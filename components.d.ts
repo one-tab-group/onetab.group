@@ -4,6 +4,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    'Carbon:download': typeof import('~icons/carbon/download')['default']
     'Carbon:language': typeof import('~icons/carbon/language')['default']
     'Carbon:logoGithub': typeof import('~icons/carbon/logo-github')['default']
     'Carbon:logoTwitter': typeof import('~icons/carbon/logo-twitter')['default']

@@ -4,7 +4,7 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
   meta: {
-    title: 'A Better Nuxt 3 Starter',
+    title: 'One Tab Group',
   },
   buildModules: [
     'nuxt-windicss',
