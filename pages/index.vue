@@ -94,9 +94,71 @@
       >
         <carbon:logo-github class="h-5 w-5 mr-2" /> <span>Sponsor on GitHub</span> 
       </a>
-      
     </div>
+    <div class="h-120"></div>
   </main>
+  <!-- footer -->
+  <footer class="py-16 mt-auto bg-gray-900 text-slate-200 sm:py-16 lg:py-20">
+    <div class="container mx-auto w-full">
+      <div class="grid grid-cols-4 gap-2">
+        <section>
+          <figcaption class="text-xl font-semibold mb-4">Getting Started</figcaption>
+          <figure class="text-slate-400">
+            <ul class="space-y-2">
+              <li>Get extension</li>
+              <li>Keyboard shortcuts</li>
+              <li>Migration from OneTab</li>
+              <li>Help Center</li>
+            </ul>
+          </figure>
+        </section>
+        <section>
+          <figcaption class="text-xl font-semibold mb-4">Features</figcaption>
+          <figure class="text-slate-400">
+            <ul class="space-y-2">
+              <li>Save all tabs & tab groups</li>
+              <li>Sync Opened Tabs</li>
+              <li>Drag & Drop opened tabs into session</li>
+              <li>Restore all tabs with tab group</li>
+              <li>Visualization web bookmark</li>
+              <li>KBar support</li>
+            </ul>
+          </figure>
+        </section>
+        <section>
+          <figcaption class="text-xl font-semibold mb-4">Features</figcaption>
+          <figure class="text-slate-400">
+            <ul class="space-y-2">
+              <li>Save all tabs & tab groups</li>
+              <li>Sync Opened Tabs</li>
+              <li>Drag & Drop opened tabs into session</li>
+              <li>Restore all tabs with tab group</li>
+              <li>Visualization web bookmark</li>
+              <li>KBar support</li>
+            </ul>
+          </figure>
+        </section>
+        <section>
+          <figcaption class="text-xl font-semibold mb-4">Support</figcaption>
+          <figure class="text-slate-400">
+            <ul class="space-y-2">
+              <li>Twitter</li>
+              <li>GitHub</li>
+              <li>Chrome Extension</li>
+              <li>Contact</li>
+            </ul>
+          </figure>
+        </section>
+      </div>
+      <div class="mt-16 pt-10 border-t flex justify-between items-center">
+        <div>One Tab Group © 2022 onetab.group. All rights reserved.</div>
+        <div class="divide-x divide-slate-200">
+          <a href="#" class="px-2">Terms of Servce</a>
+          <a href="#" class="px-2">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script lang="ts" setup>
