@@ -65,14 +65,14 @@
   <main class="container mx-auto pt-20 sm:pt-24 lg:pt-32">
     <div class="relative max-w-3xl mx-auto">
       <div
-        class="absolute rainbow-gradient duration-1000 -inset-2 transitiona-all opacity-20 rounded-xl blur-lg filter"
+        class="absolute rainbow-gradient duration-1000 -inset-2 transitiona-all opacity-10 rounded-xl blur-lg filter"
         group-hover="opacity-100 -inset-1 duration-200"
       ></div>
       <h1
-        class="relative font-bold tracking-tight"
+        class="relative font-bold tracking-tight space-y-4"
         text="3xl slate-900 dark:slate-200 sm:4xl md:5xl center"
       >
-        Your all-in-one chrome tab manager
+        <p>Your all-in-one tab manager for chrome</p>
       </h1>
     </div>
     <p
@@ -83,7 +83,9 @@
     </p>
     <div class="mt-6 sm:mt-10 flex justify-center space-x-6 text-sm">
       <a
-        class="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400"
+        class="bg-slate-900 hover:bg-slate-700 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto"
+        focus="outline-none ring-2 ring-slate-400 ring-offset-2 ring-offset-slate-50"
+        dark="bg-sky-500 highlight-white/20 hover:bg-sky-400"
         href="/extension"
       >
         <carbon:download class="h-5 w-5 mr-2" /> <span>Get extension</span> 
@@ -96,6 +98,20 @@
       </a>
     </div>
     <div class="h-120"></div>
+    <section class="point-bg relative py-20 bg-slate-900 flex flex-col justify-center items-center my-16 rounded-lg w-full">
+      <div class="text-3xl text-slate-200 dark:text-slate-900 mb-8">Ready to get started?</div>
+      <p class="text-lg pb-8 text-slate-600 text-center max-w-3xl mx-auto text-slate-200 dark:text-slate-400">
+        Manage your tabs & tab groups in one place.
+      </p>
+      <a
+        class="bg-sky-500 highlight-white/20 hover:bg-sky-400 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto"
+        focus="outline-none ring-2 ring-slate-400 ring-offset-2 ring-offset-slate-50"
+        dark="bg-slate-900 highlight-white/20 hover:bg-slate-700"
+        href="/extension"
+      >
+        <carbon:download class="h-5 w-5 mr-2" /> <span>Get extension</span> 
+      </a>
+    </section>
   </main>
   <!-- footer -->
   <footer class="py-16 mt-auto bg-gray-900 text-slate-200 sm:py-16 lg:py-20">
@@ -145,12 +161,15 @@
               <li>Twitter</li>
               <li>GitHub</li>
               <li>Chrome Extension</li>
+              <li>IndieHackers</li>
+              <li>ProductHunt</li>
               <li>Contact</li>
+              <li>Changelog</li>
             </ul>
           </figure>
         </section>
       </div>
-      <div class="mt-16 pt-10 border-t flex justify-between items-center">
+      <div class="mt-16 pt-10 border-t border-blue-gray-700 flex justify-between items-center">
         <div>One Tab Group © 2022 onetab.group. All rights reserved.</div>
         <div class="divide-x divide-slate-200">
           <a href="#" class="px-2">Terms of Servce</a>
@@ -189,3 +208,13 @@ const gotoGitHub = () => {
   window.open("https://github.com/xiaoluoboding/nuxt3-starter")
 }
 </script>
+
+<style>
+.point-bg {
+  background-image: radial-gradient(#64748b 1px, #0f172a 1px);
+  background-size: 20px 20px;
+}
+.dark .point-bg {
+  background-image: radial-gradient(#94a3b8 1px, #f8fafc 1px);
+}
+</style>

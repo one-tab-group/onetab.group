@@ -15,5 +15,5 @@ export default defineConfig({
   attributify: true,
   plugins: [
     rainbowGradient
-  ]
+  ],
 })
