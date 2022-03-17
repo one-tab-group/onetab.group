@@ -3,5 +3,8 @@
   "language": "语言",
   "menu": {
     "home": "首页"
+  },
+  "common": {
+    "features": "功能"
   }
 }

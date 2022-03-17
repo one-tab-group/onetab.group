@@ -1,6 +1,7 @@
 {
-  "name": "nuxt3-starter",
-  "description": "A better nuxt3 starter template",
+  "name": "onetab.group",
+  "displayName": "One Tab Group",
+  "description": "One Tab Group For Chrome Extension.",
   "private": false,
   "scripts": {
     "dev": "nuxi dev --port 3088",
@@ -13,7 +14,8 @@
     "@iconify/json": "^2.1.10",
     "@intlify/nuxt3": "^0.1.10",
     "@pinia/nuxt": "^0.1.8",
-    "@vueuse/nuxt": "^7.7.0",
+    "@vueuse/core": "^8.1.1",
+    "@vueuse/nuxt": "^8.1.1",
     "nuxt-windicss": "^2.2.8",
     "nuxt3": "3.0.0-27439163.9f506de",
     "unplugin-icons": "^0.13.2",

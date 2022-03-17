@@ -1,0 +1,10 @@
+<svg fill="none" viewBox="0 0 2769 1602" width="2769" height="1602"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter id="graident" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" x="-19.2%" y="-39.3%" width="138.4%" height="178.5%">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"/>
+      <feGaussianBlur stdDeviation="100" in="SourceGraphic"></feGaussianBlur>
+    </filter>
+  </defs>
+  <g filter="url(#graident)" opacity=".66"><ellipse cx="1385" cy="900" fill="#0ea5e9" rx="480" ry="270"></ellipse></g>
+</svg>

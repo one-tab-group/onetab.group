@@ -4,12 +4,19 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    'Bx:bxWindowOpen': typeof import('~icons/bx/bx-window-open')['default']
+    'Bx:bxWindows': typeof import('~icons/bx/bx-windows')['default']
     'Carbon:download': typeof import('~icons/carbon/download')['default']
+    'Carbon:keyboard': typeof import('~icons/carbon/keyboard')['default']
     'Carbon:language': typeof import('~icons/carbon/language')['default']
     'Carbon:logoGithub': typeof import('~icons/carbon/logo-github')['default']
     'Carbon:logoTwitter': typeof import('~icons/carbon/logo-twitter')['default']
     'Carbon:moon': typeof import('~icons/carbon/moon')['default']
     'Carbon:sun': typeof import('~icons/carbon/sun')['default']
+    'Mdi:contentCopy': typeof import('~icons/mdi/content-copy')['default']
+    'Mdi:group': typeof import('~icons/mdi/group')['default']
+    'Mdi:openInNew': typeof import('~icons/mdi/open-in-new')['default']
+    'Mdi:ungroup': typeof import('~icons/mdi/ungroup')['default']
     'SimpleIcons:nuxtdotjs': typeof import('~icons/simple-icons/nuxtdotjs')['default']
   }
 }

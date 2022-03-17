@@ -3,5 +3,8 @@
   "language": "Language",
   "menu": {
     "home": "Home"
+  },
+  "common": {
+    "features": "Features"
   }
 }
