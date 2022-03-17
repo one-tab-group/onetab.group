@@ -95,9 +95,9 @@
           aggregate all tabs & tab groups into one session.
         </p>
 
-        <div class="flex flex-wrap justify-center space-x-4">
+        <div class="flex flex-wrap justify-center items-center sm:space-x-4">
           <a
-            class="flex items-center px-6 py-3 text-sm font-medium text-white bg-sky-500 border border-sky-500 rounded-lg sm:w-auto active:text-opacity-75"
+            class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-sky-500 border border-sky-500 rounded-lg sm:w-auto active:text-opacity-75"
             hover="bg-sky-400 text-white"
             focus="outline-none ring"
             href="#"
@@ -106,7 +106,7 @@
           </a>
 
           <a
-            class="flex items-center px-6 py-3 text-sm font-medium text-slate-900 bg-slate-200 rounded-lg sm:w-auto active:bg-sky-400"
+            class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-slate-900 bg-slate-200 rounded-lg sm:w-auto active:bg-sky-400"
             hover="bg-sky-500 text-white border-slate-200 outline-none"
             border="~ slate-200 opacity-30 hover:opacity-10"
             dark="bg-white text-slate-200 backdrop-filter backdrop-blur-sm backdrop-saturate-[180%] bg-opacity-33 hover:bg-opacity-10"
@@ -169,7 +169,9 @@
 
     <section class="right-desc">
       <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
+        <div
+          class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
+        >
           <div
             class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full"
           >
@@ -210,7 +212,9 @@
 
     <section class="left-desc">
       <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
+        <div
+          class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
+        >
           <div
             class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last"
           >
@@ -250,7 +254,9 @@
     <!-- 4. Turn any tab as a visual web bookmark -->
     <section class="right-desc">
       <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
+        <div
+          class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
+        >
           <div
             class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full"
           >
@@ -292,7 +298,9 @@
 
     <section class="left-desc">
       <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
+        <div
+          class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
+        >
           <div
             class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last"
           >
@@ -332,7 +340,9 @@
     <!-- 6. Explore the tabs using the KBar-->
     <section class="right-desc">
       <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
+        <div
+          class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
+        >
           <div
             class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full"
           >
@@ -370,7 +380,7 @@
 
     <!-- 7. supercharge features -->
     <section class="relative text-slate-900 dark:text-white">
-      <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8 z-10">
+      <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div class="max-w-lg mx-auto text-center">
           <h2 class="text-3xl font-bold sm:text-4xl">
             <span class="text-neon">Supercharge</span> your tab mangement for
@@ -567,7 +577,7 @@
         </div>
       </div>
       <img
-        class="bg-glow pointer-events-none"
+        class="bg-glow pointer-events-none hidden sm:block !max-w-screen-xl"
         :src="isDark ? bgGlowDark : bgGlowLight"
       />
     </section>
