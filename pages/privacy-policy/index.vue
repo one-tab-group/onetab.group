@@ -22,17 +22,9 @@
       </p>
       <h3>How do we access your data?</h3>
       <p>
-        We access the data you provide us with which is strictly necessary in
-        order to make the application function properly. The data is collected
-        when you save a recording made with the application to Google Drive.
-      </p>
-      <h3>How do we use your data?</h3>
-      <p>
-        We request write access to Drive in order to save the recordings you
-        make with the application in Google Drive. How do we store your data?
-        The data is only stored locally through Chrome storage in your browser,
-        which allows you to save recordings to Google Drive without having to
-        sign in every time.
+        We never store your data, onetab.group is a tools running on the your
+        local chrome, We can not touch your data, and we can not access your
+        data.
       </p>
       <h3>How do we share your data?</h3>
       <p>
