@@ -22,9 +22,8 @@
       </p>
       <h3>How do we access your data?</h3>
       <p>
-        We never store your data, onetab.group is a tools running on the your
-        local chrome, We can not touch your data, and we can not access your
-        data.
+        We never store your data, onetab.group is a tool running on your local
+        chrome. We can not touch your data, and we can not access your data.
       </p>
       <h3>How do we share your data?</h3>
       <p>
@@ -42,23 +41,23 @@
       </p>
       <h3>Limits of Our Policy</h3>
       <p>
-        Our website may link to external sites that are not operated by us.
-        Please be aware that we have no control over the content and policies of
-        those sites, and cannot accept responsibility or liability for their
-        respective privacy practices.
+        Our website may link to external sites that we do not operate. Please be
+        aware that we have no control over the content and policies of those
+        sites and cannot accept responsibility or liability for their respective
+        privacy practices.
       </p>
       <h3>Changes to This Policy</h3>
       <p>
         At our discretion, we may change our privacy policy to reflect updates
         to our business processes, current acceptable practices, or legislative
-        or regulatory changes. If we decide to change this privacy policy, we
-        will post the changes here at the same link by which you are accessing
-        this privacy policy.
+        or regulatory changes at our discretion. If we decide to modify this
+        privacy policy, we will post the changes here at the same link by which
+        you are accessing this privacy policy.
       </p>
       <p>
-        If required by law, we will get your permission or give you the
-        opportunity to opt in to or opt out of, as applicable, any new uses of
-        your personal information.
+        If required by law, we will get your permission or allow you to opt in
+        to or opt-out of, as applicable, any new uses of your personal
+        information.
       </p>
       <h3>Contact Us</h3>
       <p>
