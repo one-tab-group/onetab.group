@@ -36,4 +36,7 @@ export default defineNuxtConfig({
       }),
     ],
   },
+  publicRuntimeConfig: {
+    CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN
+  }
 })
