@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full dark:bg-slate-900">
+  <div class="relative h-full dark:bg-slate-900">
     <NuxtLayout>
       <NuxtPage/>
     </NuxtLayout>
@@ -12,6 +12,6 @@
 <script lang="ts" setup>
 </script>
 
-<style>
+<style scoped>
 
 </style>

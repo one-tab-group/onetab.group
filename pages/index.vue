@@ -1,8 +1,12 @@
 <template>
+  <div class="gradient-header absolute left-0 top-0 overflow-hidden"></div>
+  <img class="bg-grid pointer-events-none hidden sm:block" :src="isDark ? bgGridDark : bgGridLight" />
+
   <!-- header -->
   <header class="px-4 sm:px-6 md:px-8">
     <div
-      class="relative pt-6 lg:pt-8 flex items-center justify-between text-slate-700 font-semibold text-sm leading-6 dark:text-slate-200"
+      class="relative pt-6 lg:pt-8 flex items-center justify-between font-semibold leading-6"
+      text="slate-700 dark:slate-200 sm"
     >
       <h1 class="text-xl text-neon">onetab.group</h1>
       <div class="flex items-center">
@@ -74,7 +78,7 @@
   <!-- hero -->
   <section class="hero">
     <div
-      class="max-w-screen-xl px-4 py-64 mx-auto h-auto lg:h-screen lg:items-center lg:flex"
+      class="max-w-screen-xl px-4 py-48 mx-auto h-auto lg:h-screen lg:items-center lg:flex"
     >
       <div class="max-w-4xl mx-auto text-center z-10">
         <h1
@@ -125,6 +129,8 @@
   <main
     class="max-w-screen-xl lg:mx-auto features space-y-20 pt-20 sm:pt-24 lg:pt-32"
   >
+    <div class="feature-divider feature-divider--between"></div>
+
     <!-- 1. Organise tabs & tab groups efficiently -->
     <section class="left-desc">
       <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
@@ -143,7 +149,7 @@
 
           <div class="lg:pb-20">
             <h2
-              class="text-4xl font-semibold text-slate-900 dark:text-slate-200"
+              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
             >
               Organise tabs &
               <span class="text-sky-500">tab groups</span> efficiently
@@ -166,7 +172,6 @@
     <div class="feature-divider feature-divider--left"></div>
 
     <!-- 2. Sync with your opened tabs & tab groups-->
-
     <section class="right-desc">
       <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
         <div
@@ -184,7 +189,7 @@
 
           <div class="lg:pb-20">
             <h2
-              class="text-4xl font-semibold text-slate-900 dark:text-slate-200"
+              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
             >
               Sync with your opened tabs &
               <span class="text-sky-500">tab groups</span>
@@ -209,7 +214,6 @@
     <div class="feature-divider feature-divider--right"></div>
 
     <!-- 3. Save/Restore/Reorganise tabs, even tab groups -->
-
     <section class="left-desc">
       <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
         <div
@@ -227,7 +231,7 @@
 
           <div class="lg:pb-20">
             <h2
-              class="text-4xl font-semibold text-slate-900 dark:text-slate-200"
+              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
             >
               Save/Restore/Reorganise tabs
               <p class="text-sky-500">Even tab groups</p>
@@ -269,7 +273,7 @@
 
           <div class="lg:pb-20">
             <h2
-              class="text-4xl font-semibold text-slate-900 dark:text-slate-200"
+              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
             >
               Turn any tab as a
               <span class="text-neon">visual web bookmark</span>
@@ -313,7 +317,7 @@
 
           <div class="lg:pb-20">
             <h2
-              class="text-4xl font-semibold text-slate-900 dark:text-slate-200"
+              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
             >
               Never miss your tabs &
               <span class="text-sky-500">tab groups</span>
@@ -355,7 +359,7 @@
 
           <div class="lg:pb-20">
             <h2
-              class="text-4xl font-semibold text-slate-900 dark:text-slate-200"
+              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
             >
               Explore the tabs using the <span class="text-neon">KBar</span>
             </h2>
@@ -610,6 +614,7 @@
       </div>
     </section>
   </main>
+  <!-- end sections-->
 
   <!-- footer -->
   <footer
@@ -693,9 +698,7 @@
       </div>
     </div>
   </footer>
-
-  <img class="bg-grid pointer-events-none" :src="bgGridDark" v-if="isDark" />
-  <img class="bg-grid pointer-events-none" :src="bgGridLight" v-else />
+  <!--  end footer -->
 </template>
 
 <script lang="ts" setup>
@@ -719,17 +722,30 @@ const toggleLocales = () => {
 }
 </script>
 
-<style>
+<style scoped>
 .bg-point {
   background-image: radial-gradient(#0ea5e9 1px, #0f172a 1px);
   background-size: 20px 20px;
 }
+
 .dark .bg-point {
   background-image: radial-gradient(#94a3b8 1px, #f8fafc 1px);
 }
 
 .feature-divider {
   @apply h-[2px] max-w-screen-xl mx-auto my-16;
+}
+
+.gradient-header {
+  width: 100vw;
+  height: 33vh;
+  /* background-image: radial-gradient(circle at 50% -100%,rgba(94,163,184, 1),rgba(255, 255, 255, 1) 66%); */
+  background-image: linear-gradient(180deg ,#f0f9ff 80px,rgb(255, 255, 255) 33vh);
+}
+
+.dark .gradient-header {
+  background-image: linear-gradient(180deg ,rgb(30, 41, 59) 80px,rgb(15, 23, 42) 33vh);
+  /* background-image: radial-gradient(circle at 50% -100%,rgba(30,41,59, 1),rgba(15,23,42, 1) 66%); */
 }
 
 .feature-divider--left {
@@ -757,13 +773,10 @@ const toggleLocales = () => {
 
 .bg-grid {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
+  left: 0;
+  top: 0;
+  width: 100vw;
   z-index: 0;
-  transform: translate(-50%, -50%);
 }
 
 .bg-glow {
