@@ -1,10 +1,10 @@
-<svg width="1536px" height="512px" viewBox="0 0 1536 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1440px" height="256px" viewBox="0 0 1440 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="font" fill="#FFFFFF" fill-rule="nonzero" font-family="PoiretOne-Regular, Poiret One" font-size="256" font-weight="normal" stroke-width="16">
         <text id="onetab." stroke="#FFFFFF">
-            <tspan x="0" y="246">onetab.</tspan>
+            <tspan x="0" y="192">onetab.</tspan>
         </text>
         <text id="group" stroke="#0EA5E9">
-            <tspan x="790" y="246">group</tspan>
+            <tspan x="790" y="192">group</tspan>
         </text>
     </g>
 </svg>

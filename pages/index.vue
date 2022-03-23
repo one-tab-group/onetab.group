@@ -8,7 +8,10 @@
       class="relative pt-6 lg:pt-8 flex items-center justify-between font-semibold leading-6"
       text="slate-700 dark:slate-200 sm"
     >
-      <h1 class="text-xl text-neon">onetab.group</h1>
+      <!-- <h1 class="text-xl text-neon">onetab.group</h1> -->
+      <h1 class="">
+        <img src="/favicon.svg" class="h-8" alt="">
+      </h1>
       <div class="flex items-center">
         <div class="hidden md:flex items-center">
           <!-- homepage navigation -->
@@ -626,11 +629,11 @@
       >
         <section>
           <figcaption class="text-3xl font-semibold mb-4">
-            onetab.group
+            <img src="/logo.svg" class="h-12" alt="">
+            <img src="/logo-text.svg" class="h-8 mt-4" alt="">
           </figcaption>
-          <p class="max-w-xs mt-8 text-sm text-slate-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
-            accusantium.
+          <p class="max-w-xs text-sm text-slate-400">
+            Manage your tabs & tab groups in one place.
           </p>
           <figure class="text-slate-400 mt-8">
             <ul class="space-x-6 flex justify-center sm:justify-start">
