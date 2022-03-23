@@ -10,7 +10,7 @@
     >
       <!-- <h1 class="text-xl text-neon">onetab.group</h1> -->
       <h1 class="">
-        <img src="/favicon.svg" class="h-8" alt="">
+        <img :src="isDark ? '/favicon.svg' : '/favicon-dark.svg'" class="h-8" alt="">
       </h1>
       <div class="flex items-center">
         <div class="hidden md:flex items-center">
@@ -630,7 +630,7 @@
         <section>
           <figcaption class="text-3xl font-semibold mb-4">
             <img src="/logo.svg" class="h-12" alt="">
-            <img src="/logo-text.svg" class="h-8 mt-4" alt="">
+            <img src="/logo-text-light.svg" class="h-8 mt-4" alt="">
           </figcaption>
           <p class="max-w-xs text-sm text-slate-400">
             Manage your tabs & tab groups in one place.
