@@ -341,7 +341,7 @@
 
     <div class="feature-divider feature-divider--left"></div>
 
-    <!-- 6. Explore the tabs using the KBar-->
+    <!-- 6. Explore the tabs using the command line-->
     <section class="right-desc">
       <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
         <div
@@ -361,13 +361,13 @@
             <h2
               class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
             >
-              Explore the tabs using the <span class="text-neon">KBar</span>
+              Explore the tabs using the <span class="text-neon">command line</span>
             </h2>
             <p
               class="text-slate-700 dark:text-slate-400 text-lg font-semibold mt-8"
             >
               With the KBar (CMD + K), you can easily switch、 search your
-              opened tabs in seconds. Even you can drill down to find out tab in
+              opened tabs in seconds with the command menu. Even you can drill down to find out tab in
               the tab groups
             </p>
 
