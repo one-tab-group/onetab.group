@@ -1,0 +1,32 @@
+<svg width="1120px" height="630px" viewBox="0 0 1120 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="chrome-frame" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" transform="translate(1.000000, 1.000000)">
+            <rect id="矩形" stroke="#FFFFFF" stroke-width="2" x="0" y="0" width="1118" height="628" rx="11"></rect>
+            <path d="M1118,39 L1118,73 L0,73 L0,39 L116,39 C118.386948,39 119.676134,38.0517884 121.363961,36.363961 C123.051788,34.6761336 124,32.3869484 124,30 L124,12 C124,8.13400675 127.134007,5 131,5 L340,5 C343.865993,5 346,8.13400675 346,12 L346,30 C346,34.9705627 351.029437,39 356,39 L958,39 L1118,39 Z" id="路径" stroke="#FFFFFF" stroke-width="2"></path>
+            <path d="M101.5,39 L116,39 C118.386948,39 119.676134,38.0517884 121.363961,36.363961 C123.051788,34.6761336 124,32.3869484 124,30 L124,12 C124,8.13400675 127.134007,5 131,5 L340,5 C343.865993,5 346,8.13400675 346,12 L346,30 C346,34.9705627 351.029437,39 356,39 L772,39" id="路径" stroke="#0EA5E9" stroke-width="2"></path>
+            <rect id="矩形" fill-opacity="0.2" fill="#FFFFFF" fill-rule="nonzero" x="109" y="44" width="660" height="24" rx="12"></rect>
+            <path d="M84,62 C86.3760667,61.9997092 88.4240266,60.3279051 88.9,58 L90.93,58 C90.404805,61.633706 87.1617457,64.2444407 83.4997055,63.981552 C79.8376654,63.7186632 77.000775,60.671464 77,57 C76.9997957,54.1686074 78.7052934,51.6159212 81.3211476,50.5323665 C83.9370019,49.4488118 86.9480052,50.0478009 88.95,52.05 L91,50 L91,56 L85,56 L87.535,53.465 C85.9348792,51.864396 83.459129,51.5382301 81.49906,52.6697994 C79.538991,53.8013688 78.5834479,56.108458 79.1694224,58.2945398 C79.7553968,60.4806216 81.7367458,62.0004833 84,62 L84,62 Z" id="路径" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" opacity="0.3" points="52.333 50 51 51.4 55.381 56 45 56 45 58 55.381 58 51 62.6 52.333 64 59 57"></polygon>
+            <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="19.667 50 21 51.4 16.619 56 27 56 27 58 16.619 58 21 62.6 19.667 64 13 57"></polygon>
+            <g opacity="0.4" transform="translate(591.111111, 16.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <polygon id="路径" points="163.024398 1 161.851852 2.333 164.197824 5 161.851852 7.667 163.024398 9 165.37037 6.333 167.716343 9 168.888889 7.667 166.542917 5 168.888889 2.333 167.716343 1 165.37037 3.667"></polygon>
+                <rect id="矩形" x="2.84217094e-14" y="0" width="87.962963" height="10" rx="5"></rect>
+            </g>
+            <g opacity="0.4" transform="translate(377.000000, 16.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <polygon id="路径" points="163.166375 1 162 2.333 164.333625 5 162 7.667 163.166375 9 165.5 6.333 167.833625 9 169 7.667 166.666375 5 169 2.333 167.833625 1 165.5 3.667"></polygon>
+                <rect id="矩形" x="0" y="0" width="88" height="10" rx="5"></rect>
+            </g>
+            <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="328.333 17 327 18.333 329.667 21 327 23.667 328.333 25 331 22.333 333.667 25 335 23.667 332.333 21 335 18.333 333.667 17 331 19.667"></polygon>
+            <rect id="矩形" fill="#FFFFFF" fill-rule="nonzero" x="133" y="16" width="100" height="10" rx="5"></rect>
+            <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="788 15 786 15 786 20 781 20 781 22 786 22 786 27 788 27 788 22 793 22 793 20 788 20"></polygon>
+            <circle id="group-dot" fill="#0EA5E9" cx="109.5" cy="21.5" r="8"></circle>
+            <circle id="group-dot" fill-opacity="0.99" fill="#777879" cx="363.5" cy="20.5" r="8"></circle>
+            <circle id="group-dot" fill-opacity="0.99" fill="#777879" cx="577.5" cy="20.5" r="8"></circle>
+            <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="772 8 773 8 773 34 772 34"></polygon>
+            <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="557 8 558 8 558 34 557 34"></polygon>
+            <circle id="椭圆形" stroke="#FFFFFF" cx="24" cy="19" r="5.5"></circle>
+            <circle id="椭圆形" stroke="#FFFFFF" cx="44" cy="19" r="5.5"></circle>
+            <circle id="椭圆形" stroke="#FFFFFF" cx="64" cy="19" r="5.5"></circle>
+        </g>
+    </g>
+</svg>
