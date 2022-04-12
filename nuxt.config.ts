@@ -28,8 +28,8 @@ export default defineNuxtConfig({
     global: true,
     dirs: ['~/components']
   },
-  windicss: {
-    analyze: true,
+  plausible: {
+    domain: 'onetab.group'
   },
   vite: {
     plugins: [
