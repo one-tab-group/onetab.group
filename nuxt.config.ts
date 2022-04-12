@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   meta: {
     title: 'One Tab Group',
   },
+  modules: [
+    'vue-plausible'
+  ],
   buildModules: [
     'nuxt-windicss',
     '@pinia/nuxt',
@@ -21,6 +24,10 @@ export default defineNuxtConfig({
       }
     ]
   ],
+  components: {
+    global: true,
+    dirs: ['~/components']
+  },
   windicss: {
     analyze: true,
   },
@@ -37,6 +44,7 @@ export default defineNuxtConfig({
     ],
   },
   publicRuntimeConfig: {
-    CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN
+    CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN,
+    PLAUSIBLE_TOKEN: process.env.PLAUSIBLE_TOKEN
   }
 })
