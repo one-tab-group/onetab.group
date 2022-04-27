@@ -965,6 +965,10 @@
     </div>
   </footer>
   <!--  end footer -->
+
+  <Client-Only>
+    <Chatwoot />
+  </Client-Only>
 </template>
 
 <script lang="ts" setup>

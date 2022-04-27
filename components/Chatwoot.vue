@@ -13,7 +13,7 @@ console.log(config)
   s.parentNode.insertBefore(g, s)
   g.onload = function () {
     window.chatwootSDK.run({
-      websiteToken: config.CHATWOOT_WEBSITE_TOKEN,
+      websiteToken: config.public.CHATWOOT_WEBSITE_TOKEN,
       baseUrl: BASE_URL
     })
   }
