@@ -966,9 +966,9 @@
   </footer>
   <!--  end footer -->
 
-  <Client-Only>
-    <Chatwoot />
-  </Client-Only>
+  <client-only>
+    <chatwoot />
+  </client-only>
 </template>
 
 <script lang="ts" setup>
