@@ -1,8 +1,6 @@
 <script lang="ts" setup>
 const config = useRuntimeConfig()
 
-console.log(config)
-
 ;(function (d, t) {
   const BASE_URL = 'https://app.chatwoot.com'
   const g = d.createElement(t) as any
