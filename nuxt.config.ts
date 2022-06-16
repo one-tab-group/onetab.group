@@ -5,13 +5,20 @@ import IconsResolver from 'unplugin-icons/resolver'
 export default defineNuxtConfig({
   meta: {
     title: 'onetab.group: manage your tabs & tab groups in one place.',
-    viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
-    description: 'onetab.group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.',
-    link: [ { rel: "icon", type: "image/*", href: "/logo.svg" } ],
+    viewport:
+      'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
+    description:
+      'onetab.group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.',
+    link: [{ rel: 'icon', type: 'image/*', href: '/logo.svg' }],
+    scripts: [
+      {
+        async: true,
+        defer: true,
+        'data-website-id': process.env.UMAMI_WEBSITE_ID,
+        src: 'https://analytics-onetab-group.up.railway.app/umami.js'
+      }
+    ]
   },
-  modules: [
-    'vue-plausible'
-  ],
   buildModules: [
     'nuxt-windicss',
     '@pinia/nuxt',
@@ -31,23 +38,21 @@ export default defineNuxtConfig({
     global: true,
     dirs: ['~/components']
   },
-  plausible: {
-    domain: 'onetab.group'
-  },
   vite: {
     plugins: [
       ViteComponents({
         resolvers: [
           IconsResolver({
-            componentPrefix: '',
-          }),
+            componentPrefix: ''
+          })
         ],
-        dts: true,
-      }),
-    ],
+        dts: true
+      })
+    ]
   },
   publicRuntimeConfig: {
     CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN,
-    PLAUSIBLE_TOKEN: process.env.PLAUSIBLE_TOKEN
+    PLAUSIBLE_TOKEN: process.env.PLAUSIBLE_TOKEN,
+    UMAMI_WEBSITE_ID: process.env.UMAMI_WEBSITE_ID
   }
 })
