@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     description:
       'onetab.group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.',
     link: [{ rel: 'icon', type: 'image/*', href: '/logo.svg' }],
-    scripts: [
+    script: [
       {
         async: true,
         defer: true,
