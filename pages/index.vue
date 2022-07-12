@@ -200,7 +200,8 @@
               <carbon:language class="h-6 w-6" />
             </button>
             <a
-              href="https://twitter.com/one-tab-group"
+              href="https://twitter.com/OneTabGroup"
+              target="_blank"
               class="flex items-center block text-slate-900 dark:text-white hover:text-slate-500 dark:hover:text-sky-500"
             >
               <span class="sr-only hidden">OneTabGroup on Twitter</span>
@@ -208,6 +209,7 @@
             </a>
             <a
               href="https://github.com/one-tab-group"
+              target="_blank"
               class="flex items-center block text-slate-900 dark:text-white hover:text-slate-500 dark:hover:text-sky-500"
             >
               <span class="sr-only hidden">OneTabGroup on GitHub</span>
@@ -367,7 +369,7 @@
               class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-sky-500 border border-sky-500 rounded-lg sm:w-auto active:text-opacity-75"
               hover="bg-sky-400 text-white"
               focus="outline-none ring"
-              href="#"
+              href="https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm"
             >
               <carbon:download class="h-5 w-5 mr-2" />
               <span>Get extension</span>
@@ -396,255 +398,136 @@
   >
     <div class="feature-divider feature-divider--between sm:hidden"></div>
 
-    <!-- 1. Organise tabs & tab groups efficiently -->
-    <section class="left-desc">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-        <div
-          class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
-        >
-          <div
-            class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last"
-          >
-            <img
-              class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-              src="https://picsum.photos/640/360"
-              alt=""
-            />
-          </div>
+    <!-- 1. Sync with your opened tabs & tab groups-->
+    <OneTabDesc left-desc>
+      <template #title>
+        Syncronizes your browser tabs &
+        <span class="text-sky-500">tab groups</span>
+      </template>
+      <template #description>
+        Are you struggling to find the tab you're looking for after opening huge
+        amount of tabs? We have synchronized the tabs and tab groups you are
+        browsing in chrome, so you can easily manage your open tabs and tab
+        groups.
+      </template>
+      <template #image>
+        <img
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
+          src="https://picsum.photos/640/360"
+          alt=""
+        />
+      </template>
+    </OneTabDesc>
 
-          <div class="lg:pb-20">
-            <h2
-              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
-            >
-              Organise tabs &
-              <span class="text-sky-500">tab groups</span> efficiently
-            </h2>
-            <p
-              class="text-slate-700 dark:text-slate-400 text-lg font-semibold mt-8"
-            >
-              You can drag & drop tabs or tab groups in your sessions to reorder
-              them. Even could drag the opened tabs into the sessions.
-            </p>
-
-            <a class="btn btn-secondary btn-blur" href="/extension">
-              <carbon:download class="h-5 w-5 mr-2" />
-              <span>Get extension</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="feature-divider feature-divider--left"></div>
-
-    <!-- 2. Sync with your opened tabs & tab groups-->
-    <section class="right-desc">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-        <div
-          class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
-        >
-          <div
-            class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full"
-          >
-            <img
-              class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-              src="https://picsum.photos/640/360"
-              alt=""
-            />
-          </div>
-
-          <div class="lg:pb-20">
-            <h2
-              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
-            >
-              Syncronizes your browser tabs &
-              <span class="text-sky-500">tab groups</span>
-            </h2>
-            <p
-              class="text-slate-700 dark:text-slate-400 text-lg font-semibold mt-8"
-            >
-              Are you struggling to find the tab you're looking for after
-              opening huge amount of tabs? We have synchronized the tabs and tab
-              groups you are browsing in chrome, so you can easily manage your
-              open tabs and tab groups.
-            </p>
-
-            <a class="btn btn-secondary btn-blur" href="/extension">
-              <carbon:download class="h-5 w-5 mr-2" />
-              <span>Get extension</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
     <div class="feature-divider feature-divider--right"></div>
 
+    <!-- 2. Organise tabs & tab groups efficiently -->
+    <OneTabDesc>
+      <template #title>
+        Organise tabs &
+        <span class="text-sky-500">tab groups</span> efficiently
+      </template>
+      <template #description>
+        You can drag & drop tabs or tab groups in your sessions to reorder them.
+        Even could drag the opened tabs into the sessions.
+      </template>
+      <template #image>
+        <img
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
+          src="https://picsum.photos/640/360"
+          alt=""
+        />
+      </template>
+    </OneTabDesc>
+
+    <div class="feature-divider feature-divider--left"></div>
+
     <!-- 3. Save/Restore/Reorganise tabs, even tab groups -->
-    <section class="left-desc">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-        <div
-          class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
-        >
-          <div
-            class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last"
-          >
-            <img
-              class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-              src="https://picsum.photos/640/360"
-              alt=""
-            />
-          </div>
-
-          <div class="lg:pb-20">
-            <h2
-              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
-            >
-              Save/Restore/Reorganise tabs
-              <p class="text-sky-500">Even tab groups</p>
-            </h2>
-            <p
-              class="text-slate-700 dark:text-slate-400 text-lg font-semibold mt-8"
-            >
-              One-click to aggregate all tabs & tab groups into one session. You
-              can restore all your tabs & tab groups later as they are. Also you
-              can reorganise the session and restore it with ease.
-            </p>
-
-            <a class="btn btn-secondary btn-blur" href="/extension">
-              <carbon:download class="h-5 w-5 mr-2" />
-              <span>Get extension</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <OneTabDesc left-desc>
+      <template #title>
+        Save/Restore/Reorganise tabs
+        <p class="text-sky-500">Even tab groups</p>
+      </template>
+      <template #description>
+        One-click to aggregate all tabs & tab groups into one session. You can
+        restore all your tabs & tab groups later as they are. Also you can
+        reorganise the session and restore it with ease.
+      </template>
+      <template #image>
+        <img
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
+          src="https://picsum.photos/640/360"
+          alt=""
+        />
+      </template>
+    </OneTabDesc>
 
     <div class="feature-divider feature-divider--left"></div>
 
     <!-- 4. Turn any tab as a visual web bookmark -->
-    <section class="right-desc">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-        <div
-          class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
-        >
-          <div
-            class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full"
-          >
-            <img
-              class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-              src="https://picsum.photos/640/360"
-              alt=""
-            />
-          </div>
+    <OneTabDesc>
+      <template #title>
+        Turn any tab into a
+        <span class="text-neon">visual web bookmark</span>
+      </template>
+      <template #description>
+        By hovering over the tab in the session, you can use the link as a
+        <span class="text-neon">visual web bookmark</span>, like a Twitter card
+        or Notion web bookmark. You can preview the website via the information
+        like a website's title, description, logo, author, thumbnails.
+      </template>
+      <template #image>
+        <img
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
+          src="https://picsum.photos/640/360"
+          alt=""
+        />
+      </template>
+    </OneTabDesc>
 
-          <div class="lg:pb-20">
-            <h2
-              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
-            >
-              Turn any tab into a
-              <span class="text-neon">visual web bookmark</span>
-            </h2>
-            <p
-              class="text-slate-700 dark:text-slate-400 text-lg font-semibold mt-8"
-            >
-              By hovering over the tab in the session, you can use the link as a
-              <span class="text-neon">visual web bookmark</span>, like a Twitter
-              card or Notion web bookmark. You can preview the website via the
-              information like a website's title, description, logo, author,
-              thumbnails.
-            </p>
-
-            <a class="btn btn-secondary btn-blur" href="/extension">
-              <carbon:download class="h-5 w-5 mr-2" />
-              <span>Get extension</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
     <div class="feature-divider feature-divider--right"></div>
 
     <!-- 5. Save/Restore/Reorganise tabs, even tab groups -->
-
-    <section class="left-desc">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-        <div
-          class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
-        >
-          <div
-            class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full lg:order-last"
-          >
-            <img
-              class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-              src="https://picsum.photos/640/360"
-              alt=""
-            />
-          </div>
-
-          <div class="lg:pb-20">
-            <h2
-              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
-            >
-              Never miss your tabs &
-              <span class="text-sky-500">tab groups</span>
-            </h2>
-            <p
-              class="text-slate-700 dark:text-slate-400 text-lg font-semibold mt-8"
-            >
-              You can export the sessions into a JSON file, and import back to
-              <span class="text-neon">onetab.group</span> later. Even could
-              import from one-tab's exported data.
-            </p>
-
-            <a class="btn btn-secondary btn-blur" href="/extension">
-              <carbon:download class="h-5 w-5 mr-2" />
-              <span>Get extension</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <OneTabDesc left-desc>
+      <template #title>
+        Never miss your tabs &
+        <span class="text-sky-500">tab groups</span>
+      </template>
+      <template #description>
+        You can export the sessions into a JSON file, and import back to
+        <span class="text-neon">onetab.group</span> later. Even could import
+        from one-tab's exported data.
+      </template>
+      <template #image>
+        <img
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
+          src="https://picsum.photos/640/360"
+          alt=""
+        />
+      </template>
+    </OneTabDesc>
 
     <div class="feature-divider feature-divider--left"></div>
 
     <!-- 6. Explore the tabs using the command line-->
-    <section class="right-desc">
-      <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
-        <div
-          class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
-        >
-          <div
-            class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full"
-          >
-            <img
-              class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-              src="https://picsum.photos/640/360"
-              alt=""
-            />
-          </div>
-
-          <div class="lg:pb-20">
-            <h2
-              class="text-3xl sm:text-4xl font-semibold text-slate-900 dark:text-slate-200"
-            >
-              Explore the tabs using the
-              <span class="text-neon">command line</span>
-            </h2>
-            <p
-              class="text-slate-700 dark:text-slate-400 text-lg font-semibold mt-8"
-            >
-              With the KBar (CMD + K), you can easily switch、 search your
-              opened tabs in seconds with the command menu. Even you can drill
-              down to find out tab in the tab groups
-            </p>
-
-            <a class="btn btn-secondary btn-blur" href="/extension">
-              <carbon:download class="h-5 w-5 mr-2" />
-              <span>Get extension</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <OneTabDesc>
+      <template #title>
+        Explore the tabs using the
+        <span class="text-neon">command line</span>
+      </template>
+      <template #description>
+        With the KBar (CMD + K), you can easily switch、 search your opened tabs
+        in seconds with the command menu. Even you can drill down to find out
+        tab in the tab groups
+      </template>
+      <template #image>
+        <img
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
+          src="https://picsum.photos/640/360"
+          alt=""
+        />
+      </template>
+    </OneTabDesc>
 
     <div class="feature-divider feature-divider--between"></div>
 

@@ -4,7 +4,7 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
   meta: {
-    title: 'onetab.group: manage your tabs & tab groups in one place.',
+    title: 'onetab.group: Your all-in-one tab manager for chrome.',
     viewport:
       'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
     description:
