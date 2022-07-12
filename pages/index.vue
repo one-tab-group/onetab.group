@@ -11,7 +11,6 @@
       class="relative pt-6 lg:pt-8 flex items-center justify-between font-semibold leading-6"
       text="slate-700 dark:slate-200 sm"
     >
-      <!-- <h1 class="text-xl text-neon">onetab.group</h1> -->
       <h1 class="">
         <svg
           class="h-8 inline-block"
@@ -200,7 +199,7 @@
               <carbon:language class="h-6 w-6" />
             </button>
             <a
-              href="https://twitter.com/OneTabGroup"
+              :href="twitterUrl"
               target="_blank"
               class="flex items-center block text-slate-900 dark:text-white hover:text-slate-500 dark:hover:text-sky-500"
             >
@@ -208,7 +207,7 @@
               <carbon:logo-twitter class="h-6 w-6" />
             </a>
             <a
-              href="https://github.com/one-tab-group"
+              :href="githubUrl"
               target="_blank"
               class="flex items-center block text-slate-900 dark:text-white hover:text-slate-500 dark:hover:text-sky-500"
             >
@@ -369,7 +368,7 @@
               class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-sky-500 border border-sky-500 rounded-lg sm:w-auto active:text-opacity-75"
               hover="bg-sky-400 text-white"
               focus="outline-none ring"
-              href="https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm"
+              :href="extensionUrl"
             >
               <carbon:download class="h-5 w-5 mr-2" />
               <span>Get extension</span>
@@ -756,7 +755,7 @@
           class="bg-sky-500 highlight-white/20 hover:bg-sky-400 text-white font-semibold h-12 px-6 rounded-lg flex items-center justify-center sm:w-auto"
           focus="outline-none ring-2 ring-slate-400 ring-offset-2 ring-offset-slate-50"
           dark="bg-slate-900 highlight-white/20 hover:bg-slate-700"
-          href="/extension"
+          :href="extensionUrl"
         >
           <carbon:download class="h-5 w-5 mr-2" /> <span>Get extension</span>
         </a>
@@ -784,10 +783,14 @@
           <figure class="text-slate-400 mt-8">
             <ul class="space-x-6 flex justify-center sm:justify-start">
               <li class="flex items-center">
-                <carbon:logo-twitter class="h-6 w-6" />
+                <a :href="twitterUrl" target="_blank">
+                  <carbon:logo-twitter class="h-6 w-6" />
+                </a>
               </li>
               <li class="flex items-center">
-                <carbon:logo-github class="h-6 w-6" />
+                <a :href="githubUrl" target="_blank">
+                  <carbon:logo-github class="h-6 w-6" />
+                </a>
               </li>
             </ul>
           </figure>
@@ -796,7 +799,13 @@
           <p class="text-xl font-semibold">Getting Started</p>
 
           <nav class="flex flex-col mt-4 space-y-2 text-md text-slate-400">
-            <a class="hover:opacity-75 text-neon" href=""> Get extension </a>
+            <a
+              class="hover:opacity-75 text-neon"
+              :href="extensionUrl"
+              target="_blank"
+            >
+              Get extension
+            </a>
             <a class="hover:opacity-75" href=""> Keyboard shortcuts </a>
             <a class="hover:opacity-75" href=""> Migration from OneTab </a>
             <a class="hover:opacity-75" href=""> Help Center </a>
@@ -824,7 +833,9 @@
           <p class="text-xl font-semibold">Support</p>
 
           <nav class="flex flex-col mt-4 space-y-2 text-md text-slate-400">
-            <a class="hover:opacity-75" href=""> Chrome Extension </a>
+            <a class="hover:opacity-75" :href="extensionUrl" target="_blank">
+              Chrome Extension
+            </a>
             <a class="hover:opacity-75" href=""> IndieHackers </a>
             <a class="hover:opacity-75" href=""> ProductHunt </a>
             <a class="hover:opacity-75" href=""> Contact </a>
@@ -837,8 +848,8 @@
         class="flex justify-between items-center flex-col lg:flex-row py-8 lg:p-0"
       >
         <div class="text-center sm:text-left">
-          One Tab Group © 2022 <span class="text-neon">onetab.group</span>. All
-          rights reserved.
+          One Tab Group © 2022 <a class="text-neon" href="/">onetab.group</a>.
+          All rights reserved.
         </div>
         <div class="divide-x divide-slate-200">
           <a href="/terms-of-services" class="px-2">Terms of Services</a>
@@ -867,6 +878,14 @@ import bgGlowLight from '@/assets/bg_glow_light.svg'
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 const { locale, availableLocales } = useI18n()
+
+const extensionUrl =
+  'https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm'
+
+const twitterUrl = 'https://twitter.com/OneTabGroup'
+
+const githubUrl = 'https://github.com/one-tab-group/'
+
 const SVGColor = computed(() => {
   return isDark.value ? '#fff' : '#0F172A'
 })
