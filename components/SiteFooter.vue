@@ -1,0 +1,108 @@
+<template>
+  <footer
+    class="mt-20 py-16 px-8 bg-slate-900 text-slate-200 sm:py-16 lg:py-20"
+  >
+    <div class="max-w-screen-xl mx-auto w-full">
+      <div
+        class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4 text-center sm:text-left sm:p-0 py-20"
+      >
+        <section>
+          <figcaption class="text-3xl font-semibold mb-4">
+            <img src="/logo.svg" class="h-12" alt="" />
+            <img src="/logo-text-light.svg" class="h-8 mt-4" alt="" />
+          </figcaption>
+          <p class="max-w-xs text-sm text-slate-400">
+            Manage your tabs & tab groups in one place.
+          </p>
+          <figure class="text-slate-400 mt-8">
+            <ul class="space-x-6 flex justify-center sm:justify-start">
+              <li class="flex items-center">
+                <a :href="twitterUrl" target="_blank">
+                  <carbon:logo-twitter class="h-6 w-6" />
+                </a>
+              </li>
+              <li class="flex items-center">
+                <a :href="githubUrl" target="_blank">
+                  <carbon:logo-github class="h-6 w-6" />
+                </a>
+              </li>
+            </ul>
+          </figure>
+        </section>
+        <div>
+          <p class="text-xl font-semibold">Getting Started</p>
+
+          <nav class="flex flex-col mt-4 space-y-2 text-md text-slate-400">
+            <a
+              class="hover:opacity-75 text-neon"
+              :href="extensionUrl"
+              target="_blank"
+            >
+              Get extension
+            </a>
+            <a class="hover:opacity-75" href=""> Keyboard shortcuts </a>
+            <a class="hover:opacity-75" href=""> Migration from OneTab </a>
+            <a class="hover:opacity-75" href=""> Help Center </a>
+          </nav>
+        </div>
+
+        <div>
+          <p class="text-xl font-semibold">Features</p>
+
+          <nav class="flex flex-col mt-4 space-y-2 text-md text-slate-400">
+            <a class="hover:opacity-75" href=""> Save all tabs & tab groups </a>
+            <a class="hover:opacity-75" href=""> Sync Opened Tabs </a>
+            <a class="hover:opacity-75" href="">
+              Drag & Drop opened tabs into session
+            </a>
+            <a class="hover:opacity-75" href="">
+              Restore all tabs with tab group
+            </a>
+            <a class="hover:opacity-75" href=""> Visualization web bookmark </a>
+            <a class="hover:opacity-75" href=""> KBar support </a>
+          </nav>
+        </div>
+
+        <div>
+          <p class="text-xl font-semibold">Support</p>
+
+          <nav class="flex flex-col mt-4 space-y-2 text-md text-slate-400">
+            <a class="hover:opacity-75" :href="extensionUrl" target="_blank">
+              Chrome Extension
+            </a>
+            <a class="hover:opacity-75" href=""> IndieHackers </a>
+            <a class="hover:opacity-75" href=""> ProductHunt </a>
+            <a class="hover:opacity-75" href=""> Contact </a>
+            <a class="hover:opacity-75" href=""> Changelog </a>
+          </nav>
+        </div>
+      </div>
+
+      <Divider between />
+
+      <div
+        class="flex justify-between items-center flex-col lg:flex-row py-8 lg:p-0"
+      >
+        <div class="text-center sm:text-left">
+          One Tab Group © 2022 <a class="text-neon" href="/">onetab.group</a>.
+          All rights reserved.
+        </div>
+        <div class="divide-x divide-slate-200">
+          <a href="/terms-of-services" class="px-2">Terms of Services</a>
+          <a href="/privacy-policy" class="px-2">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</template>
+
+<script lang="ts" setup>
+const extensionUrl =
+  'https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm'
+
+const twitterUrl = 'https://twitter.com/OneTabGroup'
+
+const githubUrl = 'https://github.com/one-tab-group/'
+</script>
+
+<style scoped></style>

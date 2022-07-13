@@ -219,6 +219,7 @@
       </div>
     </div>
   </header>
+  <!-- end header -->
 
   <!-- hero -->
   <section class="hero">
@@ -368,6 +369,7 @@
               class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-sky-500 border border-sky-500 rounded-lg sm:w-auto active:text-opacity-75"
               hover="bg-sky-400 text-white"
               focus="outline-none ring"
+              target="_blank"
               :href="extensionUrl"
             >
               <carbon:download class="h-5 w-5 mr-2" />
@@ -379,6 +381,7 @@
               hover="bg-sky-500 text-white border-slate-200 outline-none"
               border="~ slate-200 opacity-30 hover:opacity-10"
               dark="bg-white text-slate-200 backdrop-filter backdrop-blur-sm backdrop-saturate-[180%] bg-opacity-33 hover:bg-opacity-10"
+              target="_blank"
               href="https://github.com/sponsors/xiaoluoboding"
             >
               <carbon:logo-github class="h-5 w-5 mr-2" />
@@ -395,7 +398,7 @@
   <main
     class="max-w-screen-xl lg:mx-auto features space-y-20 pt-20 sm:pt-24 lg:pt-32"
   >
-    <div class="feature-divider feature-divider--between sm:hidden"></div>
+    <Divider between class="hidden lg:block" />
 
     <!-- 1. Sync with your opened tabs & tab groups-->
     <OneTabDesc left-desc>
@@ -418,7 +421,7 @@
       </template>
     </OneTabDesc>
 
-    <div class="feature-divider feature-divider--right"></div>
+    <Divider right />
 
     <!-- 2. Organise tabs & tab groups efficiently -->
     <OneTabDesc>
@@ -439,7 +442,7 @@
       </template>
     </OneTabDesc>
 
-    <div class="feature-divider feature-divider--left"></div>
+    <Divider left />
 
     <!-- 3. Save/Restore/Reorganise tabs, even tab groups -->
     <OneTabDesc left-desc>
@@ -461,7 +464,7 @@
       </template>
     </OneTabDesc>
 
-    <div class="feature-divider feature-divider--left"></div>
+    <Divider right />
 
     <!-- 4. Turn any tab as a visual web bookmark -->
     <OneTabDesc>
@@ -484,7 +487,7 @@
       </template>
     </OneTabDesc>
 
-    <div class="feature-divider feature-divider--right"></div>
+    <Divider left />
 
     <!-- 5. Save/Restore/Reorganise tabs, even tab groups -->
     <OneTabDesc left-desc>
@@ -506,7 +509,7 @@
       </template>
     </OneTabDesc>
 
-    <div class="feature-divider feature-divider--left"></div>
+    <Divider right />
 
     <!-- 6. Explore the tabs using the command line-->
     <OneTabDesc>
@@ -528,7 +531,7 @@
       </template>
     </OneTabDesc>
 
-    <div class="feature-divider feature-divider--between"></div>
+    <Divider between />
 
     <!-- 7. supercharge features -->
     <section class="relative text-slate-900 dark:text-white">
@@ -765,99 +768,7 @@
   <!-- end sections-->
 
   <!-- footer -->
-  <footer
-    class="mt-20 py-16 px-8 bg-slate-900 text-slate-200 sm:py-16 lg:py-20"
-  >
-    <div class="max-w-screen-xl mx-auto w-full">
-      <div
-        class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4 text-center sm:text-left sm:p-0 py-20"
-      >
-        <section>
-          <figcaption class="text-3xl font-semibold mb-4">
-            <img src="/logo.svg" class="h-12" alt="" />
-            <img src="/logo-text-light.svg" class="h-8 mt-4" alt="" />
-          </figcaption>
-          <p class="max-w-xs text-sm text-slate-400">
-            Manage your tabs & tab groups in one place.
-          </p>
-          <figure class="text-slate-400 mt-8">
-            <ul class="space-x-6 flex justify-center sm:justify-start">
-              <li class="flex items-center">
-                <a :href="twitterUrl" target="_blank">
-                  <carbon:logo-twitter class="h-6 w-6" />
-                </a>
-              </li>
-              <li class="flex items-center">
-                <a :href="githubUrl" target="_blank">
-                  <carbon:logo-github class="h-6 w-6" />
-                </a>
-              </li>
-            </ul>
-          </figure>
-        </section>
-        <div>
-          <p class="text-xl font-semibold">Getting Started</p>
-
-          <nav class="flex flex-col mt-4 space-y-2 text-md text-slate-400">
-            <a
-              class="hover:opacity-75 text-neon"
-              :href="extensionUrl"
-              target="_blank"
-            >
-              Get extension
-            </a>
-            <a class="hover:opacity-75" href=""> Keyboard shortcuts </a>
-            <a class="hover:opacity-75" href=""> Migration from OneTab </a>
-            <a class="hover:opacity-75" href=""> Help Center </a>
-          </nav>
-        </div>
-
-        <div>
-          <p class="text-xl font-semibold">Features</p>
-
-          <nav class="flex flex-col mt-4 space-y-2 text-md text-slate-400">
-            <a class="hover:opacity-75" href=""> Save all tabs & tab groups </a>
-            <a class="hover:opacity-75" href=""> Sync Opened Tabs </a>
-            <a class="hover:opacity-75" href="">
-              Drag & Drop opened tabs into session
-            </a>
-            <a class="hover:opacity-75" href="">
-              Restore all tabs with tab group
-            </a>
-            <a class="hover:opacity-75" href=""> Visualization web bookmark </a>
-            <a class="hover:opacity-75" href=""> KBar support </a>
-          </nav>
-        </div>
-
-        <div>
-          <p class="text-xl font-semibold">Support</p>
-
-          <nav class="flex flex-col mt-4 space-y-2 text-md text-slate-400">
-            <a class="hover:opacity-75" :href="extensionUrl" target="_blank">
-              Chrome Extension
-            </a>
-            <a class="hover:opacity-75" href=""> IndieHackers </a>
-            <a class="hover:opacity-75" href=""> ProductHunt </a>
-            <a class="hover:opacity-75" href=""> Contact </a>
-            <a class="hover:opacity-75" href=""> Changelog </a>
-          </nav>
-        </div>
-      </div>
-      <div class="feature-divider feature-divider--between"></div>
-      <div
-        class="flex justify-between items-center flex-col lg:flex-row py-8 lg:p-0"
-      >
-        <div class="text-center sm:text-left">
-          One Tab Group © 2022 <a class="text-neon" href="/">onetab.group</a>.
-          All rights reserved.
-        </div>
-        <div class="divide-x divide-slate-200">
-          <a href="/terms-of-services" class="px-2">Terms of Services</a>
-          <a href="/privacy-policy" class="px-2">Privacy Policy</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <SiteFooter />
   <!--  end footer -->
 
   <client-only>
@@ -908,10 +819,6 @@ const toggleLocales = () => {
   background-image: radial-gradient(#94a3b8 1px, #f8fafc 1px);
 }
 
-.feature-divider {
-  @apply h-[2px] max-w-screen-xl mx-auto my-16;
-}
-
 .gradient-header {
   width: 100vw;
   height: 33vh;
@@ -930,29 +837,6 @@ const toggleLocales = () => {
     rgb(15, 23, 42) 33vh
   );
   /* background-image: radial-gradient(circle at 50% -100%,rgba(30,41,59, 1),rgba(15,23,42, 1) 66%); */
-}
-
-.feature-divider--left {
-  background: linear-gradient(
-    90deg,
-    rgba(14, 165, 233, 0.66),
-    rgba(179, 132, 201, 0)
-  );
-}
-.feature-divider--right {
-  background: linear-gradient(
-    90deg,
-    rgba(179, 132, 201, 0),
-    rgba(14, 165, 233, 0.66)
-  );
-}
-.feature-divider--between {
-  background: linear-gradient(
-    90deg,
-    rgba(179, 132, 201, 0),
-    rgba(14, 165, 233, 0.66),
-    rgba(179, 132, 201, 0)
-  );
 }
 
 .bg-grid {
