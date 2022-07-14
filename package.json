@@ -16,6 +16,7 @@
     "@pinia/nuxt": "^0.1.8",
     "@vueuse/core": "^8.1.1",
     "@vueuse/nuxt": "^8.1.1",
+    "nodemailer": "^6.7.7",
     "nuxt-windicss": "^2.2.8",
     "nuxt3": "latest",
     "unplugin-icons": "^0.14.7",
