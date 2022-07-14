@@ -62,10 +62,10 @@ const sendBackupEmail = async (username: string, to: string, blob?: Blob) => {
   })
 }
 
-export default async (req: any) => {
-  const { username, to, blob = null } = useQuery(req) as any
+export default defineEventHandler(async (event) => {
+  const { username, to, blob } = await useBody(event)
   const data = await sendBackupEmail(username, to, blob)
   return {
     data
   }
-}
+})
