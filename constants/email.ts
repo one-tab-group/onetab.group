@@ -1774,7 +1774,7 @@ export const EMAIL_TEMPLATE = `
                       <!-- footer -->
                       <tr>
                         <center data-parsed="">
-                          <table align="left" class="menu float-center">
+                          <table align="center" class="menu float-center">
                             <tr>
                               <td>
                                 <table>
