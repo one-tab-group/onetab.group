@@ -8,7 +8,7 @@
           class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full"
           :class="{ 'lg:order-last': leftDesc }"
         >
-          <slot name="image"></slot>
+          <slot name="media"></slot>
         </div>
 
         <div class="lg:pb-20">

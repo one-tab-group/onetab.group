@@ -400,7 +400,7 @@
   >
     <Divider between class="hidden lg:block" />
 
-    <!-- 1. Sync with your opened tabs & tab groups-->
+    <!-- 1. Sync with your open tabs & tab groups-->
     <OneTabDesc left-desc>
       <template #title>
         Syncronizes your browser tabs &
@@ -412,61 +412,101 @@
         browsing in chrome, so you can easily manage your open tabs and tab
         groups.
       </template>
-      <template #image>
-        <img
-          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-          src="https://picsum.photos/640/360"
-          alt=""
+      <template #media>
+        <VideoRender
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0 w-full h-96"
+          src="/feature_01.mp4"
         />
       </template>
     </OneTabDesc>
 
     <Divider right />
 
-    <!-- 2. Organise tabs & tab groups efficiently -->
+    <!-- 2. Save/Restore/Reorganise tabs, even tab groups -->
     <OneTabDesc>
       <template #title>
-        Organise tabs &
-        <span class="text-sky-500">tab groups</span> efficiently
-      </template>
-      <template #description>
-        You can drag & drop tabs or tab groups in your sessions to reorder them.
-        Even could drag the opened tabs into the sessions.
-      </template>
-      <template #image>
-        <img
-          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-          src="https://picsum.photos/640/360"
-          alt=""
-        />
-      </template>
-    </OneTabDesc>
-
-    <Divider left />
-
-    <!-- 3. Save/Restore/Reorganise tabs, even tab groups -->
-    <OneTabDesc left-desc>
-      <template #title>
         Save/Restore/Reorganise tabs
-        <p class="text-sky-500">Even tab groups</p>
+        <p>Even <span class="text-sky-500">tab groups</span></p>
       </template>
       <template #description>
         One-click to aggregate all tabs & tab groups into one session. You can
         restore all your tabs & tab groups later as they are. Also you can
         reorganise the session and restore it with ease.
       </template>
-      <template #image>
-        <img
-          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-          src="https://picsum.photos/640/360"
-          alt=""
+      <template #media>
+        <VideoRender
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0 w-full h-96"
+          src="/feature_02.mp4"
+        />
+      </template>
+    </OneTabDesc>
+
+    <Divider left />
+
+    <!-- 3. Organise tabs & tab groups efficiently -->
+    <OneTabDesc left-desc>
+      <template #title>
+        Organise tabs &
+        <span class="text-sky-500">tab groups</span> efficiently
+      </template>
+      <template #description>
+        You can drag & drop tabs/tab groups in your sessions to reorder/organise
+        them.
+        <p>Also could drag the open tabs/tab groups into the sessions.</p>
+      </template>
+      <template #media>
+        <VideoRender
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0 w-full h-96"
+          src="/feature_03.mp4"
         />
       </template>
     </OneTabDesc>
 
     <Divider right />
 
-    <!-- 4. Turn any tab as a visual web bookmark -->
+    <!-- 4. Explore the tabs using the command line-->
+    <OneTabDesc>
+      <template #title>
+        Explore the tabs using the
+        <span class="text-neon">command line</span>
+      </template>
+      <template #description>
+        With the KBar (CMD + K), you can easily switch、 search your open tabs
+        in seconds with the command menu. Even you can drill down to find out
+        tab in the tab groups
+      </template>
+      <template #media>
+        <VideoRender
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0 w-full h-96"
+          src="/feature_04.mp4"
+        />
+      </template>
+    </OneTabDesc>
+
+    <Divider left />
+
+    <!-- 5. Never miss your tabs & tab groups -->
+    <OneTabDesc left-desc>
+      <template #title>
+        Never miss your tabs &
+        <span class="text-sky-500">tab groups</span>
+      </template>
+      <template #description>
+        You can export the sessions into a JSON file, and import back to
+        <span class="text-neon">onetab.group</span> later.
+        <p>Also could import from one-tab's exported data.</p>
+      </template>
+      <template #media>
+        <VideoRender
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0 w-full h-96"
+          src="/feature_05.mp4"
+        />
+      </template>
+    </OneTabDesc>
+
+    <Divider right />
+
+    <!-- 6. Turn any tab as a visual web bookmark -->
     <OneTabDesc>
       <template #title>
         Turn any tab into a
@@ -478,55 +518,10 @@
         or Notion web bookmark. You can preview the website via the information
         like a website's title, description, logo, author, thumbnails.
       </template>
-      <template #image>
-        <img
-          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-          src="https://picsum.photos/640/360"
-          alt=""
-        />
-      </template>
-    </OneTabDesc>
-
-    <Divider left />
-
-    <!-- 5. Save/Restore/Reorganise tabs, even tab groups -->
-    <OneTabDesc left-desc>
-      <template #title>
-        Never miss your tabs &
-        <span class="text-sky-500">tab groups</span>
-      </template>
-      <template #description>
-        You can export the sessions into a JSON file, and import back to
-        <span class="text-neon">onetab.group</span> later. Even could import
-        from one-tab's exported data.
-      </template>
-      <template #image>
-        <img
-          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-          src="https://picsum.photos/640/360"
-          alt=""
-        />
-      </template>
-    </OneTabDesc>
-
-    <Divider right />
-
-    <!-- 6. Explore the tabs using the command line-->
-    <OneTabDesc>
-      <template #title>
-        Explore the tabs using the
-        <span class="text-neon">command line</span>
-      </template>
-      <template #description>
-        With the KBar (CMD + K), you can easily switch、 search your opened tabs
-        in seconds with the command menu. Even you can drill down to find out
-        tab in the tab groups
-      </template>
-      <template #image>
-        <img
-          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0"
-          src="https://picsum.photos/640/360"
-          alt=""
+      <template #media>
+        <VideoRender
+          class="rounded-lg shadow-lg border-slate-50 mx-auto sm:mx-0 w-full h-96"
+          src="/feature_06.mp4"
         />
       </template>
     </OneTabDesc>
@@ -543,192 +538,102 @@
           </h2>
 
           <p class="mt-4 text-slate-700 dark:text-slate-300">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consequuntur aliquam doloribus nesciunt eos fugiat. Vitae aperiam
-            fugit consequuntur saepe laborum.
+            Manage your tabs & tab groups in one place.
           </p>
         </div>
 
         <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
-          <a
-            class="card-blur block p-8 transition shadow-xl rounded-xl z-10"
-            bg="white/75 dark:slate-900/75"
-            border="~ slate-200 dark:slate-800"
-            hover="shadow-sky-500/10 border-sky-500/10"
-            href="/services/digital-campaigns"
+          <OneTabFeature
+            title="Restore all your tabs"
+            desc="We provide two ways to restore your tabs, one is by drag & drop
+              open tabs into session, the other is by click the extension icon."
           >
-            <bx:bx-window-open class="h-8 w-8 text-sky-500" />
+            <template #icon>
+              <bx:bx-window-open class="h-8 w-8 text-sky-500" />
+            </template>
+          </OneTabFeature>
 
-            <h3 class="mt-4 text-xl font-bold text-slate-70 dark:text-white">
-              Restore all your tabs
-            </h3>
-
-            <p class="mt-1 text-sm text-slate-500 dark:text-slate-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
-            </p>
-          </a>
-
-          <a
-            class="card-blur block p-8 transition shadow-xl rounded-xl z-10"
-            bg="white/75 dark:slate-900/75"
-            border="~ slate-200 dark:slate-800"
-            hover="shadow-sky-500/10 border-sky-500/10"
-            href="/services/digital-campaigns"
+          <OneTabFeature
+            title="Restore tabs in new window"
+            desc="We also support restoring the session or tabs/tab groups in new
+              window."
           >
-            <mdi:open-in-new class="h-8 w-8 text-sky-500" />
+            <template #icon>
+              <mdi:open-in-new class="h-8 w-8 text-sky-500" />
+            </template>
+          </OneTabFeature>
 
-            <h3 class="mt-4 text-xl font-bold text-slate-70 dark:text-white">
-              Restore tabs in new window
-            </h3>
-
-            <p class="mt-1 text-sm text-slate-500 dark:text-slate-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
-            </p>
-          </a>
-
-          <a
-            class="card-blur block p-8 transition shadow-xl rounded-xl z-10"
-            bg="white/75 dark:slate-900/75"
-            border="~ slate-200 dark:slate-800"
-            hover="shadow-sky-500/10 border-sky-500/10"
-            href="/services/digital-campaigns"
+          <OneTabFeature
+            title="Copy links to your clipboard"
+            desc="Within tab groups, you can copy all the links to your clipboard,
+              and share them to anyone."
           >
-            <mdi:content-copy class="h-8 w-8 text-sky-500" />
+            <template #icon>
+              <mdi:content-copy class="h-8 w-8 text-sky-500" />
+            </template>
+          </OneTabFeature>
 
-            <h3 class="mt-4 text-xl font-bold text-slate-70 dark:text-white">
-              Copy links to your clipboard
-            </h3>
-
-            <p class="mt-1 text-sm text-slate-500 dark:text-slate-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
-            </p>
-          </a>
-
-          <a
-            class="card-blur block p-8 transition shadow-xl rounded-xl z-10"
-            bg="white/75 dark:slate-900/75"
-            border="~ slate-200 dark:slate-800"
-            hover="shadow-sky-500/10 border-sky-500/10"
-            href="/services/digital-campaigns"
+          <OneTabFeature
+            title="Restore tabs with group"
+            desc="Restore tabs with group is a core feature in this extension, enjoy
+              it."
           >
-            <bx:bx-windows class="h-8 w-8 text-sky-500" />
+            <template #icon>
+              <bx:bx-windows class="h-8 w-8 text-sky-500" />
+            </template>
+          </OneTabFeature>
 
-            <h3 class="mt-4 text-xl font-bold text-slate-70 dark:text-white">
-              Restore tabs with group
-            </h3>
-
-            <p class="mt-1 text-sm text-slate-500 dark:text-slate-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
-            </p>
-          </a>
-
-          <a
-            class="card-blur block p-8 transition shadow-xl rounded-xl z-10"
-            bg="white/75 dark:slate-900/75"
-            border="~ slate-200 dark:slate-800"
-            hover="shadow-sky-500/10 border-sky-500/10"
-            href="/services/digital-campaigns"
+          <OneTabFeature
+            title="Create a new group"
+            desc="You can create a new group in the session to manage your tabs, and
+              restore them with tab group mode."
           >
-            <mdi:group class="h-8 w-8 text-sky-500" />
+            <template #icon>
+              <mdi:group class="h-8 w-8 text-sky-500" />
+            </template>
+          </OneTabFeature>
 
-            <h3 class="mt-4 text-xl font-bold text-slate-70 dark:text-white">
-              Create a new group
-            </h3>
-
-            <p class="mt-1 text-sm text-slate-500 dark:text-slate-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
-            </p>
-          </a>
-
-          <a
-            class="card-blur block p-8 transition shadow-xl rounded-xl z-10"
-            bg="white/75 dark:slate-900/75"
-            border="~ slate-200 dark:slate-800"
-            hover="shadow-sky-500/10 border-sky-500/10"
-            href="/services/digital-campaigns"
+          <OneTabFeature
+            title="Ungroup"
+            desc="You can ungroup a tab group with ease."
           >
-            <mdi:ungroup class="h-8 w-8 text-sky-500" />
+            <template #icon>
+              <mdi:ungroup class="h-8 w-8 text-sky-500" />
+            </template>
+          </OneTabFeature>
 
-            <h3 class="mt-4 text-xl font-bold text-slate-70 dark:text-white">
-              Ungroup
-            </h3>
-
-            <p class="mt-1 text-sm text-slate-500 dark:text-slate-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
-            </p>
-          </a>
-
-          <a
-            class="card-blur block p-8 transition shadow-xl rounded-xl z-10"
-            bg="white/75 dark:slate-900/75"
-            border="~ slate-200 dark:slate-800"
-            hover="shadow-sky-500/10 border-sky-500/10"
-            href="/services/digital-campaigns"
+          <OneTabFeature
+            title="Dark mode"
+            desc="Dark mode builtin, provide you with a dark mode experience."
           >
-            <carbon:moon class="h-8 w-8 text-sky-500" />
+            <template #icon>
+              <carbon:moon class="h-8 w-8 text-sky-500" />
+            </template>
+          </OneTabFeature>
 
-            <h3 class="mt-4 text-xl font-bold text-slate-70 dark:text-white">
-              Dark mode
-            </h3>
+          <OneTabFeature title="i18n support" desc="English / Chinese Ready.">
+            <template #icon>
+              <carbon:language class="h-8 w-8 text-sky-500" />
+            </template>
+          </OneTabFeature>
 
-            <p class="mt-1 text-sm text-slate-500 dark:text-slate-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
-            </p>
-          </a>
-
-          <a
-            class="card-blur block p-8 transition shadow-xl rounded-xl z-10"
-            bg="white/75 dark:slate-900/75"
-            border="~ slate-200 dark:slate-800"
-            hover="shadow-sky-500/10 border-sky-500/10"
-            href="/services/digital-campaigns"
+          <OneTabFeature
+            title="Keyboard shortcuts"
+            desc="Within the Command K interface, we provide keyboard shortcuts for
+              some feature, like toggle Dark Mode."
           >
-            <carbon:language class="h-8 w-8 text-sky-500" />
+            <template #icon>
+              <carbon:keyboard class="h-8 w-8 text-sky-500" />
+            </template>
+          </OneTabFeature>
 
-            <h3 class="mt-4 text-xl font-bold text-slate-70 dark:text-white">
-              i18n support
-            </h3>
-
-            <p class="mt-1 text-sm text-slate-500 dark:text-slate-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
-            </p>
-          </a>
-
-          <a
-            class="card-blur block p-8 transition shadow-xl rounded-xl z-10"
-            bg="white/75 dark:slate-900/75"
-            border="~ slate-200 dark:slate-800"
-            hover="shadow-sky-500/10 border-sky-500/10"
-            href="/services/digital-campaigns"
-          >
-            <carbon:keyboard class="h-8 w-8 text-sky-500" />
-
-            <h3 class="mt-4 text-xl font-bold text-slate-70 dark:text-white">
-              Keyboard shortcuts
-            </h3>
-
-            <p class="mt-1 text-sm text-slate-500 dark:text-slate-300">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis
-              laudantium.
-            </p>
-          </a>
+          <div></div>
+          <OneTabFeature title="More Features" desc="Coming soon...">
+            <template #icon>
+              <carbon:strawberry class="h-8 w-8 text-sky-500" />
+            </template>
+          </OneTabFeature>
+          <div></div>
         </div>
       </div>
       <img
