@@ -10,6 +10,42 @@ export default defineNuxtConfig({
     description:
       'onetab.group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.',
     link: [{ rel: 'icon', type: 'image/*', href: '/logo.svg' }],
+    meta: [
+      {
+        property: 'og:title',
+        content: 'onetab.group: Your all-in-one tab manager for chrome.'
+      },
+      {
+        property: 'og:description',
+        content:
+          'onetab.group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.'
+      },
+      { property: 'og:image', content: 'https://onetab.group/preview.jpg' },
+      { property: 'og:url', content: 'https://onetab.group' },
+      { property: 'og:stie_name', content: 'One Tab Group' },
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '900' },
+      {
+        property: 'og:image:alt',
+        content:
+          'onetab.group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.'
+      },
+      { property: 'twitter:site', content: 'One Tab Group' },
+      {
+        property: 'twitter:title',
+        content: 'onetab.group: Your all-in-one tab manager for chrome.'
+      },
+      { property: 'twitter:card', content: 'summary_large_image' },
+      {
+        property: 'twitter:description',
+        content:
+          'onetab.group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.'
+      },
+      {
+        property: 'twitter:image:src',
+        content: 'https://onetab.group/preview.jpg'
+      }
+    ],
     script: [
       {
         async: true,
