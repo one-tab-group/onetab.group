@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     'Carbon:logoGithub': typeof import('~icons/carbon/logo-github')['default']
     'Carbon:logoTwitter': typeof import('~icons/carbon/logo-twitter')['default']
     'Carbon:moon': typeof import('~icons/carbon/moon')['default']
+    'Carbon:strawberry': typeof import('~icons/carbon/strawberry')['default']
     'Carbon:sun': typeof import('~icons/carbon/sun')['default']
     'Mdi:contentCopy': typeof import('~icons/mdi/content-copy')['default']
     'Mdi:group': typeof import('~icons/mdi/group')['default']

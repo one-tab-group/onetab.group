@@ -4,14 +4,13 @@
     class="bg-grid pointer-events-none hidden sm:block"
     :src="isDark ? bgGridDark : bgGridLight"
   />
-
   <!-- header -->
-  <header class="px-4 sm:px-6 md:px-8">
+  <header class="max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8">
     <div
       class="relative pt-6 lg:pt-8 flex items-center justify-between font-semibold leading-6"
       text="slate-700 dark:slate-200 sm"
     >
-      <h1 class="">
+      <a href="https://onetab.group" class="w-full">
         <svg
           class="h-8 inline-block"
           viewBox="0 0 3147 512"
@@ -151,7 +150,7 @@
             </g>
           </g>
         </svg>
-      </h1>
+      </a>
       <div class="flex items-center">
         <div class="hidden md:flex items-center">
           <!-- homepage navigation -->
@@ -160,7 +159,8 @@
               <li>
                 <a
                   class="hover:text-sky-500 dark:hover:text-sky-400"
-                  href="/features"
+                  href="javascript:void(0)"
+                  @click="gotoFeatures"
                 >
                   {{ $t('common.features') }}
                 </a>
@@ -170,13 +170,6 @@
                   href="https://github.com/sponsors/xiaoluoboding"
                   class="hover:text-sky-500 dark:hover:text-sky-400"
                   >Sponsor</a
-                >
-              </li>
-              <li>
-                <a
-                  class="hover:text-sky-500 dark:hover:text-sky-400"
-                  href="/about"
-                  >About</a
                 >
               </li>
             </ul>
@@ -397,6 +390,7 @@
   <!-- sections -->
   <main
     class="max-w-screen-xl lg:mx-auto features space-y-20 pt-20 sm:pt-24 lg:pt-32"
+    ref="featuresRef"
   >
     <Divider between class="hidden lg:block" />
 
@@ -681,7 +675,7 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useDark, useToggle } from '@vueuse/core'
 
@@ -693,6 +687,7 @@ import bgGlowLight from '@/assets/bg_glow_light.svg'
 const isDark = useDark()
 const toggleDark = useToggle(isDark)
 const { locale, availableLocales } = useI18n()
+const featuresRef = ref()
 
 const extensionUrl =
   'https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm'
@@ -710,6 +705,10 @@ const toggleLocales = () => {
   const locales = availableLocales
   console.log(locale.value)
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
+}
+
+const gotoFeatures = () => {
+  featuresRef.value.scrollIntoView({ behavior: 'smooth' })
 }
 </script>
 
