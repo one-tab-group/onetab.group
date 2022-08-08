@@ -51,7 +51,7 @@ export default defineNuxtConfig({
         async: true,
         defer: true,
         'data-website-id': process.env.UMAMI_WEBSITE_ID,
-        src: 'https://analytics.onetab.group/umami.js'
+        src: 'https://analysis.onetab.group/umami.js'
       }
     ]
   },

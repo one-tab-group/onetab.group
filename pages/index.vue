@@ -403,14 +403,13 @@
     <!-- 1. Sync with your open tabs & tab groups-->
     <OneTabDesc left-desc>
       <template #title>
-        Syncronizes your browser tabs &
+        Synchronize your browser tabs &
         <span class="text-sky-500">tab groups</span>
       </template>
       <template #description>
         Are you struggling to find the tab you're looking for after opening huge
-        amount of tabs? We have synchronized the tabs and tab groups you are
-        browsing in chrome, so you can easily manage your open tabs and tab
-        groups.
+        amount of tabs? We have synced the tabs and tab groups you are browsing
+        in chrome, so you can easily manage your open tabs and tab groups.
       </template>
       <template #media>
         <VideoRender
