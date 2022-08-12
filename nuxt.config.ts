@@ -4,16 +4,16 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
   meta: {
-    title: 'onetab.group: Your all-in-one tab manager for chrome.',
+    title: 'One Tab Group: Your all-in-one tab manager for Chrome.',
     viewport:
       'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
     description:
-      'onetab.group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.',
+      'One Tab Group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.',
     link: [{ rel: 'icon', type: 'image/*', href: '/logo.svg' }],
     meta: [
       {
         property: 'og:title',
-        content: 'onetab.group: Your all-in-one tab manager for chrome.'
+        content: 'onetab.group: Your all-in-one tab manager for Chrome.'
       },
       {
         property: 'og:description',
@@ -28,18 +28,18 @@ export default defineNuxtConfig({
       {
         property: 'og:image:alt',
         content:
-          'onetab.group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.'
+          'One Tab Group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.'
       },
       { property: 'twitter:site', content: 'One Tab Group' },
       {
         property: 'twitter:title',
-        content: 'onetab.group: Your all-in-one tab manager for chrome.'
+        content: 'One Tab Group: Your all-in-one tab manager for Chrome.'
       },
       { property: 'twitter:card', content: 'summary_large_image' },
       {
         property: 'twitter:description',
         content:
-          'onetab.group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.'
+          'One Tab Group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.'
       },
       {
         property: 'twitter:image:src',
