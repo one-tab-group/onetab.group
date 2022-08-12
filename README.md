@@ -9,7 +9,6 @@
   </h3>
   <br>
   <p align="center">
-    <a href="https://onetab.group"><img src="https://img.shields.io/website?color=%230ea5e9&down_color=%230ea5e9&down_message=app&label=Bookmark.style&style=for-the-badge&up_color=%230ea5e9&up_message=app&url=https%3A%2F%2Fwww.onetab.group%2F"></a>
     <a href="https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm"><img src="https://img.shields.io/chrome-web-store/v/lajbajamkpmkmldodfbljkjihppdclbm?color=%234285F4&logo=googlechrome&logoColor=%234285F4&style=for-the-badge"></a>
   </p>
   <p align="center">
