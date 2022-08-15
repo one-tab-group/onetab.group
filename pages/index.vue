@@ -185,12 +185,12 @@
               <carbon:moon class="h-6 w-6" v-if="isDark" />
               <carbon:sun class="h-6 w-6" v-else />
             </button>
-            <button
+            <!-- <button
               class="flex items-center block text-slate-900 dark:text-white hover:text-slate-500 dark:hover:text-sky-500"
               @click="(e) => toggleLocales()"
             >
               <carbon:language class="h-6 w-6" />
-            </button>
+            </button> -->
             <a
               :href="twitterUrl"
               target="_blank"

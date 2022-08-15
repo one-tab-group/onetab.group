@@ -12,7 +12,7 @@
     <a href="https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm"><img src="https://img.shields.io/chrome-web-store/v/lajbajamkpmkmldodfbljkjihppdclbm?color=%234285F4&logo=googlechrome&logoColor=%234285F4&style=for-the-badge"></a>
   </p>
   <p align="center">
-    🪄 Turn any link into a stylish visual web bookmark, one-click to copy the beautiful web bookmark image.
+    A Chrome extension for reorganizing your open tabs, restoring saved tab sessions, and also restoring tab groups.
   </p>
 </p>
 
