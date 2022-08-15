@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="mt-20 py-16 px-8 bg-slate-900 text-slate-200 sm:py-16 lg:py-20"
+    class="mt-20 py-16 px-8 bg-shark-900 text-shark-200 sm:py-16 lg:py-20"
   >
     <div class="max-w-screen-xl mx-auto w-full">
       <div
@@ -11,10 +11,13 @@
             <img src="/logo.svg" class="h-12" alt="" />
             <img src="/logo-text-light.svg" class="h-8 mt-4" alt="" />
           </figcaption>
-          <p class="max-w-xs text-sm text-slate-400">
+          <p class="max-w-xs text-sm text-shark-400">
+            Your all-in-one tab manager for Chrome.
+          </p>
+          <p class="max-w-xs text-sm text-shark-400">
             Manage your tabs & tab groups in one place.
           </p>
-          <figure class="text-slate-400 mt-8">
+          <figure class="text-shark-400 mt-8">
             <ul class="space-x-6 flex justify-center sm:justify-start">
               <li class="flex items-center">
                 <a :href="twitterUrl" target="_blank">
@@ -32,13 +35,13 @@
         <div>
           <p class="text-xl font-semibold">Getting Started</p>
 
-          <nav class="flex flex-col mt-4 space-y-2 text-md text-slate-400">
+          <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
             <a
               class="hover:opacity-75 text-neon"
               :href="extensionUrl"
               target="_blank"
             >
-              Get extension
+              <span>Get extension</span>
             </a>
             <a class="hover:opacity-75" href=""> Keyboard shortcuts </a>
             <a class="hover:opacity-75" href=""> Migration from OneTab </a>
@@ -49,8 +52,13 @@
         <div>
           <p class="text-xl font-semibold">Features</p>
 
-          <nav class="flex flex-col mt-4 space-y-2 text-md text-slate-400">
-            <a class="hover:opacity-75" href=""> Save all tabs & tab groups </a>
+          <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
+            <a
+              class="hover:opacity-75"
+              href="/blog/save-all-tabs-and-tab-groups"
+            >
+              Save all tabs & tab groups
+            </a>
             <a class="hover:opacity-75" href=""> Sync Opened Tabs </a>
             <a class="hover:opacity-75" href="">
               Drag & Drop opened tabs into session
@@ -66,14 +74,26 @@
         <div>
           <p class="text-xl font-semibold">Support</p>
 
-          <nav class="flex flex-col mt-4 space-y-2 text-md text-slate-400">
+          <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
             <a class="hover:opacity-75" :href="extensionUrl" target="_blank">
               Chrome Extension
             </a>
             <a class="hover:opacity-75" href=""> IndieHackers </a>
             <a class="hover:opacity-75" href=""> ProductHunt </a>
-            <a class="hover:opacity-75" href=""> Contact </a>
-            <a class="hover:opacity-75" href=""> Changelog </a>
+            <a
+              class="hover:opacity-75 flex items-center gap-1"
+              href="mailto:onetabgroup@hotmail.com"
+            >
+              <span>Contact</span>
+              <carbon:email class="h-4 w-4" />
+            </a>
+            <a
+              class="hover:opacity-75 flex items-center gap-1"
+              href="/changelog"
+            >
+              <span>Changelog</span>
+              <heroicons-outline:external-link class="h-4 w-4" />
+            </a>
           </nav>
         </div>
       </div>
@@ -87,7 +107,7 @@
           One Tab Group © 2022 <a class="text-neon" href="/">onetab.group</a>.
           All rights reserved.
         </div>
-        <div class="divide-x divide-slate-200">
+        <div class="divide-x divide-shark-200">
           <a href="/terms-of-services" class="px-2">Terms of Services</a>
           <a href="/privacy-policy" class="px-2">Privacy Policy</a>
         </div>

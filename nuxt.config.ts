@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
 import ViteComponents from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
@@ -55,20 +55,12 @@ export default defineNuxtConfig({
       }
     ]
   },
-  buildModules: [
+  modules: [
     'nuxt-windicss',
     '@pinia/nuxt',
     'unplugin-icons/nuxt',
     '@vueuse/nuxt',
-    [
-      '@intlify/nuxt3',
-      {
-        localeDir: 'locales',
-        vueI18n: {
-          locale: 'en'
-        }
-      }
-    ]
+    '@nuxt/content'
   ],
   components: {
     global: true,
@@ -85,6 +77,16 @@ export default defineNuxtConfig({
         dts: true
       })
     ]
+  },
+  // https://content.nuxtjs.org
+  content: {
+    navigation: {
+      fields: ['navTitle']
+    },
+    highlight: {
+      // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
+      theme: 'dracula'
+    }
   },
   publicRuntimeConfig: {
     CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN,

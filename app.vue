@@ -1,7 +1,7 @@
 <template>
-  <div class="relative h-full dark:bg-slate-900">
+  <div class="relative h-full bg-shark-50 dark:bg-shark-900">
     <NuxtLayout>
-      <NuxtPage/>
+      <NuxtPage />
     </NuxtLayout>
     <ClientOnly>
       <Chatwoot />
@@ -9,9 +9,6 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-</script>
+<script lang="ts" setup></script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
