@@ -39,7 +39,7 @@
               />
               <path
                 d="M101.5 39H116c2.387 0 3.676-.948 5.364-2.636A9 9 0 0 0 124 30V12a7 7 0 0 1 7-7h209c3.866 0 6 3.134 6 7v18c0 4.97 5.03 9 10 9h416"
-                stroke="#0EA5E9"
+                stroke="#0c98eb"
                 stroke-width="2"
               />
               <rect
@@ -109,7 +109,7 @@
                 fill-rule="nonzero"
                 d="M788 15h-2v5h-5v2h5v5h2v-5h5v-2h-5z"
               />
-              <circle fill="#0EA5E9" cx="109.5" cy="21.5" r="8" />
+              <circle fill="#0c98eb" cx="109.5" cy="21.5" r="8" />
               <circle
                 fill-opacity=".99"
                 fill="#777879"
@@ -486,7 +486,7 @@ const extensionUrl =
   'https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm'
 
 const SVGColor = computed(() => {
-  return isDark.value ? '#fff' : '#0F172A'
+  return isDark.value ? '#f6f6f7' : '#1f2023'
 })
 
 // const toggleLocales = () => {
@@ -503,22 +503,21 @@ definePageMeta({
 
 <style scoped>
 .bg-point {
-  background-image: radial-gradient(#0ea5e9 1px, #0f172a 1px);
+  background-image: radial-gradient(#0c98eb 1px, #1f2023 1px);
   background-size: 20px 20px;
 }
 
 .dark .bg-point {
-  background-image: radial-gradient(#94a3b8 1px, #f8fafc 1px);
+  background-image: radial-gradient(#0b446f 1px, #f6f6f7 1px);
 }
 
 .gradient-header {
   width: 100vw;
   height: 33vh;
-  /* background-image: radial-gradient(circle at 50% -100%,rgba(94,163,184, 1),rgba(255, 255, 255, 1) 66%); */
   background-image: linear-gradient(
     180deg,
-    #f0f9ff 80px,
-    rgb(255, 255, 255) 33vh
+    hsl(208, 100%, 97%) 80px,
+    hsl(240, 6%, 97%) 33vh
   );
 }
 
@@ -528,7 +527,6 @@ definePageMeta({
     hsl(228, 5%, 19%) 80px,
     hsl(225, 6%, 13%) 33vh
   );
-  /* background-image: radial-gradient(circle at 50% -100%,rgba(30,41,59, 1),rgba(15,23,42, 1) 66%); */
 }
 
 .bg-grid {

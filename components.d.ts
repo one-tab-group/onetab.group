@@ -19,13 +19,11 @@ declare module '@vue/runtime-core' {
     'Carbon:strawberry': typeof import('~icons/carbon/strawberry')['default']
     'Carbon:sun': typeof import('~icons/carbon/sun')['default']
     'HeroiconsOutline:externalLink': typeof import('~icons/heroicons-outline/external-link')['default']
-    'LineMd:externalLink': typeof import('~icons/line-md/external-link')['default']
     'Mdi:contentCopy': typeof import('~icons/mdi/content-copy')['default']
     'Mdi:group': typeof import('~icons/mdi/group')['default']
     'Mdi:openInNew': typeof import('~icons/mdi/open-in-new')['default']
     'Mdi:ungroup': typeof import('~icons/mdi/ungroup')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    'SimpleIcons:nuxtdotjs': typeof import('~icons/simple-icons/nuxtdotjs')['default']
   }
 }
