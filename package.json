@@ -8,7 +8,7 @@
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
     "preview": "nuxi preview",
-    "updateall": "yarn upgrade-interactive --latest"
+    "updateall": "pnpm up"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.92",
