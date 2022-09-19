@@ -139,7 +139,7 @@
           >
             <h1
               class="relative font-bold tracking-tight space-y-4"
-              text="4xl shark-900 dark:shark-200 sm:5xl md:6xl lg:7xl center"
+              text="4xl shark-900 dark:shark-50 sm:5xl md:6xl lg:7xl center"
             >
               <p>
                 Your <span class="text-neon">all-in-one</span> tab manager for
