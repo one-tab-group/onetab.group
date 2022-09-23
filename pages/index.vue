@@ -2,7 +2,7 @@
   <div class="gradient-header absolute left-0 top-0 overflow-hidden"></div>
   <!-- Site Header -->
   <ClientOnly>
-    <SiteHeader>
+    <SiteHeader @jump="gotoFeatures">
       <img
         class="bg-grid pointer-events-none hidden sm:block"
         :src="isDark ? '/img/bg_grid_dark.svg' : '/img/bg_grid_light.svg'"
@@ -138,17 +138,17 @@
             class="max-w-[1120px] mx-auto text-center z-10 absolute left-0 top-0 mt-40"
           >
             <h1
-              class="relative font-bold tracking-tight space-y-4"
-              text="4xl shark-900 dark:shark-50 sm:5xl md:6xl lg:7xl center"
+              class="relative font-bold tracking-tight space-y-4 text-primary"
+              text="4xl sm:5xl md:6xl lg:7xl center"
             >
               <p>
-                Your <span class="text-neon">all-in-one</span> tab manager for
-                chrome
+                Your <span class="text-neon">all-in-one</span> tab/tab group
+                manager for chrome
               </p>
             </h1>
 
             <p
-              class="max-w-xl mx-auto mt-8 mb-16 text-xl font-medium sm:leading-relaxed sm:text-xl text-shark-600 dark:text-shark-200"
+              class="max-w-xl mx-auto mt-8 mb-16 text-xl font-medium sm:leading-relaxed sm:text-xl text-secondary"
             >
               <span class="text-neon">One Tab Group</span> is a chrome extension
               that allows you to manage your tabs & tab groups in one place.
@@ -191,7 +191,7 @@
   <!-- sections -->
   <main
     class="max-w-screen-xl lg:mx-auto features space-y-20 pt-20 sm:pt-24 lg:pt-32"
-    id="site-features"
+    ref="featureRef"
   >
     <Divider between class="hidden lg:block" />
 
@@ -485,6 +485,7 @@ import { isDark } from '~~/composables/useDarkMode'
 const extensionUrl =
   'https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm'
 
+const featureRef = ref()
 const SVGColor = computed(() => {
   return isDark.value ? '#f6f6f7' : '#1f2023'
 })
@@ -499,6 +500,13 @@ const SVGColor = computed(() => {
 definePageMeta({
   layout: false
 })
+
+const gotoFeatures = () => {
+  featureRef.value.scrollIntoView({
+    behavior: 'smooth',
+    inline: 'nearest'
+  })
+}
 </script>
 
 <style scoped>

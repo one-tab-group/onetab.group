@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="mt-20 py-16 px-8 bg-shark-900 text-shark-200 sm:py-16 lg:py-20"
+    class="mt-20 py-16 px-8 bg-shark-900 text-shark-50 sm:py-16 lg:py-20"
   >
     <div class="max-w-screen-xl mx-auto w-full">
       <div
@@ -12,7 +12,7 @@
             <img src="/logo-text-light.svg" class="h-8 mt-4" alt="" />
           </figcaption>
           <p class="max-w-xs text-sm text-shark-400">
-            Your all-in-one tab manager for Chrome.
+            Your all-in-one tab/tab group manager for Chrome.
           </p>
           <p class="max-w-xs text-sm text-shark-400">
             Manage your tabs & tab groups in one place.

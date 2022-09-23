@@ -13,12 +13,12 @@
 
         <div class="lg:pb-20">
           <h2
-            class="text-3xl sm:text-4xl font-semibold text-shark-900 dark:text-shark-200"
+            class="text-3xl sm:text-4xl font-semibold text-primary"
           >
             <slot name="title"></slot>
           </h2>
           <p
-            class="text-shark-700 dark:text-shark-400 text-lg font-semibold mt-8"
+            class="text-secondary text-lg font-semibold mt-8"
           >
             <slot name="description"></slot>
           </p>

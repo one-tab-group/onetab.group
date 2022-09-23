@@ -155,7 +155,8 @@
               <li>
                 <a
                   class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
-                  href="/#site-features"
+                  href="#features"
+                  @click="emit('jump')"
                 >
                   Features
                 </a>
@@ -164,8 +165,9 @@
                 <a
                   href="https://github.com/sponsors/xiaoluoboding"
                   class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
-                  >Sponsor</a
                 >
+                  Sponsor
+                </a>
               </li>
             </ul>
           </nav>
@@ -192,7 +194,7 @@
               class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
             >
               <span class="sr-only hidden">OneTabGroup on Twitter</span>
-              <carbon:logo-twitter class="h-6 w-6" />
+              <mdi:twitter class="h-6 w-6" />
             </a>
             <a
               :href="githubUrl"
@@ -200,7 +202,7 @@
               class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
             >
               <span class="sr-only hidden">OneTabGroup on GitHub</span>
-              <carbon:logo-github class="h-6 w-6" />
+              <mdi:github class="h-6 w-6" />
             </a>
           </div>
         </div>
@@ -210,12 +212,14 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, ref } from 'vue'
+import { computed } from 'vue'
 import { isDark, toggleDark } from '~~/composables/useDarkMode'
 
 const twitterUrl = 'https://twitter.com/OneTabGroup'
 
 const githubUrl = 'https://github.com/one-tab-group/'
+
+const emit = defineEmits(['jump'])
 
 const SVGColor = computed(() => {
   return isDark.value ? '#fff' : '#0F172A'

@@ -4,7 +4,7 @@ import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineNuxtConfig({
   meta: {
-    title: 'One Tab Group: Your all-in-one tab manager for Chrome.',
+    title: 'One Tab Group: Your all-in-one tab/tab group manager for Chrome.',
     viewport:
       'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
     description:
@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     meta: [
       {
         property: 'og:title',
-        content: 'onetab.group: Your all-in-one tab manager for Chrome.'
+        content: 'onetab.group: Your all-in-one tab/tab group manager for Chrome.'
       },
       {
         property: 'og:description',
@@ -33,7 +33,7 @@ export default defineNuxtConfig({
       { property: 'twitter:site', content: 'One Tab Group' },
       {
         property: 'twitter:title',
-        content: 'One Tab Group: Your all-in-one tab manager for Chrome.'
+        content: 'One Tab Group: Your all-in-one tab/tab group manager for Chrome.'
       },
       { property: 'twitter:card', content: 'summary_large_image' },
       {

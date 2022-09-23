@@ -75,6 +75,8 @@ export default defineConfig({
      `,
     'btn-blur':
       'backdrop-filter backdrop-blur-sm backdrop-saturate-[180%] dark:bg-opacity-33',
-    'card-blur': 'backdrop-filter backdrop-blur-lg backdrop-saturate-[180%]'
+    'card-blur': 'backdrop-filter backdrop-blur-lg backdrop-saturate-[180%]',
+    'text-primary': 'text-shark-900 dark:text-shark-50',
+    'text-secondary': 'text-shark-700 dark:text-shark-300'
   }
 })

@@ -58,7 +58,7 @@ const sendBackupEmail = async (username: string, to: string, blob?: Blob) => {
   const templateParams = {
     name: 'onetab.group',
     href: 'https://onetab.group',
-    bio: 'Your all-in-one tab manager for Chrome.',
+    bio: 'Your all-in-one tab/tab group manager for Chrome.',
     creatorDesc:
       'is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session. ',
     cids: attachments
