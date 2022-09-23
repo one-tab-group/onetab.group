@@ -5,6 +5,42 @@ title: 'One Tab Group | Changelog'
 
 # Changelog
 
+# [0.4.0](https://github.com/one-tab-group/one-tab-group/compare/v0.3.0...v0.4.0) (2022-09-22)
+
+### Bug Fixes
+
+- fixed the discard all tabs bug ([bf87984](https://github.com/one-tab-group/one-tab-group/commit/bf879841889798a48f8fb584b4047ebc2f3f6bc4))
+
+### Features
+
+- add the i18n for relative time ([9161aef](https://github.com/one-tab-group/one-tab-group/commit/9161aef1e0e0bc9fd4026db75c934b1c0ced3885))
+- add the option's constant ([850c8c3](https://github.com/one-tab-group/one-tab-group/commit/850c8c3cf4be4acf04e4d1ff3279036e6d66f201))
+- add the restore&suspend option ([fd62a21](https://github.com/one-tab-group/one-tab-group/commit/fd62a217538500a016409bf8e6a8bd25526d9fdc))
+- add the suspend stat icon ([3360559](https://github.com/one-tab-group/one-tab-group/commit/3360559c63d2eeb9192646e97471d0397d0b8648))
+- change the default preference options ([f62ba98](https://github.com/one-tab-group/one-tab-group/commit/f62ba9854a5d013c9decc76c3f60ea74efbe22b3))
+- improve the option smooth scroll ([31173dd](https://github.com/one-tab-group/one-tab-group/commit/31173dd530e720c45bd65220278e3855952a5278))
+- move the remove duplicate action into dropdown menu ([4d6f702](https://github.com/one-tab-group/one-tab-group/commit/4d6f702a91d8ebadf25c9c72876cd9bd1c1945d5))
+- remove duplicate tabs in opened tabs ([d415bfc](https://github.com/one-tab-group/one-tab-group/commit/d415bfc3541ae45cc1cb8f75f5fec3a4315ba8ea))
+- remove duplicate tabs in session ([85d9200](https://github.com/one-tab-group/one-tab-group/commit/85d920020ab7974a8a2e44ada40db03cc402cab6))
+- suspend opened tabs ([be27778](https://github.com/one-tab-group/one-tab-group/commit/be277788a61a6b927d75bf0e64ec045398d0412a))
+
+# [0.3.0](https://github.com/one-tab-group/one-tab-group/compare/v0.2.4...v0.3.0) (2022-08-22)
+
+### Bug Fixes
+
+- fixed the delete all tabs tooltips ([d353855](https://github.com/one-tab-group/one-tab-group/commit/d3538553c46395a1275bb9130cd042107f339f28))
+
+### Features
+
+- add collapse session feature ([725487c](https://github.com/one-tab-group/one-tab-group/commit/725487cf4215b41cab432b50118691e21bbee553))
+- add the dblclick event on the tab group meta ([c40a3fc](https://github.com/one-tab-group/one-tab-group/commit/c40a3fc1a817459293f89d848c824bf16a380fe4))
+- add the title options in fuzz search options ([2240716](https://github.com/one-tab-group/one-tab-group/commit/2240716bc49c68181d1f29a5ffce40fac3663369))
+- change the fuzz search options ([57fdd76](https://github.com/one-tab-group/one-tab-group/commit/57fdd762b4687be18b82a6938c5c6b220cced3c9))
+- change the tab group hover logic ([2a3133e](https://github.com/one-tab-group/one-tab-group/commit/2a3133e0d7273c347f25fa03814a83774eed64df))
+- hidden the session feature icon ([6696a34](https://github.com/one-tab-group/one-tab-group/commit/6696a34125387a855fd80fa49d0313837bde7688))
+- hidden the tab group icons ([ee8d381](https://github.com/one-tab-group/one-tab-group/commit/ee8d381337d3c8912ba5438036d1e1e11128edda))
+- make all the input using the keyup.enter event ([2ddccd1](https://github.com/one-tab-group/one-tab-group/commit/2ddccd1ee11f16863cb4a5f6b17601866b89a84a))
+
 ## [0.2.4](https://github.com/one-tab-group/one-tab-group/compare/v0.2.3...v0.2.4) (2022-08-15)
 
 ### Bug Fixes
