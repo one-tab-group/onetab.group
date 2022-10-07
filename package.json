@@ -8,8 +8,8 @@
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
     "preview": "nuxi preview",
-    "i:sh": "pnpm install --shamefully-hoist",
-    "updateall": "pnpm up"
+    "p:ish": "pnpm install --shamefully-hoist",
+    "p:up": "pnpm up"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.92",

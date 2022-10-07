@@ -13,7 +13,8 @@ export default defineNuxtConfig({
     meta: [
       {
         property: 'og:title',
-        content: 'onetab.group: Your all-in-one tab/tab group manager for Chrome.'
+        content:
+          'onetab.group: Your all-in-one tab/tab group manager for Chrome.'
       },
       {
         property: 'og:description',
@@ -22,7 +23,7 @@ export default defineNuxtConfig({
       },
       { property: 'og:image', content: 'https://onetab.group/preview.jpg' },
       { property: 'og:url', content: 'https://onetab.group' },
-      { property: 'og:stie_name', content: 'One Tab Group' },
+      { property: 'og:site_name', content: 'One Tab Group' },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '900' },
       {
@@ -33,7 +34,8 @@ export default defineNuxtConfig({
       { property: 'twitter:site', content: 'One Tab Group' },
       {
         property: 'twitter:title',
-        content: 'One Tab Group: Your all-in-one tab/tab group manager for Chrome.'
+        content:
+          'One Tab Group: Your all-in-one tab/tab group manager for Chrome.'
       },
       { property: 'twitter:card', content: 'summary_large_image' },
       {

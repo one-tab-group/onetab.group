@@ -1,7 +1,5 @@
 <template>
-  <footer
-    class="mt-20 py-16 px-8 bg-shark-900 text-shark-50 sm:py-16 lg:py-20"
-  >
+  <footer class="mt-20 py-16 px-8 bg-shark-900 text-shark-50 sm:py-16 lg:py-20">
     <div class="max-w-screen-xl mx-auto w-full">
       <div
         class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4 text-center sm:text-left sm:p-0 py-20"
@@ -44,7 +42,9 @@
               <span>Get extension</span>
             </a>
             <a class="hover:opacity-75" href=""> Keyboard shortcuts </a>
-            <a class="hover:opacity-75" href=""> Migration from OneTab </a>
+            <a class="hover:opacity-75" href="/blog/how-to-migrate-from-onetab">
+              Migration from OneTab
+            </a>
             <a class="hover:opacity-75" href=""> Help Center </a>
           </nav>
         </div>

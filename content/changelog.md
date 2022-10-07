@@ -5,6 +5,44 @@ title: 'One Tab Group | Changelog'
 
 # Changelog
 
+## [0.4.3](https://github.com/one-tab-group/one-tab-group/compare/v0.4.2...v0.4.3) (2022-10-04)
+
+### Bug Fixes
+
+- fixed the runtime error ([7bbf912](https://github.com/one-tab-group/one-tab-group/commit/7bbf912c0b3428dd3315728c905409a3f2426a7e))
+
+### Features
+
+- import tabs into the head of sessions ([390c922](https://github.com/one-tab-group/one-tab-group/commit/390c9225018f1b4dac79857377cac63f6a5cdd81))
+
+## [0.4.2](https://github.com/one-tab-group/one-tab-group/compare/v0.4.1...v0.4.2) (2022-09-29)
+
+### Bug Fixes
+
+- fixed the path in client side ([946d8d2](https://github.com/one-tab-group/one-tab-group/commit/946d8d235c344a5070d220f03f638bfc8720d5b9))
+
+### Features
+
+- add google indentity ([80b4c85](https://github.com/one-tab-group/one-tab-group/commit/80b4c855be27b20f3a5559a214df0c903409339b))
+- add identifying the google user feature ([8d6fa68](https://github.com/one-tab-group/one-tab-group/commit/8d6fa68e467e60f8f58cb9ae5c8a2f077cfc526f))
+- add the log in modal ([007be73](https://github.com/one-tab-group/one-tab-group/commit/007be738410bc7d2118120e218deed09a9149fd3))
+- deal with the error when login with google ([c8e2077](https://github.com/one-tab-group/one-tab-group/commit/c8e20779db26310ad0e7d8b2d32d58ec47371ac4))
+- finish sign in feature ([7ed1729](https://github.com/one-tab-group/one-tab-group/commit/7ed17296b677df58839687386a682405796d5afe))
+- hidden the account btn when already sign in ([862abd0](https://github.com/one-tab-group/one-tab-group/commit/862abd0f17e7fe5a1d684432e0129e583b8f7a75))
+- uniform the user system ([84c10fe](https://github.com/one-tab-group/one-tab-group/commit/84c10fe7668c6cb5e1735a22264afe1702d105c9))
+- use constants config instead ([e2e4cfa](https://github.com/one-tab-group/one-tab-group/commit/e2e4cfa1ec6d0c999263d060abe790c6c02a48c1))
+- use env instead magic string ([b64606d](https://github.com/one-tab-group/one-tab-group/commit/b64606d6a8e38f8a96cb9cc80adc907fd2507f9c))
+
+## [0.4.1](https://github.com/one-tab-group/one-tab-group/compare/v0.4.0...v0.4.1) (2022-09-25)
+
+### Bug Fixes
+
+- fixed the eslint bug ([8326a71](https://github.com/one-tab-group/one-tab-group/commit/8326a71d763837c6dc3218a7b5634848253ff3d9))
+
+### Features
+
+- add the icon ([b82b476](https://github.com/one-tab-group/one-tab-group/commit/b82b4768117769c946c71d8e94bc34e55d5886d5))
+
 # [0.4.0](https://github.com/one-tab-group/one-tab-group/compare/v0.3.0...v0.4.0) (2022-09-22)
 
 ### Bug Fixes
