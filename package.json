@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.1.92",
-    "@nuxt/content": "^2.0.1",
+    "@nuxt/content": "^2.1.1",
     "@pinia/nuxt": "^0.4.0",
     "@vueuse/core": "9.1.0",
     "@vueuse/nuxt": "9.1.0",
