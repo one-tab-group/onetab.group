@@ -10,6 +10,8 @@
   <br>
   <p align="center">
     <a href="https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm"><img src="https://img.shields.io/chrome-web-store/v/lajbajamkpmkmldodfbljkjihppdclbm?color=%234285F4&logo=googlechrome&logoColor=%234285F4&style=for-the-badge"></a>
+    <a href="https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm"><img alt="Chrome Web Store" src="https://img.shields.io/chrome-web-store/users/lajbajamkpmkmldodfbljkjihppdclbm?color=%234298f4&style=for-the-badge"></a>
+    <a href="https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm"><img src="https://img.shields.io/badge/Mircosoft%20Edge-v0.4.0-white?color=%234298f4&style=for-the-badge&logo=microsoftedge"></a>
   </p>
   <p align="center">
     A Chrome extension for reorganizing your open tabs, restoring saved tab sessions, and also restoring tab groups.
