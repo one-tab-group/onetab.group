@@ -36,10 +36,17 @@
           <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
             <a
               class="hover:opacity-75 text-neon"
-              :href="extensionUrl"
+              :href="chromeUrl"
               target="_blank"
             >
-              <span>Get extension</span>
+              <span>Get it for Chrome</span>
+            </a>
+            <a
+              class="hover:opacity-75 text-neon"
+              :href="edgeUrl"
+              target="_blank"
+            >
+              <span>Get it for Microsoft Edge</span>
             </a>
             <a class="hover:opacity-75" href=""> Keyboard shortcuts </a>
             <a class="hover:opacity-75" href="/blog/how-to-migrate-from-onetab">
@@ -75,7 +82,7 @@
           <p class="text-xl font-semibold">Support</p>
 
           <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
-            <a class="hover:opacity-75" :href="extensionUrl" target="_blank">
+            <a class="hover:opacity-75" :href="chromeUrl" target="_blank">
               Chrome Extension
             </a>
             <a class="hover:opacity-75" href=""> IndieHackers </a>
@@ -117,8 +124,10 @@
 </template>
 
 <script lang="ts" setup>
-const extensionUrl =
+const chromeUrl =
   'https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm'
+const edgeUrl =
+  'https://microsoftedge.microsoft.com/addons/detail/one-tab-group-tabtab-g/njmgdlgmnlinpieohfpmiipenmgilpga'
 
 const twitterUrl = 'https://twitter.com/OneTabGroup'
 

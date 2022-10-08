@@ -150,9 +150,10 @@
             <p
               class="max-w-xl mx-auto mt-8 mb-16 text-xl font-medium sm:leading-relaxed sm:text-xl text-secondary"
             >
-              <span class="text-neon">One Tab Group</span> is a chrome extension
-              that allows you to manage your tabs & tab groups in one place.
-              One-click to aggregate all tabs & tab groups into one session.
+              <span class="text-neon">One Tab Group</span> is a chromium based
+              extension that allows you to manage your tabs & tab groups in one
+              place. One-click to aggregate all tabs & tab groups into one
+              session.
             </p>
 
             <div
@@ -165,8 +166,8 @@
                 target="_blank"
                 :href="extensionUrl"
               >
-                <carbon:download class="h-5 w-5 mr-2" />
-                <span>Get extension</span>
+                <mdi:google-chrome class="h-5 w-5 mr-2" />
+                <span>Get it for Chrome</span>
               </a>
 
               <a
@@ -175,10 +176,10 @@
                 border="~ shark-200 opacity-30 hover:opacity-10"
                 dark="bg-white text-shark-200 backdrop-filter backdrop-blur-sm backdrop-saturate-[180%] bg-opacity-33 hover:bg-opacity-10"
                 target="_blank"
-                href="https://github.com/sponsors/xiaoluoboding"
+                href="https://microsoftedge.microsoft.com/addons/detail/one-tab-group-tabtab-g/njmgdlgmnlinpieohfpmiipenmgilpga"
               >
-                <carbon:logo-github class="h-5 w-5 mr-2" />
-                <span>Sponsor on GitHub</span>
+                <mdi:microsoft-edge class="h-5 w-5 mr-2" />
+                <span>Get it for Microsoft Edge</span>
               </a>
             </div>
           </div>
