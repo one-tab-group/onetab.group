@@ -466,9 +466,11 @@
 
     <Divider between />
 
-    <!-- <FAQ />
+    <div ref="faqsRef">
+      <FAQ />
+    </div>
 
-    <Divider between /> -->
+    <Divider between />
 
     <!-- 8. Ready to get started? -->
     <section class="my-16 mx-auto px-8">
@@ -499,7 +501,7 @@
   <!-- end sections-->
 
   <!-- footer -->
-  <SiteFooter />
+  <SiteFooter @goto-faqs="gotoFaqs" />
   <!--  end footer -->
 
   <client-only>
@@ -518,6 +520,7 @@ const extensionUrl =
   'https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm'
 
 const featureRef = ref()
+const faqsRef = ref()
 const SVGColor = computed(() => {
   return isDark.value ? '#f6f6f7' : '#1f2023'
 })
@@ -535,6 +538,12 @@ definePageMeta({
 
 const gotoFeatures = () => {
   featureRef.value.scrollIntoView({
+    behavior: 'smooth',
+    inline: 'nearest'
+  })
+}
+const gotoFaqs = () => {
+  faqsRef.value.scrollIntoView({
     behavior: 'smooth',
     inline: 'nearest'
   })

@@ -92,6 +92,14 @@
             </a>
             <a class="hover:opacity-75" href=""> IndieHackers </a>
             <a class="hover:opacity-75" href=""> ProductHunt </a>
+
+            <div
+              class="hover:opacity-75 flex items-center gap-1 cursor-pointer"
+              @click="emit('goto-faqs')"
+            >
+              <span>FAQS</span>
+            </div>
+
             <a
               class="hover:opacity-75 flex items-center gap-1"
               href="mailto:onetabgroup@hotmail.com"
@@ -99,6 +107,7 @@
               <span>Contact</span>
               <carbon:email class="h-4 w-4" />
             </a>
+
             <a
               class="hover:opacity-75 flex items-center gap-1"
               href="/changelog"
@@ -129,6 +138,8 @@
 </template>
 
 <script lang="ts" setup>
+const emit = defineEmits(['goto-faqs'])
+
 const chromeUrl =
   'https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm'
 const edgeUrl =
