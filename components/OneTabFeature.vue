@@ -8,7 +8,7 @@
   >
     <slot name="icon" />
 
-    <h3 class="mt-4 text-xl font-bold text-primary">
+    <h3 class="text-xl font-bold text-primary">
       {{ title }}
     </h3>
 

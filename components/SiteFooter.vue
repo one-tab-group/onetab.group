@@ -66,7 +66,12 @@
             >
               Save all tabs & tab groups
             </a>
-            <a class="hover:opacity-75" href=""> Sync Opened Tabs </a>
+            <a
+              class="hover:opacity-75"
+              href="/blog/synchronize-the-opened-tabs-and-tab-groups"
+            >
+              Synchronize the Opened Tabs & Tab Groups
+            </a>
             <a class="hover:opacity-75" href="">
               Drag & Drop opened tabs into session
             </a>
@@ -74,7 +79,7 @@
               Restore all tabs with tab group
             </a>
             <a class="hover:opacity-75" href=""> Visualization web bookmark </a>
-            <a class="hover:opacity-75" href=""> KBar support </a>
+            <a class="hover:opacity-75" href=""> Command Palette support </a>
           </nav>
         </div>
 

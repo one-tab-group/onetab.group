@@ -259,16 +259,16 @@
 
     <Divider right />
 
-    <!-- 4. Explore the tabs using the command line-->
+    <!-- 4. Explore the tabs using the command palette-->
     <OneTabDesc>
       <template #title>
         Explore the tabs using the
-        <span class="text-neon">command line</span>
+        <span class="text-neon">command palette</span>
       </template>
       <template #description>
-        With the KBar (CMD + K), you can easily switch、 search your open tabs
-        in seconds with the command menu. Even you can drill down to find out
-        tab in the tab groups
+        With the Command Palette (CMD + K), you can easily switch、 search your
+        open tabs in seconds with the command menu. Even you can drill down to
+        find out tab in the tab groups
       </template>
       <template #media>
         <VideoRender
@@ -328,12 +328,12 @@
       <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
         <div class="max-w-lg mx-auto text-center">
           <h2 class="text-3xl font-bold sm:text-4xl">
-            <span class="text-neon">Supercharge</span> your tab mangement for
-            Chrome
+            <span class="text-neon">Supercharge</span> your tab/tab group
+            mangement for Chrome
           </h2>
 
           <p class="mt-4 text-shark-700 dark:text-shark-300">
-            Manage your tabs & tab groups in one place.
+            With 20+ useful features built in, you can explore it for free
           </p>
         </div>
 
@@ -380,7 +380,7 @@
 
           <OneTabFeature
             title="Create a new group"
-            desc="You can create a new group in the session to manage your tabs, and
+            desc="Create a new group in the session to manage your tabs, and
               restore them with tab group mode."
           >
             <template #icon>
@@ -390,10 +390,37 @@
 
           <OneTabFeature
             title="Ungroup"
-            desc="You can ungroup a tab group with ease."
+            desc="Ungroup a tab group with ease, or drag&drop any tabs outside tab group."
           >
             <template #icon>
               <mdi:ungroup class="h-8 w-8 text-lochmara-500" />
+            </template>
+          </OneTabFeature>
+
+          <OneTabFeature
+            title="Search Tabs"
+            desc="Find any saved tabs in milliseconds with a fuzzy search."
+          >
+            <template #icon>
+              <carbon:search class="h-8 w-8 text-lochmara-500" />
+            </template>
+          </OneTabFeature>
+
+          <OneTabFeature
+            title="Suspend Tabs"
+            desc="Suspend opened tabs, or open suspended tabs with ease, It can save a ton of memory."
+          >
+            <template #icon>
+              <carbon:clean class="h-8 w-8 text-lochmara-500" />
+            </template>
+          </OneTabFeature>
+
+          <OneTabFeature
+            title="De-duplicate Tabs"
+            desc="De-duplicate opened/saved tabs in session, keep your session clean"
+          >
+            <template #icon>
+              <mdi:delete-sweep-outline class="h-8 w-8 text-lochmara-500" />
             </template>
           </OneTabFeature>
 
@@ -437,7 +464,11 @@
       />
     </section>
 
-    <div class="feature-divider feature-divider--between"></div>
+    <Divider between />
+
+    <!-- <FAQ />
+
+    <Divider between /> -->
 
     <!-- 8. Ready to get started? -->
     <section class="my-16 mx-auto px-8">
