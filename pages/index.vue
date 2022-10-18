@@ -151,9 +151,9 @@
               class="max-w-xl mx-auto mt-8 mb-16 text-xl font-medium sm:leading-relaxed sm:text-xl text-secondary"
             >
               <span class="text-neon">One Tab Group</span> is a chromium based
-              extension that allows you to manage your tabs & tab groups in one
-              place. One-click to aggregate all tabs & tab groups into one
-              session.
+              extension that allows you to manage your tabs &amp; tab groups in
+              one place. One-click to aggregate all tabs &amp; tab groups into
+              one session.
             </p>
 
             <div
@@ -196,10 +196,10 @@
   >
     <Divider between class="hidden lg:block" />
 
-    <!-- 1. Sync with your open tabs & tab groups-->
+    <!-- 1. Sync with your open tabs &amp; tab groups-->
     <OneTabDesc left-desc>
       <template #title>
-        Synchronize your browser tabs &
+        Synchronize your browser tabs &amp;
         <span class="text-lochmara-500">tab groups</span>
       </template>
       <template #description>
@@ -224,9 +224,9 @@
         <p>Even <span class="text-lochmara-500">tab groups</span></p>
       </template>
       <template #description>
-        One-click to aggregate all tabs & tab groups into one session. You can
-        restore all your tabs & tab groups later as they are. Also you can
-        reorganise the session and restore it with ease.
+        One-click to aggregate all tabs &amp; tab groups into one session. You
+        can restore all your tabs &amp; tab groups later as they are. Also you
+        can reorganise the session and restore it with ease.
       </template>
       <template #media>
         <VideoRender
@@ -241,12 +241,12 @@
     <!-- 3. Organise tabs & tab groups efficiently -->
     <OneTabDesc left-desc>
       <template #title>
-        Organise tabs &
+        Organise tabs &amp;
         <span class="text-lochmara-500">tab groups</span> efficiently
       </template>
       <template #description>
-        You can drag & drop tabs/tab groups in your sessions to reorder/organise
-        them.
+        You can drag &amp; drop tabs/tab groups in your sessions to
+        reorder/organise them.
         <p>Also could drag the open tabs/tab groups into the sessions.</p>
       </template>
       <template #media>
@@ -280,10 +280,10 @@
 
     <Divider left />
 
-    <!-- 5. Never miss your tabs & tab groups -->
+    <!-- 5. Never miss your tabs &amp; tab groups -->
     <OneTabDesc left-desc>
       <template #title>
-        Never miss your tabs &
+        Never miss your tabs &amp;
         <span class="text-lochmara-500">tab groups</span>
       </template>
       <template #description>
@@ -340,7 +340,7 @@
         <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
           <OneTabFeature
             title="Restore all your tabs"
-            desc="We provide two ways to restore your tabs, one is by drag & drop
+            desc="We provide two ways to restore your tabs, one is by drag&drop
               open tabs into session, the other is by click the extension icon."
           >
             <template #icon>
@@ -485,7 +485,7 @@
         <p
           class="text-lg pb-8 text-center max-w-3xl mx-auto text-shark-200 dark:text-shark-700 font-medium"
         >
-          Manage your tabs & tab groups in one place.
+          Manage your tabs &amp; tab groups in one place.
         </p>
         <a
           class="bg-lochmara-500 highlight-white/20 hover:bg-lochmara-400 text-white font-semibold h-12 px-6 rounded-lg flex items-center justify-center sm:w-auto"

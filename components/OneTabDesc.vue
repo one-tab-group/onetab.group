@@ -12,16 +12,12 @@
         </div>
 
         <div class="lg:pb-20">
-          <h2
-            class="text-3xl sm:text-4xl font-semibold text-primary"
-          >
+          <h2 class="text-3xl sm:text-4xl font-semibold text-primary">
             <slot name="title"></slot>
           </h2>
-          <p
-            class="text-secondary text-lg font-semibold mt-8"
-          >
+          <div class="text-secondary text-lg font-semibold mt-8">
             <slot name="description"></slot>
-          </p>
+          </div>
 
           <a
             class="btn btn-secondary btn-blur"
@@ -38,7 +34,7 @@
 </template>
 
 <script lang="ts" setup>
-const props = defineProps({
+defineProps({
   leftDesc: {
     type: Boolean,
     default: false
