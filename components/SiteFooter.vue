@@ -9,9 +9,7 @@
             <img src="/logo.svg" class="h-12" alt="" />
             <img src="/logo-text-light.svg" class="h-8 mt-4" alt="" />
           </figcaption>
-          <p class="max-w-xs text-sm text-shark-400">
-            Your all-in-one tab/tab group manager for Chrome.
-          </p>
+
           <p class="max-w-xs text-sm text-shark-400">
             Manage your tabs & tab groups in one place.
           </p>
@@ -19,7 +17,7 @@
             <ul class="space-x-6 flex justify-center sm:justify-start">
               <li class="flex items-center">
                 <a :href="twitterUrl" target="_blank">
-                  <carbon:logo-twitter class="h-6 w-6" />
+                  <mdi:twitter class="h-6 w-6" />
                 </a>
               </li>
               <li class="flex items-center">
@@ -35,29 +33,38 @@
 
           <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
             <a
-              class="hover:opacity-75 text-neon"
+              class="flex hover:opacity-75 text-neon"
               :href="chromeUrl"
               target="_blank"
             >
               <span>Get it for Chrome</span>
             </a>
             <a
-              class="hover:opacity-75 text-neon"
+              class="flex hover:opacity-75 text-neon"
               :href="edgeUrl"
               target="_blank"
             >
               <span>Get it for Microsoft Edge</span>
             </a>
-            <a class="hover:opacity-75" href=""> Keyboard shortcuts </a>
             <a class="hover:opacity-75" href="/blog/how-to-migrate-from-onetab">
               Migration from OneTab
             </a>
-            <a class="hover:opacity-75" href=""> Help Center </a>
+            <a class="hover:opacity-75" href="/blog/how-to-migrate-from-onetab">
+              Migration from Session Buddy
+            </a>
+            <a
+              class="hover:opacity-75 flex items-center gap-1"
+              href="https://www.indiehackers.com/product/one-tab-group"
+            >
+              <span>IndieHackers</span>
+              <heroicons-outline:external-link class="h-4 w-4" />
+            </a>
+            <a class="hover:opacity-75" href=""> ProductHunt </a>
           </nav>
         </div>
 
         <div>
-          <p class="text-xl font-semibold">Features</p>
+          <p class="text-xl font-semibold">Product Features</p>
 
           <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
             <a
@@ -70,7 +77,7 @@
               class="hover:opacity-75"
               href="/blog/synchronize-the-opened-tabs-and-tab-groups"
             >
-              Synchronize the Opened Tabs & Tab Groups
+              Synchronize the Open Tabs/Tab Groups
             </a>
             <a class="hover:opacity-75" href="">
               Drag & Drop opened tabs into session
@@ -87,18 +94,13 @@
           <p class="text-xl font-semibold">Support</p>
 
           <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
-            <a class="hover:opacity-75" :href="chromeUrl" target="_blank">
-              Chrome Extension
-            </a>
-            <a class="hover:opacity-75" href=""> IndieHackers </a>
-            <a class="hover:opacity-75" href=""> ProductHunt </a>
-
             <div
               class="hover:opacity-75 flex items-center gap-1 cursor-pointer"
               @click="emit('goto-faqs')"
             >
               <span>FAQS</span>
             </div>
+            <a class="hover:opacity-75" href=""> Help Center </a>
 
             <a
               class="hover:opacity-75 flex items-center gap-1"

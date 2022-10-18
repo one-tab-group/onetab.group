@@ -5,6 +5,41 @@ title: 'One Tab Group | Changelog'
 
 # Changelog
 
+## [0.4.6](https://github.com/one-tab-group/one-tab-group/compare/v0.4.5...v0.4.6) (2022-10-10)
+
+
+### Bug Fixes
+
+* fixed duplicate create group bug ([4af8724](https://github.com/one-tab-group/one-tab-group/commit/4af8724b2a08ea95f1a410f80ab93e644da66751))
+* fixed the create tab group bug ([372fee3](https://github.com/one-tab-group/one-tab-group/commit/372fee3c8499860d8e3684b149291ded51af3f7d))
+* fixed the QRCode not render bug ([9f5b8d0](https://github.com/one-tab-group/one-tab-group/commit/9f5b8d04504787fd59f2948371154303c0587e76))
+* fixed the tab group create bug ([6e30408](https://github.com/one-tab-group/one-tab-group/commit/6e304089dd40120c94df494db9fb44fcd8dbf9da))
+* fixed typo error ([2ec7a66](https://github.com/one-tab-group/one-tab-group/commit/2ec7a66e2c51a04d9481afdadac0b1623136e086))
+
+
+### Features
+
+* add leave a review menu ([9289d56](https://github.com/one-tab-group/one-tab-group/commit/9289d56f2888daf1d955d029ac0914b717136e29))
+* add the command shortcuts support ([f0a8bfb](https://github.com/one-tab-group/one-tab-group/commit/f0a8bfb1dfd33cce07caad3494211681705a113f))
+* add the leave a review link ([dcb7e7c](https://github.com/one-tab-group/one-tab-group/commit/dcb7e7c5994274e9ba09928151f0af244b6edf42))
+* add the shortcuts entry ([af67c06](https://github.com/one-tab-group/one-tab-group/commit/af67c06676e38b83b5fa4db64ec19b65f588fd5e))
+* change the suspend tab timer ([c10a830](https://github.com/one-tab-group/one-tab-group/commit/c10a83085cc222e12739fa83bd82ba1f11d9aee3))
+
+
+
+## [0.4.5](https://github.com/one-tab-group/one-tab-group/compare/v0.4.3...v0.4.5) (2022-10-08)
+
+
+### Features
+
+* change local storage to save tabs & tab groups ([f7803c1](https://github.com/one-tab-group/one-tab-group/commit/f7803c1f881a7dd2088cf64f1a72959349e9b926))
+* keep the original synced data, replace the otgOptions ([659c261](https://github.com/one-tab-group/one-tab-group/commit/659c2610e6d88ab764db85bbed069ad198265aa4))
+* remove permissions of identity email ([56692a9](https://github.com/one-tab-group/one-tab-group/commit/56692a9ccbb09b238a9302b45733ed937609796d))
+* sync back the darkmode ([51d0d63](https://github.com/one-tab-group/one-tab-group/commit/51d0d6368f5cd79dcc1005fc84c804464e03963d))
+* sync back the language ([77ab3e4](https://github.com/one-tab-group/one-tab-group/commit/77ab3e4cedb0d5460d1e2364c57507574d25765d))
+
+
+
 ## [0.4.3](https://github.com/one-tab-group/one-tab-group/compare/v0.4.2...v0.4.3) (2022-10-04)
 
 ### Bug Fixes

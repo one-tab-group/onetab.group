@@ -14,7 +14,7 @@
       <div
         class="flex flex-col max-w-screen-lg mx-auto divide-y-1 divide-shark-100 dark:divide-shark-600 border border-shark-100 dark:border-shark-600"
       >
-        <!-- question - start -->
+        <!-- question - start Where is your data stored? -->
         <div class="faq-wrapper">
           <div class="faq">
             <span class="md:text-lg font-semibold transition duration-100">
@@ -38,7 +38,7 @@
         </div>
         <!-- question - end -->
 
-        <!-- question - start -->
+        <!-- question - start Why do I need to log in? -->
         <div class="faq-wrapper">
           <div class="faq">
             <span class="md:text-lg font-semibold transition duration-100">
@@ -84,7 +84,7 @@
         </div>
         <!-- question - end -->
 
-        <!-- question - start -->
+        <!-- question - start Does it support cloud sync? -->
         <div class="faq-wrapper">
           <div class="faq">
             <span class="md:text-lg font-semibold transition duration-100">
@@ -95,8 +95,13 @@
           <div class="answer">
             <p>
               Cloud sync is in our
-              <a href="#" class="text-neon">roadmap</a>, but you need to login
-              through a third party account(Google or GitHub) to use it.
+              <a
+                href="https://github.com/orgs/one-tab-group/projects/1"
+                class="text-neon"
+                target="_blank"
+                >roadmap</a
+              >, but you need to login through a third party account(Google or
+              GitHub) to use it.
             </p>
             <p>
               Cloud sync means that your data will be uploaded to the cloud, but
@@ -110,11 +115,11 @@
         </div>
         <!-- question - end -->
 
-        <!-- question - start -->
+        <!-- question - start Don't have enough features, need new ones?-->
         <div class="faq-wrapper">
           <div class="faq">
             <span class="md:text-lg font-semibold transition duration-100"
-              >Don't have enough features and need new ones?</span
+              >Don't have enough features, need new ones?</span
             >
           </div>
 
@@ -130,13 +135,40 @@
               gets better and better!
             </p>
             <p>
-              You can give us your comments and suggestions by
+              You can
               <a
                 href="https://github.com/one-tab-group/onetab.group/issues/new"
                 class="text-neon"
               >
                 suggest a change
               </a>
+              , and we will check on it.
+            </p>
+          </div>
+        </div>
+        <!-- question - end -->
+
+        <!-- question - start oes One Tab Group work on Firefox?-->
+        <div class="faq-wrapper">
+          <div class="faq">
+            <span class="md:text-lg font-semibold transition duration-100">
+              Does One Tab Group work on Firefox?
+            </span>
+          </div>
+
+          <div class="answer">
+            <p>
+              There’s no <span text="lochmara-400">Firefox</span> version and at
+              the moment there are no plans on releasing one. Because Firefox
+              does not support the creation of Tab Groups at this time. But we
+              support
+              <a
+                class="text-neon"
+                href="https://microsoftedge.microsoft.com/addons/detail/one-tab-group-tabtab-g/njmgdlgmnlinpieohfpmiipenmgilpga"
+                target="_blank"
+                >Microsoft Edge</a
+              >
+              version.
             </p>
           </div>
         </div>
