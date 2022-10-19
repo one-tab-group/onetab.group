@@ -4,6 +4,7 @@ node_modules
 nuxt.d.ts
 .output
 yarn.lock
+pnpm-lock.yaml
 .github
 .env
 
