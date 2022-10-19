@@ -92,7 +92,6 @@ export default defineNuxtConfig({
   },
   publicRuntimeConfig: {
     CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN,
-    PLAUSIBLE_TOKEN: process.env.PLAUSIBLE_TOKEN,
     UMAMI_WEBSITE_ID: process.env.UMAMI_WEBSITE_ID,
     EMAIL_USER: process.env.EMAIL_USER,
     EMAIL_PASSWORD: process.env.EMAIL_PASSWORD
