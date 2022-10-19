@@ -62,7 +62,8 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'unplugin-icons/nuxt',
     '@vueuse/nuxt',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/supabase'
   ],
   components: {
     global: true,
@@ -94,6 +95,8 @@ export default defineNuxtConfig({
     CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN,
     UMAMI_WEBSITE_ID: process.env.UMAMI_WEBSITE_ID,
     EMAIL_USER: process.env.EMAIL_USER,
-    EMAIL_PASSWORD: process.env.EMAIL_PASSWORD
+    EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
+    SUPABASE_URL: process.env.SUPABASE_URL,
+    SUPABASE_KEY: process.env.SUPABASE_KEY
   }
 })
