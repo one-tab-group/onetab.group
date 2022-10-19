@@ -6,7 +6,7 @@ export default defineEventHandler(async (event): Promise<any> => {
   let user = {}
 
   if (email) {
-    const userList = await sdb.account.queryByEmail('malanore.tk@gmail.com')
+    const userList = await sdb.account.queryByEmail(email)
     user = userList[0]
   }
 
