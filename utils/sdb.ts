@@ -12,7 +12,7 @@ type SupaDb = {
     ) => Promise<SessionData[] | null>
     deleteById: (
       sessionId: SessionData['id'],
-      sessionItem: SessionData
+      accountId: AccountData['id']
     ) => Promise<SessionData[] | null>
     fetchByAccountId: (
       accountId: AccountData['id']
@@ -92,14 +92,11 @@ const updateSessionById = async (
   return tryCatchDbError<typeof data>(data, error)
 }
 
-const deleteSessionById = async (
-  sessionId: string,
-  sessionItem: SessionData
-) => {
+const deleteSessionById = async (sessionId: string, accountId: string) => {
   const { data, error } = await supabase
     .from<SessionData>('session')
     .delete()
-    .match({ id: sessionId, account_id: sessionItem.account_id })
+    .match({ id: sessionId, account_id: accountId })
   return tryCatchDbError<typeof data>(data, error)
 }
 
