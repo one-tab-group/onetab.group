@@ -7,7 +7,7 @@ export default defineEventHandler(async (event): Promise<SessionData[]> => {
   let session = [] as SessionData[]
 
   try {
-    session = await sdb.session.queryByAccountId(accountId)
+    session = await sdb.session.fetchByAccountId(accountId)
   } catch (error) {
     console.log(error)
   }

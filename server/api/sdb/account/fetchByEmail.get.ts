@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
   let account = null
 
   try {
-    const res = await sdb.account.queryByEmail(email)
+    const res = await sdb.account.fetchByEmail(email)
 
     if (res && res.length === 1) {
       account = res[0]

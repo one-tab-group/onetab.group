@@ -14,14 +14,14 @@ type SupaDb = {
       sessionId: SessionData['id'],
       sessionItem: SessionData
     ) => Promise<SessionData[] | null>
-    queryByAccountId: (
+    fetchByAccountId: (
       accountId: AccountData['id']
     ) => Promise<SessionData[] | null>
   }
   account: {
     select: () => Promise<AccountData[] | null>
     queryById: (accountId: AccountData['id']) => Promise<AccountData[] | null>
-    queryByEmail: (email: AccountData['email']) => Promise<AccountData[] | null>
+    fetchByEmail: (email: AccountData['email']) => Promise<AccountData[] | null>
     insert: (account: AccountData) => Promise<AccountData[] | null>
     upsert: (account: AccountData) => Promise<AccountData[] | null>
     updateSyncedAt: (
@@ -155,7 +155,7 @@ sdb.session = {
   upsert: upsertSession,
   updateById: updateSessionById,
   deleteById: deleteSessionById,
-  queryByAccountId: selectSessionByAccountId
+  fetchByAccountId: selectSessionByAccountId
 }
 
 sdb.account = {
@@ -163,7 +163,7 @@ sdb.account = {
   insert: insertAccount,
   upsert: upsertAccount,
   queryById: selectAccountById,
-  queryByEmail: selectAccountByEmail,
+  fetchByEmail: selectAccountByEmail,
   updateSyncedAt: updateAccountSyncedAt
 }
 
