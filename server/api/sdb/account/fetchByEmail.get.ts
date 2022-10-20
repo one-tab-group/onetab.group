@@ -3,13 +3,16 @@ import { sdb } from '@/utils/sdb'
 export default defineEventHandler(async (event) => {
   const { email } = getQuery(event) as { email: string }
 
-  let account = {}
+  let account = null
 
-  if (email) {
+  try {
     const res = await sdb.account.queryByEmail(email)
+
     if (res && res.length === 1) {
       account = res[0]
     }
+  } catch (error) {
+    console.log(error)
   }
 
   return account
