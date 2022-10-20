@@ -14,7 +14,7 @@ type SupaDb = {
       sessionId: SessionData['id'],
       sessionItem: SessionData
     ) => Promise<SessionData[] | null>
-    queryByAccount: (
+    queryByAccountId: (
       accountId: AccountData['id']
     ) => Promise<SessionData[] | null>
   }
@@ -55,7 +55,7 @@ const selectSession = async () => {
   return tryCatchDbError<typeof data>(data, error)
 }
 
-const selectSessionByAccount = async (accountId: string) => {
+const selectSessionByAccountId = async (accountId: string) => {
   const { data, error } = await sessionQuery.eq('account_id', accountId)
 
   return tryCatchDbError<typeof data>(data, error)
@@ -155,7 +155,7 @@ sdb.session = {
   upsert: upsertSession,
   updateById: updateSessionById,
   deleteById: deleteSessionById,
-  queryByAccount: selectSessionByAccount
+  queryByAccountId: selectSessionByAccountId
 }
 
 sdb.account = {
