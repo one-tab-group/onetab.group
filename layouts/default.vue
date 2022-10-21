@@ -2,12 +2,18 @@
   <ClientOnly>
     <SiteHeader />
   </ClientOnly>
-  <main
-    class="max-w-screen-lg px-16 py-16 my-12 m-auto sm:px-16 sm:shadow bg-white dark:bg-shark-800 sm:rounded"
-  >
-    <article class="prose text-shark-800 dark:text-shark-200 max-w-none">
-      <slot />
+
+  <main class="max-w-screen-xl pt-24 my-12 m-auto sm:rounded">
+    <article class="prose text-shark-800 dark:text-shark-100 max-w-none">
+      <PageHeader />
+      <hr class="!my-16" />
+      <section class="grid grid-cols-[1fr,2fr]">
+        <PageToc />
+        <slot />
+      </section>
     </article>
+
+    <Divider between />
   </main>
   <SiteFooter />
 </template>
@@ -19,17 +25,18 @@
 .prose h3 a,
 .prose h4 a {
   @apply no-underline;
-  @apply text-shark-800 dark:text-shark-200;
+  @apply text-shark-800 dark:text-shark-100;
 }
 
 .prose p,
-.prose ul > li {
-  @apply text-shark-700 dark:text-shark-400;
+.prose ul > li,
+.prose ol > li {
+  @apply text-shark-700 dark:text-shark-300;
 }
 
 .prose h2 a:hover,
 .prose h3 a:hover {
-  @apply border-b border-neutral-600 dark:border-neutral-300;
+  @apply border-b border-shark-600 dark:border-shark-300;
 }
 
 .prose a {
@@ -42,7 +49,12 @@
 
 .prose code,
 .prose strong {
-  @apply dark:text-shark-100;
+  @apply text-lochmara-500 dark:text-lochmara-300;
+}
+
+.prose code::before,
+.prose code::after {
+  content: '';
 }
 
 .prose hr {
