@@ -6,7 +6,9 @@
   <main class="max-w-screen-xl pt-24 my-12 m-auto sm:rounded">
     <article class="prose text-shark-800 dark:text-shark-100 max-w-none">
       <PageHeader />
-      <hr class="!my-16" />
+
+      <Divider between />
+
       <section class="grid grid-cols-[1fr,2fr]">
         <PageToc />
         <slot />

@@ -91,7 +91,7 @@ const sendBackupEmail = async (username: string, to: string, blob?: Blob) => {
 }
 
 export default defineEventHandler(async (event) => {
-  const { username, to, blob } = await useBody(event)
+  const { username, to, blob } = await readBody(event)
   const data = await sendBackupEmail(username, to, blob)
   return {
     data
