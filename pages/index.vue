@@ -208,9 +208,9 @@
         in chrome, so you can easily manage your open tabs and tab groups.
       </template>
       <template #media>
-        <VideoRender
+        <img
           class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
-          src="/feature_01.mp4"
+          src="/feature_01.gif"
         />
       </template>
     </OneTabDesc>
@@ -229,9 +229,9 @@
         can reorganise the session and restore it with ease.
       </template>
       <template #media>
-        <VideoRender
+        <img
           class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
-          src="/feature_02.mp4"
+          src="/feature_02.gif"
         />
       </template>
     </OneTabDesc>
@@ -250,9 +250,9 @@
         <p>Also could drag the open tabs/tab groups into the sessions.</p>
       </template>
       <template #media>
-        <VideoRender
+        <img
           class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
-          src="/feature_03.mp4"
+          src="/feature_03.gif"
         />
       </template>
     </OneTabDesc>
@@ -271,9 +271,9 @@
         find out tab in the tab groups
       </template>
       <template #media>
-        <VideoRender
+        <img
           class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
-          src="/feature_04.mp4"
+          src="/feature_04.gif"
         />
       </template>
     </OneTabDesc>
@@ -292,9 +292,9 @@
         <p>Also could import from <em>One</em>Tab's exported data.</p>
       </template>
       <template #media>
-        <VideoRender
+        <img
           class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
-          src="/feature_05.mp4"
+          src="/feature_05.gif"
         />
       </template>
     </OneTabDesc>
@@ -314,9 +314,9 @@
         like a website's title, description, logo, author, thumbnails.
       </template>
       <template #media>
-        <VideoRender
+        <img
           class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
-          src="/feature_06.mp4"
+          src="/feature_06.gif"
         />
       </template>
     </OneTabDesc>
