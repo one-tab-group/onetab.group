@@ -202,15 +202,23 @@
               target="_blank"
               class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
             >
-              <span class="sr-only hidden">OneTabGroup on Twitter</span>
+              <span class="sr-only hidden">One Tab Group on Twitter</span>
               <mdi:twitter class="h-6 w-6" />
+            </a>
+            <a
+              :href="telegramUrl"
+              target="_blank"
+              class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
+            >
+              <span class="sr-only hidden">One Tab Group on Telegram</span>
+              <mdi:telegram class="h-6 w-6" />
             </a>
             <a
               :href="githubUrl"
               target="_blank"
               class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
             >
-              <span class="sr-only hidden">OneTabGroup on GitHub</span>
+              <span class="sr-only hidden">One Tab Group on GitHub</span>
               <mdi:github class="h-6 w-6" />
             </a>
           </div>
@@ -225,6 +233,8 @@ import { computed } from 'vue'
 import { isDark, toggleDark } from '~~/composables/useDarkMode'
 
 const twitterUrl = 'https://twitter.com/OneTabGroup'
+
+const telegramUrl = 'https://t.me/otghq'
 
 const githubUrl = 'https://github.com/one-tab-group/'
 
