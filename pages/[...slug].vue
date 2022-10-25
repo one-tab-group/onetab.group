@@ -1,5 +1,7 @@
 <template>
-  <ContentDoc class="h-full w-full" />
+  <div>
+    <ContentDoc class="h-full w-full" />
+  </div>
 </template>
 
 <script lang="ts" setup>

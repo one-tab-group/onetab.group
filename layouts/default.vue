@@ -1,23 +1,25 @@
 <template>
-  <ClientOnly>
-    <SiteHeader />
-  </ClientOnly>
+  <div>
+    <ClientOnly>
+      <SiteHeader />
+    </ClientOnly>
 
-  <main class="max-w-screen-xl pt-24 my-12 m-auto sm:rounded">
-    <article class="prose text-shark-800 dark:text-shark-100 max-w-none">
-      <PageHeader />
+    <main class="max-w-screen-xl pt-24 my-12 m-auto sm:rounded">
+      <article class="prose text-shark-800 dark:text-shark-100 max-w-none">
+        <PageHeader />
+
+        <Divider between />
+
+        <section class="grid grid-cols-[1fr,2fr]">
+          <PageToc />
+          <slot />
+        </section>
+      </article>
 
       <Divider between />
-
-      <section class="grid grid-cols-[1fr,2fr]">
-        <PageToc />
-        <slot />
-      </section>
-    </article>
-
-    <Divider between />
-  </main>
-  <SiteFooter />
+    </main>
+    <SiteFooter />
+  </div>
 </template>
 
 <style>

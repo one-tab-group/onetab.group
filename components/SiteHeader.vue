@@ -156,9 +156,18 @@
                 <a
                   class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
                   href="#features"
-                  @click="emit('jump')"
+                  @click="emit('navto', 'features')"
                 >
                   Features
+                </a>
+              </li>
+              <li>
+                <a
+                  class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
+                  href="#faqs"
+                  @click="emit('navto', 'faqs')"
+                >
+                  FAQs
                 </a>
               </li>
               <li>
@@ -219,7 +228,7 @@ const twitterUrl = 'https://twitter.com/OneTabGroup'
 
 const githubUrl = 'https://github.com/one-tab-group/'
 
-const emit = defineEmits(['jump'])
+const emit = defineEmits(['navto'])
 
 const SVGColor = computed(() => {
   return isDark.value ? '#fff' : '#0F172A'

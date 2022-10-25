@@ -27,6 +27,7 @@ declare module '@vue/runtime-core' {
     'Mdi:group': typeof import('~icons/mdi/group')['default']
     'Mdi:microsoftEdge': typeof import('~icons/mdi/microsoft-edge')['default']
     'Mdi:openInNew': typeof import('~icons/mdi/open-in-new')['default']
+    'Mdi:telegram': typeof import('~icons/mdi/telegram')['default']
     'Mdi:twitter': typeof import('~icons/mdi/twitter')['default']
     'Mdi:ungroup': typeof import('~icons/mdi/ungroup')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

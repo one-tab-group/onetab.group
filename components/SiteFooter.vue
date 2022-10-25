@@ -21,8 +21,13 @@
                 </a>
               </li>
               <li class="flex items-center">
+                <a :href="telegramUrl" target="_blank">
+                  <mdi:telegram class="h-6 w-6" />
+                </a>
+              </li>
+              <li class="flex items-center">
                 <a :href="githubUrl" target="_blank">
-                  <carbon:logo-github class="h-6 w-6" />
+                  <mdi:github class="h-6 w-6" />
                 </a>
               </li>
             </ul>
@@ -83,13 +88,15 @@
               Synchronize the Open Tabs/Tab Groups
             </a>
             <a class="hover:opacity-75" href="">
-              Drag & Drop opened tabs into session
+              Drag & Drop open tabs into session
             </a>
             <a class="hover:opacity-75" href="">
               Restore all tabs with tab group
             </a>
             <a class="hover:opacity-75" href=""> Visualization web bookmark </a>
-            <a class="hover:opacity-75" href=""> Command Palette support </a>
+            <a class="hover:opacity-75" href="">
+              Searching tabs using Command Palette
+            </a>
           </nav>
         </div>
 
@@ -99,7 +106,7 @@
           <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
             <div
               class="hover:opacity-75 flex items-center gap-1 cursor-pointer"
-              @click="emit('goto-faqs')"
+              @click="emit('navto', 'faqs')"
             >
               <span>FAQS</span>
             </div>
@@ -118,6 +125,14 @@
               href="/changelog"
             >
               <span>Changelog</span>
+              <heroicons-outline:external-link class="h-4 w-4" />
+            </a>
+            <a
+              class="hover:opacity-75 flex items-center gap-1"
+              href="https://github.com/orgs/one-tab-group/projects/1"
+              target="_blank"
+            >
+              <span>Roadmap</span>
               <heroicons-outline:external-link class="h-4 w-4" />
             </a>
           </nav>
@@ -143,7 +158,7 @@
 </template>
 
 <script lang="ts" setup>
-const emit = defineEmits(['goto-faqs'])
+const emit = defineEmits(['navto'])
 
 const chromeUrl =
   'https://chrome.google.com/webstore/detail/one-tab-group/lajbajamkpmkmldodfbljkjihppdclbm'
@@ -151,6 +166,8 @@ const edgeUrl =
   'https://microsoftedge.microsoft.com/addons/detail/one-tab-group-tabtab-g/njmgdlgmnlinpieohfpmiipenmgilpga'
 
 const twitterUrl = 'https://twitter.com/OneTabGroup'
+
+const telegramUrl = 'https://t.me/otghq'
 
 const githubUrl = 'https://github.com/one-tab-group/'
 </script>
