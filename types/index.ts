@@ -33,9 +33,11 @@ export type Account = {
 export type License = {
   id: string
   account_id: string
-  purchaser_id: string
   email: string
+  otg_version: string
+  // license info
   license_key: string
+  purchaser_id: string
   price: number
   gumroad_fee: number
   currency: string
