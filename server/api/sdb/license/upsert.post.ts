@@ -1,16 +1,18 @@
 import { sdb } from '@/utils/sdb'
-import { Session } from '~/types'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
 
-  let session = [] as Session[]
+  let license = null
 
   try {
-    session = await sdb.session.upsert(body)
+    const res = await sdb.license.upsert(body)
+    if (res && res.length === 1) {
+      license = res[0]
+    }
   } catch (error) {
     console.log(error)
   }
 
-  return session
+  return license
 })

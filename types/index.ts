@@ -6,24 +6,41 @@ export type Tabs = Array<AnyRecord>
 
 export type UserType = 'GitHub' | 'Google'
 
-export interface SessionData {
+export type RecurrenceType = 'monthly' | 'yearly'
+
+export interface Session {
   id: string
   title: string
   tabTree: Tabs
   collapsed: boolean
-  created_at: number
-  updated_at: number
+  created_at: number | string
+  updated_at: number | string
   account_id?: string
 }
 
-export type AccountData = {
+export type Account = {
   id: string
   name: string
   email: string
   type: UserType
   avatar_url: string
   accounts_url: string
-  created_at: number
-  updated_at?: number
-  synced_at?: number
+  created_at: number | string
+  updated_at?: number | string
+  synced_at?: number | string
+}
+
+export type License = {
+  id: string
+  account_id: string
+  purchaser_id: string
+  email: string
+  license_key: string
+  price: number
+  gumroad_fee: number
+  currency: string
+  recurrence: RecurrenceType
+  ip_country: string
+  created_at: number | string
+  expriy_at?: number | string
 }

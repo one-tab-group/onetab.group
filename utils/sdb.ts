@@ -1,33 +1,35 @@
 import { createClient, PostgrestError } from '@supabase/supabase-js'
-import { SessionData, AccountData } from '~/types'
+import { Session, Account, License } from '~/types'
 
 type SupaDb = {
   session: {
-    select: () => Promise<SessionData[] | null>
-    insert: (sessionList: SessionData[]) => Promise<SessionData[] | null>
-    upsert: (sessionList: SessionData[]) => Promise<SessionData[] | null>
+    select: () => Promise<Session[] | null>
+    insert: (sessionList: Session[]) => Promise<Session[] | null>
+    upsert: (sessionList: Session[]) => Promise<Session[] | null>
     updateById: (
-      sessionId: SessionData['id'],
-      sessionItem: SessionData
-    ) => Promise<SessionData[] | null>
+      sessionId: Session['id'],
+      sessionItem: Session
+    ) => Promise<Session[] | null>
     deleteById: (
-      sessionId: SessionData['id'],
-      accountId: AccountData['id']
-    ) => Promise<SessionData[] | null>
-    fetchByAccountId: (
-      accountId: AccountData['id']
-    ) => Promise<SessionData[] | null>
+      sessionId: Session['id'],
+      accountId: Account['id']
+    ) => Promise<Session[] | null>
+    fetchByAccountId: (accountId: Account['id']) => Promise<Session[] | null>
   }
   account: {
-    select: () => Promise<AccountData[] | null>
-    queryById: (accountId: AccountData['id']) => Promise<AccountData[] | null>
-    fetchByEmail: (email: AccountData['email']) => Promise<AccountData[] | null>
-    insert: (account: AccountData) => Promise<AccountData[] | null>
-    upsert: (account: AccountData) => Promise<AccountData[] | null>
+    select: () => Promise<Account[] | null>
+    queryById: (accountId: Account['id']) => Promise<Account[] | null>
+    fetchByEmail: (email: Account['email']) => Promise<Account[] | null>
+    insert: (account: Account) => Promise<Account[] | null>
+    upsert: (account: Account) => Promise<Account[] | null>
     updateSyncedAt: (
-      accountId: AccountData['id'],
+      accountId: Account['id'],
       syncedTime: number
-    ) => Promise<AccountData[] | null>
+    ) => Promise<Account[] | null>
+  }
+  license: {
+    fetchByEmail: (email: Account['email']) => Promise<License[] | null>
+    upsert: (license: License) => Promise<License[] | null>
   }
 }
 
@@ -45,10 +47,11 @@ const tryCatchDbError = <T>(data: T, error: PostgrestError | null) => {
 }
 
 const sessionQuery = supabase
-  .from<SessionData>('session')
+  .from<Session>('session')
   .select()
   .order('created_at', { ascending: false })
 
+/** session api begin */
 const selectSession = async () => {
   const { data, error } = await sessionQuery
 
@@ -61,17 +64,17 @@ const selectSessionByAccountId = async (accountId: string) => {
   return tryCatchDbError<typeof data>(data, error)
 }
 
-const insertSession = async (session: SessionData[]) => {
+const insertSession = async (session: Session[]) => {
   const { data, error } = await supabase
-    .from<SessionData>('session')
+    .from<Session>('session')
     .insert(session)
 
   return tryCatchDbError<typeof data>(data, error)
 }
 
-const upsertSession = async (session: SessionData[]) => {
+const upsertSession = async (session: Session[]) => {
   const { data, error } = await supabase
-    .from<SessionData>('session')
+    .from<Session>('session')
     .upsert(session)
 
   if (error) {
@@ -80,12 +83,9 @@ const upsertSession = async (session: SessionData[]) => {
   return data
 }
 
-const updateSessionById = async (
-  sessionId: string,
-  sessionItem: SessionData
-) => {
+const updateSessionById = async (sessionId: string, sessionItem: Session) => {
   const { data, error } = await supabase
-    .from<SessionData>('session')
+    .from<Session>('session')
     .update(sessionItem)
     .eq('id', sessionId)
     .eq('account_id', sessionItem.account_id)
@@ -94,13 +94,15 @@ const updateSessionById = async (
 
 const deleteSessionById = async (sessionId: string, accountId: string) => {
   const { data, error } = await supabase
-    .from<SessionData>('session')
+    .from<Session>('session')
     .delete()
     .match({ id: sessionId, account_id: accountId })
   return tryCatchDbError<typeof data>(data, error)
 }
+/** session api end */
 
-const accountQuery = supabase.from<AccountData>('account').select()
+/** account api begin */
+const accountQuery = supabase.from<Account>('account').select()
 
 const selectAccount = async () => {
   const { data, error } = await accountQuery
@@ -108,29 +110,29 @@ const selectAccount = async () => {
   return tryCatchDbError<typeof data>(data, error)
 }
 
-const selectAccountById = async (accountId: AccountData['id']) => {
+const selectAccountById = async (accountId: Account['id']) => {
   const { data, error } = await accountQuery.eq('id', accountId)
 
   return tryCatchDbError<typeof data>(data, error)
 }
 
-const selectAccountByEmail = async (email: AccountData['email']) => {
+const selectAccountByEmail = async (email: Account['email']) => {
   const { data, error } = await accountQuery.eq('email', email)
 
   return tryCatchDbError<typeof data>(data, error)
 }
 
-const insertAccount = async (account: AccountData) => {
+const insertAccount = async (account: Account) => {
   const { data, error } = await supabase
-    .from<AccountData>('account')
+    .from<Account>('account')
     .insert([account])
 
   return tryCatchDbError<typeof data>(data, error)
 }
 
-const upsertAccount = async (account: AccountData) => {
+const upsertAccount = async (account: Account) => {
   const { data, error } = await supabase
-    .from<AccountData>('account')
+    .from<Account>('account')
     .upsert([account])
 
   return tryCatchDbError<typeof data>(data, error)
@@ -138,13 +140,32 @@ const upsertAccount = async (account: AccountData) => {
 
 const updateAccountSyncedAt = async (accountId: string, syncedTime: number) => {
   const { data, error } = await supabase
-    .from<AccountData>('account')
+    .from<Account>('account')
     .update({ synced_at: syncedTime })
     .eq('id', accountId)
     .select()
 
   return tryCatchDbError<typeof data>(data, error)
 }
+/** account api end */
+
+/** license api begin */
+const licenseQuery = supabase.from<License>('license').select()
+
+const selectLicenseByEmail = async (email: Account['email']) => {
+  const { data, error } = await licenseQuery.eq('email', email)
+
+  return tryCatchDbError<typeof data>(data, error)
+}
+
+const upsertLicense = async (license: License) => {
+  const { data, error } = await supabase
+    .from<License>('license')
+    .upsert([license])
+
+  return tryCatchDbError<typeof data>(data, error)
+}
+/** license api end */
 
 sdb.session = {
   select: selectSession,
@@ -162,6 +183,11 @@ sdb.account = {
   queryById: selectAccountById,
   fetchByEmail: selectAccountByEmail,
   updateSyncedAt: updateAccountSyncedAt
+}
+
+sdb.license = {
+  fetchByEmail: selectLicenseByEmail,
+  upsert: upsertLicense
 }
 
 export { supabase, sdb }

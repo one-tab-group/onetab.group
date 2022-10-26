@@ -168,7 +168,7 @@
                   :href="extensionUrl"
                 >
                   <mdi:google-chrome class="h-5 w-5 mr-2" />
-                  <span>Get it for Chrome</span>
+                  <span>Add to Chrome</span>
                 </a>
 
                 <a
@@ -180,7 +180,7 @@
                   href="https://microsoftedge.microsoft.com/addons/detail/one-tab-group-tabtab-g/njmgdlgmnlinpieohfpmiipenmgilpga"
                 >
                   <mdi:microsoft-edge class="h-5 w-5 mr-2" />
-                  <span>Get it for Microsoft Edge</span>
+                  <span>Add to Microsoft Edge</span>
                 </a>
               </div>
             </div>

@@ -2,7 +2,7 @@ import axios from 'axios'
 
 export default defineEventHandler(async (event) => {
   const { license_key } = await readBody(event)
-  let [res, message] = [null, null, null]
+  let [res, message] = [null, null]
 
   console.log(license_key)
 

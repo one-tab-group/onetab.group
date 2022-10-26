@@ -42,14 +42,14 @@
               :href="chromeUrl"
               target="_blank"
             >
-              <span>Get it for Chrome</span>
+              <span>Add to Chrome</span>
             </a>
             <a
               class="flex hover:opacity-75 text-neon"
               :href="edgeUrl"
               target="_blank"
             >
-              <span>Get it for Microsoft Edge</span>
+              <span>Add to Microsoft Edge</span>
             </a>
             <a class="hover:opacity-75" href="/blog/how-to-migrate-from-onetab">
               Migration from OneTab

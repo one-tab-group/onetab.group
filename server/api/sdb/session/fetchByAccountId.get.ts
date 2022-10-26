@@ -1,10 +1,10 @@
 import { sdb } from '@/utils/sdb'
-import { SessionData } from '~/types'
+import { Session } from '~/types'
 
-export default defineEventHandler(async (event): Promise<SessionData[]> => {
+export default defineEventHandler(async (event): Promise<Session[]> => {
   const { accountId } = getQuery(event) as { accountId: string }
 
-  let session = [] as SessionData[]
+  let session = [] as Session[]
 
   try {
     session = await sdb.session.fetchByAccountId(accountId)
