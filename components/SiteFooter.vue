@@ -54,15 +54,13 @@
             <a class="hover:opacity-75" href="/blog/how-to-migrate-from-onetab">
               Migration from OneTab
             </a>
-            <a
-              class="hover:opacity-75"
-              href="/blog/how-to-migrate-from-session-buddy"
-            >
+            <a class="hover:opacity-75" href="#">
               Migration from Session Buddy
             </a>
             <a
               class="hover:opacity-75 flex items-center gap-1"
               href="https://www.indiehackers.com/product/one-tab-group"
+              target="_blank"
             >
               <span>IndieHackers</span>
               <heroicons-outline:external-link class="h-4 w-4" />
@@ -149,8 +147,10 @@
           All rights reserved.
         </div>
         <div class="divide-x divide-shark-200">
-          <a href="/terms-of-services" class="px-2">Terms of Services</a>
-          <a href="/privacy-policy" class="px-2">Privacy Policy</a>
+          <NuxtLink to="/terms-of-services" class="px-2"
+            >Terms of Services</NuxtLink
+          >
+          <NuxtLink to="/privacy-policy" class="px-2">Privacy Policy</NuxtLink>
         </div>
       </div>
     </div>

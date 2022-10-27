@@ -1,8 +1,6 @@
 <template>
   <div class="relative h-full bg-shark-50 dark:bg-shark-900">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
+    <NuxtPage />
     <ClientOnly>
       <Chatwoot />
     </ClientOnly>
