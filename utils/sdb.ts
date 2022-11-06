@@ -29,6 +29,7 @@ type SupaDb = {
   }
   license: {
     fetchByEmail: (email: Account['email']) => Promise<License[] | null>
+    insert: (license: License) => Promise<License[] | null>
     upsert: (license: License) => Promise<License[] | null>
   }
 }
@@ -158,6 +159,14 @@ const selectLicenseByEmail = async (email: Account['email']) => {
   return tryCatchDbError<typeof data>(data, error)
 }
 
+const insertLicense = async (license: License) => {
+  const { data, error } = await supabase
+    .from<License>('license')
+    .insert([license])
+
+  return tryCatchDbError<typeof data>(data, error)
+}
+
 const upsertLicense = async (license: License) => {
   const { data, error } = await supabase
     .from<License>('license')
@@ -187,6 +196,7 @@ sdb.account = {
 
 sdb.license = {
   fetchByEmail: selectLicenseByEmail,
+  insert: insertLicense,
   upsert: upsertLicense
 }
 

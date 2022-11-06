@@ -25,7 +25,7 @@
           <div class="answer">
             <p>
               First of all we don't read or save any of your data, Your data is
-              locally stored in the browser's own data storage solution
+              saved locally in your browser's own data storage solution
               <strong text="lochmara-400">indexed db</strong>.
             </p>
             <p>
