@@ -42,8 +42,8 @@ const sendBackupEmail = async (username: string, to: string, blob?: Blob) => {
       cid: 'logo'
     },
     {
-      filename: 'preview.png',
-      path: 'https://www.onetab.group/preview.png',
+      filename: 'preview.jpg',
+      path: 'https://www.onetab.group/preview.jpg',
       cid: 'preview'
     },
     {
@@ -85,15 +85,23 @@ const sendBackupEmail = async (username: string, to: string, blob?: Blob) => {
       if (error) {
         reject(error)
       }
-      resolve(info.messageId)
+      resolve(info?.messageId)
     })
   })
 }
 
 export default defineEventHandler(async (event) => {
   const { username, to, blob } = await readBody(event)
-  const data = await sendBackupEmail(username, to, blob)
+  let [data, message] = [null, null]
+
+  try {
+    data = await sendBackupEmail(username, to, blob)
+  } catch (error) {
+    message = error
+  }
   return {
-    data
+    data,
+    error: !!message,
+    message
   }
 })
