@@ -6,12 +6,12 @@ export default defineEventHandler(async (event) => {
   let [data, message] = [null, null]
 
   try {
-    const res = await sdb.license.fetchByEmail(email)
-    if (res && res.length === 1) {
-      data = res[0]
+    const { data: LicenseList, error } = await sdb.license.fetchByEmail(email)
+    if (LicenseList && LicenseList.length === 1) {
+      data = LicenseList[0]
     }
+    message = error
   } catch (err) {
-    console.log(err)
     message = err
   }
 

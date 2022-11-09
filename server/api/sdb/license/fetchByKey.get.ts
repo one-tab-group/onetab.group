@@ -1,11 +1,12 @@
 import { sdb } from '@/utils/sdb'
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event)
+  const { key } = getQuery(event) as { key: string }
+
   let [data, message] = [null, null]
 
   try {
-    const { data: LicenseList, error } = await sdb.license.insert(body)
+    const { data: LicenseList, error } = await sdb.license.fetchByKey(key)
     if (LicenseList && LicenseList.length === 1) {
       data = LicenseList[0]
     }

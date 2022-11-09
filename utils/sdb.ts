@@ -28,9 +28,22 @@ type SupaDb = {
     ) => Promise<Account[] | null>
   }
   license: {
-    fetchByEmail: (email: Account['email']) => Promise<License[] | null>
-    insert: (license: License) => Promise<License[] | null>
-    upsert: (license: License) => Promise<License[] | null>
+    fetchByKey: (key: License['license_key']) => Promise<{
+      data: License[] | null
+      error: PostgrestError
+    }>
+    fetchByEmail: (email: Account['email']) => Promise<{
+      data: License[] | null
+      error: PostgrestError
+    }>
+    insert: (license: License) => Promise<{
+      data: License[] | null
+      error: PostgrestError
+    }>
+    upsert: (license: License) => Promise<{
+      data: License[] | null
+      error: PostgrestError
+    }>
   }
 }
 
@@ -40,11 +53,20 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
 
 const sdb = {} as SupaDb
 
-const tryCatchDbError = <T>(data: T, error: PostgrestError | null) => {
+const tryCatchError = <T>(data: T, error: PostgrestError | null) => {
   if (error) {
     console.log(error)
   }
   return data
+}
+const tryCatchDBError = <T>(data: T, error: PostgrestError | null) => {
+  if (error) {
+    console.log(error)
+  }
+  return {
+    data,
+    error
+  }
 }
 
 const sessionQuery = supabase
@@ -56,13 +78,13 @@ const sessionQuery = supabase
 const selectSession = async () => {
   const { data, error } = await sessionQuery
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchError<typeof data>(data, error)
 }
 
 const selectSessionByAccountId = async (accountId: string) => {
   const { data, error } = await sessionQuery.eq('account_id', accountId)
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchError<typeof data>(data, error)
 }
 
 const insertSession = async (session: Session[]) => {
@@ -70,7 +92,7 @@ const insertSession = async (session: Session[]) => {
     .from<Session>('session')
     .insert(session)
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchError<typeof data>(data, error)
 }
 
 const upsertSession = async (session: Session[]) => {
@@ -90,7 +112,7 @@ const updateSessionById = async (sessionId: string, sessionItem: Session) => {
     .update(sessionItem)
     .eq('id', sessionId)
     .eq('account_id', sessionItem.account_id)
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchError<typeof data>(data, error)
 }
 
 const deleteSessionById = async (sessionId: string, accountId: string) => {
@@ -98,7 +120,7 @@ const deleteSessionById = async (sessionId: string, accountId: string) => {
     .from<Session>('session')
     .delete()
     .match({ id: sessionId, account_id: accountId })
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchError<typeof data>(data, error)
 }
 /** session api end */
 
@@ -108,19 +130,19 @@ const accountQuery = supabase.from<Account>('account').select()
 const selectAccount = async () => {
   const { data, error } = await accountQuery
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchError<typeof data>(data, error)
 }
 
 const selectAccountById = async (accountId: Account['id']) => {
   const { data, error } = await accountQuery.eq('id', accountId)
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchError<typeof data>(data, error)
 }
 
 const selectAccountByEmail = async (email: Account['email']) => {
   const { data, error } = await accountQuery.eq('email', email)
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchError<typeof data>(data, error)
 }
 
 const insertAccount = async (account: Account) => {
@@ -128,7 +150,7 @@ const insertAccount = async (account: Account) => {
     .from<Account>('account')
     .insert([account])
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchError<typeof data>(data, error)
 }
 
 const upsertAccount = async (account: Account) => {
@@ -136,7 +158,7 @@ const upsertAccount = async (account: Account) => {
     .from<Account>('account')
     .upsert([account])
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchError<typeof data>(data, error)
 }
 
 const updateAccountSyncedAt = async (accountId: string, syncedTime: number) => {
@@ -146,17 +168,23 @@ const updateAccountSyncedAt = async (accountId: string, syncedTime: number) => {
     .eq('id', accountId)
     .select()
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchError<typeof data>(data, error)
 }
 /** account api end */
 
 /** license api begin */
 const licenseQuery = supabase.from<License>('license').select()
 
+const selectLicenseByKey = async (key: License['license_key']) => {
+  const { data, error } = await licenseQuery.eq('license_key', key)
+
+  return tryCatchDBError<typeof data>(data, error)
+}
+
 const selectLicenseByEmail = async (email: Account['email']) => {
   const { data, error } = await licenseQuery.eq('email', email)
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchDBError<typeof data>(data, error)
 }
 
 const insertLicense = async (license: License) => {
@@ -164,7 +192,7 @@ const insertLicense = async (license: License) => {
     .from<License>('license')
     .insert([license])
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchDBError<typeof data>(data, error)
 }
 
 const upsertLicense = async (license: License) => {
@@ -172,7 +200,7 @@ const upsertLicense = async (license: License) => {
     .from<License>('license')
     .upsert([license])
 
-  return tryCatchDbError<typeof data>(data, error)
+  return tryCatchDBError<typeof data>(data, error)
 }
 /** license api end */
 
@@ -195,6 +223,7 @@ sdb.account = {
 }
 
 sdb.license = {
+  fetchByKey: selectLicenseByKey,
   fetchByEmail: selectLicenseByEmail,
   insert: insertLicense,
   upsert: upsertLicense
