@@ -1,6 +1,7 @@
 import { sdb } from '@/utils/sdb'
 
 export default defineEventHandler(async (event) => {
+  setHeader(event, 'Cache-Control', 'no-cache')
   const { key } = getQuery(event) as { key: string }
 
   let [data, message] = [null, null]
