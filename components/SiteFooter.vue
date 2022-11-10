@@ -54,7 +54,10 @@
             <a class="hover:opacity-75" href="/blog/how-to-migrate-from-onetab">
               Migration from OneTab
             </a>
-            <a class="hover:opacity-75" href="#">
+            <a
+              class="hover:opacity-75"
+              href="/blog/how-to-migrate-from-session-buddy"
+            >
               Migration from Session Buddy
             </a>
             <a
