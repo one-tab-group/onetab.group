@@ -7,6 +7,11 @@
           <a :href="`#${link.id}`">
             {{ link.text }}
           </a>
+          <li v-for="child in link.children" :key="child.text">
+            <a :href="`#${child.id}`">
+              {{ child.text }}
+            </a>
+          </li>
         </li>
       </ul>
     </div>

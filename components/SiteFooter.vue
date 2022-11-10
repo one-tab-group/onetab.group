@@ -78,7 +78,7 @@
           <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
             <a
               class="hover:opacity-75"
-              href="/blog/save-all-tabs-and-tab-groups"
+              href="/blog/how-to-save-your-tabs-and-tab-groups"
             >
               Save all tabs & tab groups
             </a>

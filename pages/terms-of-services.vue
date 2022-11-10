@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="terms">
+  <NuxtLayout name="home">
     <h1>Terms and Conditions</h1>
     <p>Last updated: March 16, 2022</p>
     <p>

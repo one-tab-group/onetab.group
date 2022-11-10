@@ -31,20 +31,19 @@
               <li>
                 <a
                   class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
-                  href="#pricing"
-                  @click="emit('navto', 'pricing')"
-                >
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a
-                  class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
                   href="#faqs"
                   @click="emit('navto', 'faqs')"
                 >
                   FAQs
                 </a>
+              </li>
+              <li>
+                <NuxtLink
+                  to="/pricing"
+                  class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
+                >
+                  Pricing
+                </NuxtLink>
               </li>
               <li>
                 <a

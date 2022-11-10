@@ -1,5 +1,5 @@
 <template>
-  <NuxtLayout name="terms">
+  <NuxtLayout name="home">
     <h1>
       Privacy Policy of <span class="text-neon"><em>onetab</em>.group</span>
     </h1>

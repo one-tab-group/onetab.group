@@ -9,6 +9,8 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     'Bx:bxWindowOpen': typeof import('~icons/bx/bx-window-open')['default']
     'Bx:bxWindows': typeof import('~icons/bx/bx-windows')['default']
+    'Carbon:checkmarkFilled': typeof import('~icons/carbon/checkmark-filled')['default']
+    'Carbon:checkmarkOutline': typeof import('~icons/carbon/checkmark-outline')['default']
     'Carbon:clean': typeof import('~icons/carbon/clean')['default']
     'Carbon:download': typeof import('~icons/carbon/download')['default']
     'Carbon:email': typeof import('~icons/carbon/email')['default']
@@ -32,5 +34,6 @@ declare module '@vue/runtime-core' {
     'Mdi:ungroup': typeof import('~icons/mdi/ungroup')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    'Tabler:discount2': typeof import('~icons/tabler/discount2')['default']
   }
 }
