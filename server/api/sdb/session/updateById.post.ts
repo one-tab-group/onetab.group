@@ -6,6 +6,7 @@ export default defineEventHandler(async (event) => {
 
   try {
     delete sessionItem.checked
+    sessionItem.updated_at = new Date().getTime()
     const { data: sessionList, error } = await sdb.session.updateById(
       sessionId,
       sessionItem
