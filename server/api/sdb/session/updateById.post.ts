@@ -1,16 +1,23 @@
 import { sdb } from '@/utils/sdb'
-import { Session } from '~/types'
 
 export default defineEventHandler(async (event) => {
   const { sessionId, sessionItem } = await readBody(event)
-
-  let session = [] as Session[]
+  let [data, message] = [null, null]
 
   try {
-    session = await sdb.session.updateById(sessionId, sessionItem)
+    const { data: sessionList, error } = await sdb.session.updateById(
+      sessionId,
+      sessionItem
+    )
+    data = sessionList
+    message = error
   } catch (error) {
     console.log(error)
   }
 
-  return session
+  return {
+    data,
+    error: !!message,
+    message
+  }
 })

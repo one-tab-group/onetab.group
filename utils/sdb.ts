@@ -9,7 +9,10 @@ type SupaDb = {
     updateById: (
       sessionId: Session['id'],
       sessionItem: Session
-    ) => Promise<Session[] | null>
+    ) => Promise<{
+      data: Session[] | null
+      error: PostgrestError
+    }>
     deleteById: (
       sessionId: Session['id'],
       accountId: Account['id']
@@ -121,7 +124,7 @@ const updateSessionById = async (sessionId: string, sessionItem: Session) => {
     .update(sessionItem)
     .eq('id', sessionId)
     .eq('account_id', sessionItem.account_id)
-  return tryCatchError<typeof data>(data, error)
+  return tryCatchDBError<typeof data>(data, error)
 }
 
 const deleteSessionById = async (sessionId: string, accountId: string) => {
