@@ -5,6 +5,7 @@ export default defineEventHandler(async (event) => {
   let [data, message] = [null, null]
 
   try {
+    sessionItem.delete('checked')
     const { data: sessionList, error } = await sdb.session.updateById(
       sessionId,
       sessionItem
