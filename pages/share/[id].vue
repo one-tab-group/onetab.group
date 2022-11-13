@@ -1,10 +1,13 @@
 <template>
   <NuxtLayout name="share">
-    <section class="flex gap-6 flex-col" v-if="session.shared">
+    <section class="flex gap-2 flex-col" v-if="session.shared">
       <h2
-        class="text-2xl border-b border-b-shark-100 dark:border-b-shark-700 pb-4"
+        class="text-2xl border-b border-b-shark-100 dark:border-b-shark-700 pb-4 flex items-center gap-4"
       >
-        {{ session.title }}
+        <div>{{ session.title }}</div>
+        <div class="text-base text-secondary">
+          {{ tabLength }} Tabs ({{ tabGroupLength }} Group)
+        </div>
       </h2>
       <div v-for="element in session.tabTree">
         <template v-if="element.children">
@@ -44,15 +47,21 @@
         />
       </div>
     </section>
-    <section class="flex items-center flex-col gap-8 justify-center h-96">
+    <section
+      class="flex items-center flex-col gap-8 justify-center h-96"
+      v-else
+    >
       Session has not been shared
-      <div>How to shared a session via link?</div>
+      <a href="https://onetab.group">
+        Learn how to shared a session in One Tab Group?
+      </a>
     </section>
   </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
 const route = useRoute()
+type AnyRecord = Record<string, any>
 
 const { data, refresh, pending } = await useFetch(
   '/api/sdb/session/fetchById',
@@ -78,6 +87,33 @@ const TAB_GROUP_COLORS: Record<string, string> = {
 const formatColor = (color: string) => TAB_GROUP_COLORS[color]
 
 const session = computed(() => data.value.data)
+const tabLength = computed(() => {
+  let tabs = []
+  const tabTree = session.value.tabTree
+  for (let index = 0; index < tabTree.length; index++) {
+    const item = tabTree[index]
+    if (!item) continue
+
+    if (item.children) {
+      const groupId = item.id
+      item.children.forEach((tab: AnyRecord) => {
+        tabs.push({
+          ...tab,
+          groupId
+        })
+      })
+    } else {
+      tabs.push({
+        ...item,
+        groupId: -1
+      })
+    }
+  }
+  return tabs.length
+})
+const tabGroupLength = computed(() => {
+  return session.value.tabTree.filter((item) => item.children).length
+})
 
 const getGroupTitleStyle = (meta) => {
   return {

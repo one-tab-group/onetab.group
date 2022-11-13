@@ -19,6 +19,9 @@
       <Divider between />
     </main>
     <SiteFooter />
+    <ClientOnly>
+      <Chatwoot />
+    </ClientOnly>
   </div>
 </template>
 
