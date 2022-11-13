@@ -94,14 +94,9 @@
 
           <div class="answer">
             <p>
-              Cloud sync is in our
-              <a
-                href="https://github.com/orgs/one-tab-group/projects/1"
-                class="text-neon"
-                target="_blank"
-                >roadmap</a
-              >, but you need to login through a third party account(Google or
-              GitHub) to use it.
+              With the release of v1.0.0, We supported cloud sync, but you need
+              to login through a third party account(Google or GitHub) to use
+              it.
             </p>
             <p>
               Cloud sync means that your data will be uploaded to the cloud, but

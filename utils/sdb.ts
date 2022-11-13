@@ -17,6 +17,10 @@ type SupaDb = {
       sessionId: Session['id'],
       accountId: Account['id']
     ) => Promise<Session[] | null>
+    fetchById: (id: Session['id']) => Promise<{
+      data: Session[] | null
+      error: PostgrestError
+    }>
     fetchByAccountId: (accountId: Account['id']) => Promise<Session[] | null>
   }
   account: {
@@ -87,6 +91,16 @@ const selectSession = async () => {
     .order('created_at', { ascending: false })
 
   return tryCatchError<typeof data>(data, error)
+}
+
+const selectSessionById = async (id: string) => {
+  const { data, error } = await supabase
+    .from<Session>('session')
+    .select()
+    .order('created_at', { ascending: false })
+    .eq('id', id)
+
+  return tryCatchDBError<typeof data>(data, error)
 }
 
 const selectSessionByAccountId = async (accountId: string) => {
@@ -238,6 +252,7 @@ sdb.session = {
   upsert: upsertSession,
   updateById: updateSessionById,
   deleteById: deleteSessionById,
+  fetchById: selectSessionById,
   fetchByAccountId: selectSessionByAccountId
 }
 
