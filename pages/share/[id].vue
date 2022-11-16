@@ -52,7 +52,7 @@
       v-else
     >
       Session has not been shared
-      <a href="https://onetab.group">
+      <a href="https://onetab.group" class="text-neon">
         Learn how to shared a session in One Tab Group?
       </a>
     </section>

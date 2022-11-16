@@ -8,6 +8,21 @@ head.image: /preview.jpg
 
 # Changelog
 
+## 1.1.0 (2022-11-16)
+
+### Features
+
+- 1、Sharing session as a link to the web
+- 2、Sort by session
+  - Newest (Created Time)
+  - Oldest (Created TIme)
+  - Alphabetical (a - z)
+  - Alphabetical (z - a)
+  - Favorites to Top
+  - Shared to Top
+- 3、Bookmark your favorites sessions
+- 4、Send open tabs into specified session
+
 ## 1.0.0 (2022-11-09)
 
 ### Bug Fixes

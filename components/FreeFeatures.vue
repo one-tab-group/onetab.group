@@ -37,7 +37,7 @@
   <!-- feat - start -->
   <li class="flex items-center gap-1.5 font-semibold">
     <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-    <span>Explore the tabs using the command palette</span>
+    <span>Explore the open tabs using the command palette</span>
   </li>
   <!-- feat - end -->
 

@@ -3,7 +3,7 @@
     <header>
       <h2 class="text-primary text-xl lg:text-2xl font-bold text-center">
         Upgrade to start using
-        <span class="text-neon">One Tab Group</span> at its Fullest.
+        <span class="text-neon">One Tab Group</span> at its Fullest
       </h2>
     </header>
     <main>
@@ -64,6 +64,27 @@
                     <span>Sharing Session as a link with anyone</span>
                   </li>
                   <!-- feat - end -->
+                  <!-- feat - start -->
+                  <li class="flex items-center gap-1.5 text-shark-400">
+                    <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
+                    <span>Clean up duplicate tabs in all sessions</span>
+                  </li>
+                  <!-- feat - end -->
+
+                  <!-- feat - start -->
+                  <li class="flex items-center gap-1.5 text-shark-400">
+                    <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
+                    <span>
+                      Explore all sessions using the command palette
+                    </span>
+                  </li>
+                  <!-- feat - end -->
+
+                  <!-- feat - start -->
+                  <li class="flex items-center gap-1.5 text-shark-400">
+                    <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
+                    <span> Group tabs by domain in Session (v1.2.0)</span>
+                  </li>
                   <!-- feat - end -->
                 </ul>
               </div>
@@ -128,21 +149,46 @@
                   <!-- feat - start -->
                   <li class="flex items-center gap-1.5 font-semibold">
                     <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-                    <span>Cloud sync and backup</span>
+                    <span>Cloud sync and backup (v1.0.0)</span>
                   </li>
                   <!-- feat - end -->
 
                   <!-- feat - start -->
                   <li class="flex items-center gap-1.5 font-semibold">
                     <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-                    <span>Bookmark your favorite sessions</span>
+                    <span>Bookmark your favorite sessions (v1.1.0)</span>
                   </li>
                   <!-- feat - end -->
 
                   <!-- feat - start -->
                   <li class="flex items-center gap-1.5 font-semibold">
                     <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-                    <span>Sharing Session as a link with anyone</span>
+                    <span>Sharing Session as a link with anyone (v1.1.0)</span>
+                  </li>
+                  <!-- feat - end -->
+
+                  <!-- feat - start -->
+                  <li class="flex items-center gap-1.5 font-semibold">
+                    <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
+                    <span
+                      >Clean up duplicate tabs in all sessions (v1.2.0)</span
+                    >
+                  </li>
+                  <!-- feat - end -->
+
+                  <!-- feat - start -->
+                  <li class="flex items-center gap-1.5 font-semibold">
+                    <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
+                    <span>
+                      Explore all sessions using the command palette (v1.2.0)
+                    </span>
+                  </li>
+                  <!-- feat - end -->
+
+                  <!-- feat - start -->
+                  <li class="flex items-center gap-1.5 font-semibold">
+                    <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
+                    <span> Group tabs by domain in Session (v1.2.0)</span>
                   </li>
                   <!-- feat - end -->
                 </ul>
@@ -167,8 +213,10 @@
           <img src="/logo.svg" class="h-8" alt="" />
         </div>
         <p>
-          After you have purchased a license, sign in and register the license
-          to enable sync
+          After you have purchased a license,
+          <span class="text-neon">sign in</span> and
+          <span class="text-neon">register the license</span> to unlock all
+          features
         </p>
       </div>
     </footer>
