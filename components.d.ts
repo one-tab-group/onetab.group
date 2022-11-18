@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     'Carbon:checkmarkFilled': typeof import('~icons/carbon/checkmark-filled')['default']
     'Carbon:checkmarkOutline': typeof import('~icons/carbon/checkmark-outline')['default']
     'Carbon:clean': typeof import('~icons/carbon/clean')['default']
+    'Carbon:close': typeof import('~icons/carbon/close')['default']
     'Carbon:download': typeof import('~icons/carbon/download')['default']
     'Carbon:earthAmericasFilled': typeof import('~icons/carbon/earth-americas-filled')['default']
     'Carbon:email': typeof import('~icons/carbon/email')['default']
