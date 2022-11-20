@@ -220,14 +220,8 @@
         </p>
       </div>
     </footer>
-    <PricingAlert />
   </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
-import { useGlobalStore } from '@/store/global'
-
-const globalStore = useGlobalStore()
-
-globalStore.showPricingAlert = true
 </script>
