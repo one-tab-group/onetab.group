@@ -18,7 +18,7 @@
               class="ml-8 text-neon"
               target="_blank"
             >
-              Getting Started →
+              Get the discount →
             </a>
           </p>
           <button @click="globalStore.showPricingAlert = false">
