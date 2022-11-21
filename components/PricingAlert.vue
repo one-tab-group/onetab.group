@@ -10,9 +10,16 @@
         <div class="flex justify-between">
           <p>
             🎉 Hey there! One Tab Group is now offering
-            <span class="text-neon">50% discount</span> during the Black Friday
-            period. Use code <span class="text-neon">"msz2mwa"</span> to redeem
-            this while checking out 😎
+            <span class="text-neon">50% discount</span> during the Black Friday.
+            Use code <span class="text-neon">"msz2mwa"</span> to redeem this
+            while checking out 😎
+            <a
+              href="https://xiaoluoboding.gumroad.com/l/otg/msz2mwa?_gl=1*1vduvtw*_ga*NDgyMjIyNzEuMTY2NzgxNzA5Ng..*_ga_6LJN6D94N6*MTY2ODk4NjQ1Mi45OC4xLjE2Njg5ODY4MTAuMC4wLjA."
+              class="ml-8 text-neon"
+              target="_blank"
+            >
+              Getting Started →
+            </a>
           </p>
           <button @click="globalStore.showPricingAlert = false">
             <carbon:close />
