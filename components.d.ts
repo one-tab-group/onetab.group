@@ -18,7 +18,6 @@ declare module '@vue/runtime-core' {
     'Carbon:email': typeof import('~icons/carbon/email')['default']
     'Carbon:keyboard': typeof import('~icons/carbon/keyboard')['default']
     'Carbon:language': typeof import('~icons/carbon/language')['default']
-    'Carbon:logoGithub': typeof import('~icons/carbon/logo-github')['default']
     'Carbon:moon': typeof import('~icons/carbon/moon')['default']
     'Carbon:search': typeof import('~icons/carbon/search')['default']
     'Carbon:strawberry': typeof import('~icons/carbon/strawberry')['default']

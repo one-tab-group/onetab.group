@@ -3,6 +3,7 @@ node_modules
 .nuxt
 nuxt.d.ts
 .output
+dist
 yarn.lock
 pnpm-lock.yaml
 .github

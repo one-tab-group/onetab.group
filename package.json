@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "nuxi dev --port 3088",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs",
+    "generate": "nuxi generate",
     "preview": "nuxi preview",
+    "serve": "esno .output/server/index.mjs",
     "p:ish": "pnpm install --shamefully-hoist",
     "p:up": "pnpm up"
   },
