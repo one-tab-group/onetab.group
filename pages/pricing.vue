@@ -212,16 +212,22 @@
         <div class="flex items-center gap-4">
           <img src="/logo.svg" class="h-8" alt="" />
         </div>
-        <p>
-          After you have purchased a license,
-          <span class="text-neon">sign in</span> and
-          <span class="text-neon">register the license</span> to unlock all
-          features
-        </p>
+        <div>
+          <p>
+            Each new purchase is granted
+            <span class="text-neon">100% money back within 7 days</span>
+            from purchase date.
+          </p>
+          <p>
+            After you have purchased a license,
+            <span class="text-neon">sign in</span> and
+            <span class="text-neon">register the license</span> to unlock all
+            features.
+          </p>
+        </div>
       </div>
     </footer>
   </NuxtLayout>
 </template>
 
-<script lang="ts" setup>
-</script>
+<script lang="ts" setup></script>
