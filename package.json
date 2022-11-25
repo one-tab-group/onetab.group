@@ -6,29 +6,33 @@
   "scripts": {
     "dev": "nuxi dev --port 3088",
     "build": "nuxi build",
-    "start": "node .output/server/index.mjs",
-    "preview": "nuxi preview",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "serve": "esno .output/server/index.mjs",
     "p:ish": "pnpm install --shamefully-hoist",
     "p:up": "pnpm up"
   },
   "devDependencies": {
-    "@iconify/json": "^2.1.92",
-    "@nuxt/content": "2.2.0",
-    "@nuxtjs/supabase": "^0.2.0",
-    "@pinia/nuxt": "^0.4.0",
+    "@iconify/json": "^2.1.143",
+    "@nuxt/content": "2.2.2",
+    "@nuxtjs/supabase": "0.3.0",
+    "@pinia/nuxt": "^0.4.5",
     "@supabase/supabase-js": "1.35.7",
-    "@vueuse/core": "9.1.0",
-    "@vueuse/nuxt": "9.1.0",
+    "@types/ejs": "^3.1.1",
+    "@types/nodemailer": "^6.4.6",
+    "@vueuse/core": "9.6.0",
+    "@vueuse/nuxt": "9.6.0",
     "ejs": "^3.1.8",
-    "nodemailer": "^6.7.7",
-    "nuxt": "3.0.0-rc.13",
-    "nuxt-windicss": "^2.5.0",
-    "unplugin-icons": "^0.14.8",
-    "unplugin-vue-components": "^0.22.4"
+    "nodemailer": "^6.8.0",
+    "nuxt": "^3.0.0",
+    "nuxt-windicss": "^2.5.5",
+    "unplugin-icons": "^0.14.14",
+    "unplugin-vue-components": "^0.22.11"
   },
   "dependencies": {
-    "axios": "^1.1.3",
-    "dayjs": "^1.11.3",
-    "pinia": "^2.0.18"
+    "axios": "^1.2.0",
+    "dayjs": "^1.11.6",
+    "pinia": "^2.0.26"
   }
 }

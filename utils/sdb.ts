@@ -62,8 +62,11 @@ type SupaDb = {
 }
 
 // Create a single supabase client for interacting with your database
-const { SUPABASE_KEY, SUPABASE_URL } = useRuntimeConfig()
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY)
+const config = useRuntimeConfig()
+const supabase = createClient(
+  config.public.SUPABASE_URL,
+  config.public.SUPABASE_KEY
+)
 
 const sdb = {} as SupaDb
 

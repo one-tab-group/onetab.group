@@ -2,9 +2,11 @@ import { defineNuxtConfig } from 'nuxt/config'
 import ViteComponents from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
-export default defineNuxtConfig(() => {
-  return {
-    meta: {
+console.log()
+
+export default defineNuxtConfig({
+  app: {
+    head: {
       title: 'One Tab Group: Your all-in-one tab/tab group manager for Chrome.',
       viewport:
         'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
@@ -57,49 +59,54 @@ export default defineNuxtConfig(() => {
           src: 'https://analytics.onetab.group/umami.js'
         }
       ]
+    }
+  },
+
+  modules: [
+    'nuxt-windicss',
+    '@pinia/nuxt',
+    'unplugin-icons/nuxt',
+    '@vueuse/nuxt',
+    '@nuxt/content',
+    '@nuxtjs/supabase'
+  ],
+
+  components: {
+    global: true,
+    dirs: ['~/components']
+  },
+
+  vite: {
+    plugins: [
+      ViteComponents({
+        resolvers: [
+          IconsResolver({
+            componentPrefix: ''
+          })
+        ],
+        dts: true
+      })
+    ]
+  },
+  // https://content.nuxtjs.org
+  content: {
+    navigation: {
+      fields: ['navTitle']
     },
-    modules: [
-      'nuxt-windicss',
-      '@pinia/nuxt',
-      'unplugin-icons/nuxt',
-      '@vueuse/nuxt',
-      '@nuxt/content',
-      '@nuxtjs/supabase'
-    ],
-    components: {
-      global: true,
-      dirs: ['~/components']
+    highlight: {
+      // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
+      theme: 'dracula'
     },
-    vite: {
-      plugins: [
-        ViteComponents({
-          resolvers: [
-            IconsResolver({
-              componentPrefix: ''
-            })
-          ],
-          dts: true
-        })
-      ]
-    },
-    // https://content.nuxtjs.org
-    content: {
-      navigation: {
-        fields: ['navTitle']
-      },
-      highlight: {
-        // See the available themes on https://github.com/shikijs/shiki/blob/main/docs/themes.md#all-theme
-        theme: 'dracula'
-      },
-      documentDriven: true
-    },
-    publicRuntimeConfig: {
-      CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN,
-      UMAMI_WEBSITE_ID: process.env.UMAMI_WEBSITE_ID,
+    documentDriven: true
+  },
+
+  runtimeConfig: {
+    public: {
       EMAIL_USER: process.env.EMAIL_USER,
       EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
       SUPABASE_URL: process.env.SUPABASE_URL,
-      SUPABASE_KEY: process.env.SUPABASE_KEY
+      SUPABASE_KEY: process.env.SUPABASE_KEY,
+      CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN
     }
   }
 })
