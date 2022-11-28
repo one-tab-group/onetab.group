@@ -19,9 +19,11 @@ export default defineEventHandler(async (event) => {
     message = err
   }
 
+  event.res.setHeader('Content-Type', 'json')
+
   return {
     res,
-    data: res,
+    data: res.data,
     error: !!message,
     message
   }
