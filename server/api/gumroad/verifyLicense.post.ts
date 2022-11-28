@@ -20,7 +20,8 @@ export default defineEventHandler(async (event) => {
   }
 
   return {
-    data: res.data,
+    res,
+    data: res,
     error: !!message,
     message
   }
