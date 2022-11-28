@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
   // const gumroadUrl = `https://api.gumroad.com/v2/licenses/verify?product_permalink=otg&license_key=${license_key}`
 
   try {
-    res = await axios.post('https://api.gumroad.com/v2/licenses', {
+    res = await axios.post('https://api.gumroad.com/v2/licenses/verify', {
       product_permalink: 'otg',
       license_key
     })
