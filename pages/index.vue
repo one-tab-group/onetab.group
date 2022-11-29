@@ -518,7 +518,7 @@
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
 // import { useI18n } from 'vue-i18n'
-import { isDark } from '~~/composables/useDarkMode'
+import { isDark } from '~/composables/useDarkMode'
 
 // const { locale, availableLocales } = useI18n()
 

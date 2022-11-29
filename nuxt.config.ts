@@ -2,6 +2,8 @@ import { defineNuxtConfig } from 'nuxt/config'
 import ViteComponents from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
+console.log()
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -59,6 +61,7 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   modules: [
     'nuxt-windicss',
     '@pinia/nuxt',
@@ -67,10 +70,12 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxtjs/supabase'
   ],
+
   components: {
     global: true,
     dirs: ['~/components']
   },
+
   vite: {
     plugins: [
       ViteComponents({
@@ -94,12 +99,14 @@ export default defineNuxtConfig({
     },
     documentDriven: true
   },
-  publicRuntimeConfig: {
-    CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN,
-    UMAMI_WEBSITE_ID: process.env.UMAMI_WEBSITE_ID,
-    EMAIL_USER: process.env.EMAIL_USER,
-    EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
-    SUPABASE_URL: process.env.SUPABASE_URL,
-    SUPABASE_KEY: process.env.SUPABASE_KEY
+
+  runtimeConfig: {
+    public: {
+      EMAIL_USER: process.env.EMAIL_USER,
+      EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
+      SUPABASE_URL: process.env.SUPABASE_URL,
+      SUPABASE_KEY: process.env.SUPABASE_KEY,
+      CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN
+    }
   }
 })
