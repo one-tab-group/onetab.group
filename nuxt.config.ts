@@ -2,16 +2,12 @@ import { defineNuxtConfig } from 'nuxt/config'
 import ViteComponents from 'unplugin-vue-components/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
-console.log()
-
 export default defineNuxtConfig({
   app: {
     head: {
       title: 'One Tab Group: Your all-in-one tab/tab group manager for Chrome.',
       viewport:
         'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
-      description:
-        'One Tab Group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.',
       link: [{ rel: 'icon', type: 'image/*', href: '/logo.svg' }],
       meta: [
         {
