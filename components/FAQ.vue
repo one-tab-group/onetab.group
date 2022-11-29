@@ -105,7 +105,26 @@
               <strong text="lochmara-400">AES-256</strong> algorithm during the
               transfer, so that your data will not be leaked.
             </p>
-            <p>Note that this is a paid feature, so stay tuned.</p>
+            <p>Note that this is a paid feature.</p>
+          </div>
+        </div>
+        <!-- question - end -->
+
+        <!-- question - Is there a free trial?-->
+        <div class="faq-wrapper">
+          <div class="faq">
+            <span class="md:text-lg font-semibold transition duration-100"
+              >Is there a free trial?</span
+            >
+          </div>
+
+          <div class="answer">
+            <p>
+              Yes, there is a <span class="text-neon">7-day free trial</span>,
+              each new purchase is granted
+              <span class="text-neon">100% money back within 7 days</span>
+              from purchase date.
+            </p>
           </div>
         </div>
         <!-- question - end -->
