@@ -1,30 +1,25 @@
-import http from '~/utils/http'
-// import axios from 'axios'
-
 export default defineEventHandler(async (event) => {
   const { license_key } = await readBody(event)
   let [res, message] = [null, null]
 
-  console.log(license_key)
+  // console.log(license_key)
+  const response = await fetch(
+    `https://api.gumroad.com/v2/licenses/verify?product_permalink=otg&license_key=${license_key}`,
+    {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'POST'
+    }
+  )
 
-  // const gumroadUrl = `https://api.gumroad.com/v2/licenses/verify?product_permalink=otg&license_key=${license_key}`
+  res = await response.json()
+  // console.log(res)
 
-  try {
-    res = await http.post('https://api.gumroad.com/v2/licenses/verify', {
-      product_permalink: 'otg',
-      license_key
-    })
-    console.log(res)
-  } catch (err) {
-    console.log(err)
-    message = err
-  }
-
-  event.res.setHeader('Content-Type', 'application/json')
+  event.node.res.setHeader('Content-Type', 'application/json')
 
   return {
-    res,
-    data: res.data,
+    data: res,
     error: !!message,
     message
   }
