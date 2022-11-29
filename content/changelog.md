@@ -8,6 +8,12 @@ head.image: /preview.jpg
 
 # Changelog
 
+## 1.1.1 (2022-11-25)
+
+### Bug Fixes
+
+- fixed the lost data bug when refresh the browser
+
 ## 1.1.0 (2022-11-16)
 
 ### Features
