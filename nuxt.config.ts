@@ -11,6 +11,11 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/*', href: '/logo.svg' }],
       meta: [
         {
+          property: 'description',
+          content:
+            'onetab.group is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session.'
+        },
+        {
           property: 'og:title',
           content:
             'onetab.group: Your all-in-one tab/tab group manager for Chrome.'
@@ -64,7 +69,8 @@ export default defineNuxtConfig({
     'unplugin-icons/nuxt',
     '@vueuse/nuxt',
     '@nuxt/content',
-    '@nuxtjs/supabase'
+    '@nuxtjs/supabase',
+    '@nuxtjs/robots'
   ],
 
   components: {

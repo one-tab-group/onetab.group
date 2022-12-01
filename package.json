@@ -17,6 +17,7 @@
   "devDependencies": {
     "@iconify/json": "^2.1.143",
     "@nuxt/content": "2.2.2",
+    "@nuxtjs/robots": "^3.0.0",
     "@nuxtjs/supabase": "0.3.0",
     "@pinia/nuxt": "^0.4.5",
     "@supabase/supabase-js": "1.35.7",
