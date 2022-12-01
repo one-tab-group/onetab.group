@@ -64,6 +64,7 @@ export default defineNuxtConfig({
     'unplugin-icons/nuxt',
     '@vueuse/nuxt',
     '@nuxt/content',
+    '@nuxt/image-edge',
     '@nuxtjs/supabase'
   ],
 

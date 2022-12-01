@@ -4,7 +4,7 @@
     <!-- Site Header -->
     <ClientOnly>
       <SiteHeader @navto="gotoAnchor">
-        <img
+        <nuxt-img
           class="bg-grid pointer-events-none hidden sm:block"
           :src="isDark ? '/img/bg_grid_dark.svg' : '/img/bg_grid_light.svg'"
         />
@@ -210,7 +210,8 @@
           groups.
         </template>
         <template #media>
-          <img
+          <nuxt-img
+            preload
             class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
             src="/feature_01.gif"
           />
@@ -231,7 +232,8 @@
           can reorganise the session and restore it with ease.
         </template>
         <template #media>
-          <img
+          <nuxt-img
+            preload
             class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
             src="/feature_02.gif"
           />
@@ -252,7 +254,8 @@
           <p>Also could drag the open tabs/tab groups into the sessions.</p>
         </template>
         <template #media>
-          <img
+          <nuxt-img
+            preload
             class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
             src="/feature_03.gif"
           />
@@ -273,7 +276,8 @@
           down to find out tab in the tab groups
         </template>
         <template #media>
-          <img
+          <nuxt-img
+            preload
             class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
             src="/feature_04.gif"
           />
@@ -294,7 +298,8 @@
           <p>Also could import from <em>One</em>Tab's exported data.</p>
         </template>
         <template #media>
-          <img
+          <nuxt-img
+            preload
             class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
             src="/feature_05.gif"
           />
@@ -317,7 +322,8 @@
           thumbnails.
         </template>
         <template #media>
-          <img
+          <nuxt-img
+            preload
             class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
             src="/feature_06.gif"
           />
@@ -463,7 +469,7 @@
             <div></div>
           </div>
         </div>
-        <img
+        <nuxt-img
           class="bg-glow pointer-events-none hidden sm:block !max-w-screen-xl"
           :src="isDark ? '/img/bg_glow_dark.svg' : '/img/bg_glow_light.svg'"
         />
