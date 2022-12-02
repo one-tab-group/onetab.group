@@ -6,11 +6,11 @@
         <span class="text-neon">One Tab Group</span> at its Fullest
       </h2>
     </header>
-    <main>
+    <main class="my-8">
       <div class="w-full space-y-4">
         <div class="py-6">
           <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
-            <div class="grid grid-cols-2 gap-4">
+            <div class="flex gap-4">
               <!-- left side - start -->
               <div class="w-full bg-shark-700 rounded-lg p-6 sm:p-8">
                 <div class="mb-4">
@@ -72,20 +72,28 @@
                   <!-- feat - end -->
 
                   <!-- feat - start -->
-                  <li class="flex items-center gap-1.5 text-shark-400">
+                  <!-- <li class="flex items-center gap-1.5 text-shark-400">
                     <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
                     <span>
                       Explore all sessions using the command palette
                     </span>
+                  </li> -->
+                  <!-- feat - end -->
+
+                  <!-- feat - start -->
+                  <li class="flex items-center gap-1.5 text-shark-400">
+                    <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
+                    <span> Group tabs by domain in Session</span>
                   </li>
                   <!-- feat - end -->
 
                   <!-- feat - start -->
                   <li class="flex items-center gap-1.5 text-shark-400">
                     <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
-                    <span> Group tabs by domain in Session (v1.2.0)</span>
+                    <span class="font-semibold">
+                      Cloud Sync session to Notion</span
+                    >
                   </li>
-                  <!-- feat - end -->
                 </ul>
               </div>
               <!-- left side - end -->
@@ -177,18 +185,27 @@
                   <!-- feat - end -->
 
                   <!-- feat - start -->
-                  <li class="flex items-center gap-1.5 font-semibold">
+                  <!-- <li class="flex items-center gap-1.5 font-semibold">
                     <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
                     <span>
                       Explore all sessions using the command palette (v1.2.0)
                     </span>
-                  </li>
+                  </li> -->
                   <!-- feat - end -->
 
                   <!-- feat - start -->
                   <li class="flex items-center gap-1.5 font-semibold">
                     <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
                     <span> Group tabs by domain in Session (v1.2.0)</span>
+                  </li>
+                  <!-- feat - end -->
+
+                  <!-- feat - start -->
+                  <li class="flex items-center gap-1.5 font-semibold">
+                    <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
+                    <span class="font-semibold">
+                      Cloud Sync session to Notion (v1.2.0)</span
+                    >
                   </li>
                   <!-- feat - end -->
                 </ul>

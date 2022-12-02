@@ -167,20 +167,30 @@
                   target="_blank"
                   :href="extensionUrl"
                 >
-                  <mdi:google-chrome class="h-5 w-5 mr-2" />
+                  <logos:chrome class="h-5 w-5 mr-2" />
                   <span>Add to Chrome</span>
                 </a>
 
                 <a
-                  class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-shark-900 bg-shark-200 rounded-lg sm:w-auto active:bg-lochmara-400"
-                  hover="bg-lochmara-500 text-white border-shark-200 outline-none"
-                  border="~ shark-200 opacity-30 hover:opacity-10"
-                  dark="bg-white text-shark-200 backdrop-filter backdrop-blur-sm backdrop-saturate-[180%] bg-opacity-33 hover:bg-opacity-10"
+                  class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
+                  hover="bg-lochmara-400 text-white"
+                  focus="outline-none ring"
                   target="_blank"
                   href="https://microsoftedge.microsoft.com/addons/detail/one-tab-group-tabtab-g/njmgdlgmnlinpieohfpmiipenmgilpga"
                 >
-                  <mdi:microsoft-edge class="h-5 w-5 mr-2" />
-                  <span>Add to Microsoft Edge</span>
+                  <logos:microsoft-edge class="h-5 w-5 mr-2" />
+                  <span>Add to Edge</span>
+                </a>
+
+                <a
+                  class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
+                  hover="bg-lochmara-400 text-white"
+                  focus="outline-none ring"
+                  target="_blank"
+                  :href="extensionUrl"
+                >
+                  <logos:brave class="h-5 w-5 mr-2" />
+                  <span>Add to Brave</span>
                 </a>
               </div>
             </div>
