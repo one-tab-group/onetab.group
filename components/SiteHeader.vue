@@ -11,6 +11,7 @@
           <img
             class="h-8"
             :src="isDark ? '/favicon.svg' : '/favicon-dark.svg'"
+            alt="site logo"
           />
         </ClientOnly>
       </a>

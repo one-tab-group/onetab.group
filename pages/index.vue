@@ -7,6 +7,7 @@
         <img
           class="bg-grid pointer-events-none hidden sm:block"
           :src="isDark ? '/img/bg_grid_dark.svg' : '/img/bg_grid_light.svg'"
+          alt="background grid"
         />
       </SiteHeader>
     </ClientOnly>
@@ -221,8 +222,9 @@
         </template>
         <template #media>
           <img
-            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
+            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-full"
             src="/feature_01.gif"
+            alt="site feature"
           />
         </template>
       </OneTabDesc>
@@ -242,8 +244,9 @@
         </template>
         <template #media>
           <img
-            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
+            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-full"
             src="/feature_02.gif"
+            alt="site feature"
           />
         </template>
       </OneTabDesc>
@@ -263,8 +266,9 @@
         </template>
         <template #media>
           <img
-            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
+            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-full"
             src="/feature_03.gif"
+            alt="site feature"
           />
         </template>
       </OneTabDesc>
@@ -284,8 +288,9 @@
         </template>
         <template #media>
           <img
-            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
+            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-full"
             src="/feature_04.gif"
+            alt="site feature"
           />
         </template>
       </OneTabDesc>
@@ -305,8 +310,9 @@
         </template>
         <template #media>
           <img
-            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
+            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-full"
             src="/feature_05.gif"
+            alt="site feature"
           />
         </template>
       </OneTabDesc>
@@ -328,8 +334,9 @@
         </template>
         <template #media>
           <img
-            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-96"
+            class="rounded-lg shadow-lg border-shark-50 mx-auto sm:mx-0 w-full h-full"
             src="/feature_06.gif"
+            alt="site feature"
           />
         </template>
       </OneTabDesc>
@@ -476,6 +483,7 @@
         <img
           class="bg-glow pointer-events-none hidden sm:block !max-w-screen-xl"
           :src="isDark ? '/img/bg_glow_dark.svg' : '/img/bg_glow_light.svg'"
+          alt="background glow"
         />
       </section>
 

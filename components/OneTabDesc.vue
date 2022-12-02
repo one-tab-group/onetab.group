@@ -5,13 +5,13 @@
         class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2 text-center sm:text-left"
       >
         <div
-          class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full"
+          class="relative overflow-hidden rounded-lg lg:h-full"
           :class="{ 'lg:order-last': leftDesc }"
         >
           <slot name="media"></slot>
         </div>
 
-        <div class="lg:pb-20">
+        <div class="">
           <h2 class="text-3xl sm:text-4xl font-semibold text-primary">
             <slot name="title"></slot>
           </h2>
