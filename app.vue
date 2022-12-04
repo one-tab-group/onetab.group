@@ -7,11 +7,11 @@
 </template>
 
 <script lang="ts" setup>
-import { useGlobalStore } from '@/store/global'
+// import { useGlobalStore } from '@/store/global'
 
-const globalStore = useGlobalStore()
+// const globalStore = useGlobalStore()
 
-globalStore.showPricingAlert = true
+// globalStore.showPricingAlert = true
 </script>
 
 <style scoped></style>
