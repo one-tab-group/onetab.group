@@ -1,6 +1,6 @@
 <template>
   <div class="bg-shark-10 dark:bg-shark-800">
-    <header class="max-w-screen-lg mx-auto">
+    <header class="max-w-screen-lg mx-auto px-8 lg:px-0">
       <div
         class="relative pt-6 lg:pt-8 flex items-center justify-between font-semibold leading-6"
         text="shark-700 dark:shark-200 sm"
@@ -27,13 +27,15 @@
         </div>
       </div>
     </header>
-    <main class="max-w-screen-lg my-12 m-auto sm:rounded">
+    <main class="max-w-screen-lg my-12 m-auto sm:rounded px-8 lg:px-0">
       <section class="container text-shark-800 dark:text-shark-100">
         <slot />
       </section>
     </main>
     <Divider between class="!max-w-screen-lg" />
-    <footer class="max-w-screen-lg container mx-auto dark:text-white py-8">
+    <footer
+      class="max-w-screen-lg container mx-auto dark:text-white py-8 px-8 lg:px-0"
+    >
       <div
         class="flex justify-between items-center flex-col lg:flex-row py-8 lg:p-0"
       >
