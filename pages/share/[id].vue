@@ -1,14 +1,27 @@
 <template>
   <NuxtLayout name="share">
     <section class="flex gap-2 flex-col" v-if="session.shared">
-      <h2
-        class="text-2xl border-b border-b-shark-100 dark:border-b-shark-700 pb-4 flex items-center gap-4"
+      <div
+        class="flex items-center justify-between border-b border-b-shark-100 dark:border-b-shark-700 pb-4"
       >
-        <div>{{ session.title }}</div>
-        <div class="text-base text-secondary">
-          {{ tabLength }} Tabs ({{ tabGroupLength }} Group)
-        </div>
-      </h2>
+        <h2 class="text-2xl">
+          <div class="flex items-center gap-4 flex-col lg:flex-row">
+            <div>{{ session.title }}</div>
+            <div class="text-base text-secondary">
+              {{ tabLength }} Tabs ({{ tabGroupLength }} Group)
+            </div>
+          </div>
+        </h2>
+        <a
+          class="hidden lg:flex items-center px-4 py-2 mb-4 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
+          hover="bg-lochmara-400 text-white"
+          focus="outline-none ring"
+          @click="openAllTabs"
+        >
+          <mdi:open-in-new class="h-5 w-5 mr-2" />
+          <span>Open all tabs</span>
+        </a>
+      </div>
       <div v-for="element in session.tabTree">
         <template v-if="element.children">
           <div
@@ -56,10 +69,13 @@
         Learn how to shared a session in One Tab Group?
       </a>
     </section>
+    <OpenTabsAlert />
   </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
+import { useGlobalStore } from '@/store/global'
+
 const route = useRoute()
 type AnyRecord = Record<string, any>
 
@@ -138,6 +154,12 @@ const getGroupContentStyle = (meta) => {
     'border-top-left-radius': 0,
     'border-top-right-radius': 0
   }
+}
+
+const globalStore = useGlobalStore()
+
+const openAllTabs = () => {
+  globalStore.showOpenTabsAlert = true
 }
 </script>
 

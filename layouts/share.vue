@@ -17,6 +17,18 @@
         <div
           class="flex items-center border-shark-900 dark:border-shark-400 ml-6 pl-6 space-x-6"
         >
+          <nav>
+            <ul class="flex items-center space-x-8">
+              <li>
+                <a
+                  class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
+                  href="/#features"
+                >
+                  Features
+                </a>
+              </li>
+            </ul>
+          </nav>
           <button
             class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
             @click="(e) => toggleDark()"
