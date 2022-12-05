@@ -4,7 +4,7 @@
       <div
         class="flex items-center justify-between border-b border-b-shark-100 dark:border-b-shark-700 pb-4"
       >
-        <h2 class="text-2xl">
+        <h2 class="text-2xl flex-1">
           <div class="flex items-center gap-4 flex-col lg:flex-row">
             <div>{{ session.title }}</div>
             <div class="text-base text-secondary">
@@ -13,7 +13,7 @@
           </div>
         </h2>
         <a
-          class="hidden lg:flex items-center px-4 py-2 mb-4 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
+          class="hidden lg:flex items-center px-4 py-2 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
           hover="bg-lochmara-400 text-white"
           focus="outline-none ring"
           @click="openAllTabs"
