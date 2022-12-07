@@ -23,7 +23,7 @@
               <li>
                 <a
                   class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
-                  href="#features"
+                  href="/#features"
                   @click="emit('navto', 'features')"
                 >
                   Features
@@ -32,7 +32,7 @@
               <li>
                 <a
                   class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
-                  href="#faqs"
+                  href="/#faqs"
                   @click="emit('navto', 'faqs')"
                 >
                   FAQs
