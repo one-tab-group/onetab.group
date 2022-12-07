@@ -88,13 +88,18 @@
             >
               Synchronize the Open Tabs/Tab Groups
             </a>
-            <a class="hover:opacity-75" href="">
-              Drag & Drop open tabs into session
+            <a
+              class="hover:opacity-75"
+              href="/blog/how-to-sync-tabs-across-devices-or-browsers"
+            >
+              Cloud syncing tabs across devices
             </a>
             <a class="hover:opacity-75" href="">
-              Restore all tabs with tab group
+              Sharing your tabs/tab groups with others
             </a>
-            <a class="hover:opacity-75" href=""> Visualization web bookmark </a>
+            <a class="hover:opacity-75" href="">
+              Add your sessions to your favorites
+            </a>
             <a class="hover:opacity-75" href="">
               Searching tabs using Command Palette
             </a>
