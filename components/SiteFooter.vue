@@ -94,7 +94,10 @@
             >
               Cloud syncing tabs across devices
             </a>
-            <a class="hover:opacity-75" href="">
+            <a
+              class="hover:opacity-75"
+              href="/blog/sharing-your-tabs-or-tabgroups-with-others"
+            >
               Sharing your tabs/tab groups with others
             </a>
             <a class="hover:opacity-75" href="">
