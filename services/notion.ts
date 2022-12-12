@@ -21,12 +21,8 @@ type DatabaseInit = {
 
 export default class NotionConnector {
   notion: Client
-  token: string
-  rootPageId: string
 
-  constructor(token: string, pageId: string) {
-    this.token = token
-    this.rootPageId = pageId
+  constructor(token: string) {
     // Initializing a client
     this.notion = new Client({
       auth: token
@@ -39,10 +35,10 @@ export default class NotionConnector {
    * @returns
    */
   async createSessionDatabase(payload: DatabaseInit) {
-    const { title, description } = payload
+    const { pageId, title, description } = payload
     return this.notion.databases.create({
       parent: {
-        page_id: this.rootPageId
+        page_id: pageId
       },
       title: [
         {

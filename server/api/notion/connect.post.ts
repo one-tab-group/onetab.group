@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
   let data
   let message
 
-  const notion = new NotionConnector(token, pageId)
+  const notion = new NotionConnector(token)
 
   try {
     const database = await notion.createSessionDatabase({
