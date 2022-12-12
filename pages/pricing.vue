@@ -215,15 +215,9 @@
               <!-- feat - start -->
               <li class="flex items-center gap-1.5 font-semibold">
                 <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-                <span>All Pro Tiers include</span>
+                <span>All Pro Features +</span>
               </li>
               <!-- feat - end -->
-
-              <!-- feat - start -->
-              <li class="flex items-center gap-1.5 font-semibold py-4">
-                <carbon:add-filled class="w-5 h-5 shrink-0" />
-                <span class="w-full h-[1px] bg-shark-50"></span>
-              </li>
 
               <!-- feat - start -->
               <li class="flex items-center gap-1.5 font-semibold">
