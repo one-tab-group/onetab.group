@@ -205,7 +205,7 @@
             >
               Get Lifetime License
             </a>
-            <div class="text-center p-4 text-primary text-sm">
+            <div class="text-center p-4 text-lochmara-50 text-sm">
               20% off with code <span class="text-neon">7vn673t</span>
             </div>
 
