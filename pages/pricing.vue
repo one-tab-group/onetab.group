@@ -61,38 +61,7 @@
                   <!-- feat - start -->
                   <li class="flex items-center gap-1.5 text-shark-400">
                     <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
-                    <span>Sharing Session as a link with anyone</span>
-                  </li>
-                  <!-- feat - end -->
-                  <!-- feat - start -->
-                  <li class="flex items-center gap-1.5 text-shark-400">
-                    <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
-                    <span>Clean up duplicate tabs in all sessions</span>
-                  </li>
-                  <!-- feat - end -->
-
-                  <!-- feat - start -->
-                  <!-- <li class="flex items-center gap-1.5 text-shark-400">
-                    <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
-                    <span>
-                      Explore all sessions using the command palette
-                    </span>
-                  </li> -->
-                  <!-- feat - end -->
-
-                  <!-- feat - start -->
-                  <li class="flex items-center gap-1.5 text-shark-400">
-                    <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
-                    <span> Group tabs by domain in Session</span>
-                  </li>
-                  <!-- feat - end -->
-
-                  <!-- feat - start -->
-                  <li class="flex items-center gap-1.5 text-shark-400">
-                    <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
-                    <span class="font-semibold">
-                      Cloud Sync session to Notion</span
-                    >
+                    <span class="font-semibold">Sync session to Notion</span>
                   </li>
                 </ul>
               </div>
@@ -121,7 +90,7 @@
                         class="flex items-center inline-block order-first lg:order-none bg-lochmara-200 bg-opacity-50 text-white text-xs font-semibold tracking-wider uppercase rounded-full px-3 py-1"
                       >
                         <tabler:discount-2 class="w-4 h-4 mr-1" />
-                        <span>Save 17%</span>
+                        <span>Save 33%</span>
                       </p>
                     </div>
                   </div>
@@ -131,13 +100,13 @@
                   <div
                     class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white"
                   >
-                    <span class="text-2xl">$4.9</span>
+                    <span class="text-2xl">$2.49</span>
                     <span>/month</span>
                   </div>
                   <div
                     class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white"
                   >
-                    <span class="text-2xl">$49</span>
+                    <span class="text-2xl">$19.9</span>
                     <span>/year</span>
                   </div>
                 </div>
@@ -171,40 +140,8 @@
                   <!-- feat - start -->
                   <li class="flex items-center gap-1.5 font-semibold">
                     <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-                    <span>Sharing Session as a link with anyone (v1.1.0)</span>
-                  </li>
-                  <!-- feat - end -->
-
-                  <!-- feat - start -->
-                  <li class="flex items-center gap-1.5 font-semibold">
-                    <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-                    <span
-                      >Clean up duplicate tabs in all sessions (v1.2.0)</span
-                    >
-                  </li>
-                  <!-- feat - end -->
-
-                  <!-- feat - start -->
-                  <!-- <li class="flex items-center gap-1.5 font-semibold">
-                    <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-                    <span>
-                      Explore all sessions using the command palette (v1.2.0)
-                    </span>
-                  </li> -->
-                  <!-- feat - end -->
-
-                  <!-- feat - start -->
-                  <li class="flex items-center gap-1.5 font-semibold">
-                    <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-                    <span> Group tabs by domain in Session (v1.2.0)</span>
-                  </li>
-                  <!-- feat - end -->
-
-                  <!-- feat - start -->
-                  <li class="flex items-center gap-1.5 font-semibold">
-                    <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
                     <span class="font-semibold">
-                      Cloud Sync session to Notion (v1.2.0)</span
+                      Sync session to Notion (v1.2.0)</span
                     >
                   </li>
                   <!-- feat - end -->
