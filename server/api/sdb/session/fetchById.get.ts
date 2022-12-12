@@ -1,4 +1,4 @@
-import { sdb } from '@/utils/sdb'
+import { sdb } from '@/services/sdb'
 
 export default defineEventHandler(async (event) => {
   const { id } = getQuery(event) as { id: string }

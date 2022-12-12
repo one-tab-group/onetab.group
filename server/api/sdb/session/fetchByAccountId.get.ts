@@ -1,4 +1,4 @@
-import { sdb } from '@/utils/sdb'
+import { sdb } from '@/services/sdb'
 import { Session } from '~/types'
 
 export default defineEventHandler(async (event): Promise<Session[]> => {

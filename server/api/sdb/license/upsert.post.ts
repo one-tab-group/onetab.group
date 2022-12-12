@@ -1,4 +1,4 @@
-import { sdb } from '@/utils/sdb'
+import { sdb } from '@/services/sdb'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)

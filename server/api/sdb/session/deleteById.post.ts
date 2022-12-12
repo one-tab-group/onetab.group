@@ -1,5 +1,5 @@
-import { sdb } from '@/utils/sdb'
-import { Session } from '~/types'
+import { sdb } from '@/services/sdb'
+import { Session } from '@/types'
 
 export default defineEventHandler(async (event) => {
   const { sessionId, accountId } = await readBody(event)
