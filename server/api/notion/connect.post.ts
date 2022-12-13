@@ -3,8 +3,8 @@ import NotionConnector from '@/services/notion'
 
 export default defineEventHandler(async (event) => {
   const { token, pageId } = await readBody(event)
-  let data
-  let message
+  let data = null
+  let message = null
 
   const notion = new NotionConnector(token)
 
