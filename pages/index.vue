@@ -306,7 +306,14 @@
         <template #description>
           You can export the sessions into a JSON file, and import back to
           <span class="text-neon">One Tab Group</span> later.
-          <p>Also could import from <em>One</em>Tab's exported data.</p>
+          <p>
+            Also could import from <em>One</em>Tab/Session Buddy's exported
+            data.
+          </p>
+          <p>
+            Or Upgrade to Pro to access the sync to cloud、sync to Notion
+            feature.
+          </p>
         </template>
         <template #media>
           <img
@@ -353,7 +360,7 @@
             </h2>
 
             <p class="mt-4 text-shark-700 dark:text-shark-300">
-              With 20+ useful features built in, you can explore it for free
+              With 30+ useful features built in, you can explore it for free
             </p>
           </div>
 
@@ -472,7 +479,7 @@
             </OneTabFeature>
 
             <div></div>
-            <OneTabFeature title="More Features" desc="Coming soon...">
+            <OneTabFeature title="More Features" desc="Keep buiding...">
               <template #icon>
                 <carbon:strawberry class="h-8 w-8 text-lochmara-500" />
               </template>

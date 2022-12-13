@@ -100,8 +100,8 @@
             >
               Sharing your tabs/tab groups with others
             </a>
-            <a class="hover:opacity-75" href="">
-              Add your sessions to your favorites
+            <a class="hover:opacity-75" href="/blog/sync-session-to-notion">
+              Sync your tabs/tab groups to Notion
             </a>
             <a class="hover:opacity-75" href="">
               Searching tabs using Command Palette
