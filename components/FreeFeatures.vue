@@ -37,7 +37,7 @@
   <!-- feat - start -->
   <li class="flex items-center gap-1.5 font-semibold">
     <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-    <span>Explore the open tabs using the command palette</span>
+    <span>Explore the open tabs using the CMDK</span>
   </li>
   <!-- feat - end -->
 
@@ -84,9 +84,16 @@
   <!-- feat - end -->
 
   <!-- feat - start -->
-  <li class="flex items-center gap-1.5 font-semibold">
+  <!-- <li class="flex items-center gap-1.5 font-semibold">
     <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
     <span>Clean up duplicate tabs in all sessions</span>
+  </li> -->
+  <!-- feat - end -->
+
+  <!-- feat - start -->
+  <li class="flex items-center gap-1.5 font-semibold">
+    <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
+    <span>Bookmark your favorite sessions</span>
   </li>
   <!-- feat - end -->
 
