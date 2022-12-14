@@ -2,7 +2,7 @@
   "name": "onetab.group",
   "displayName": "One Tab Group",
   "description": "One Tab Group For Chrome Extension.",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "private": false,
   "scripts": {
     "dev": "nuxt dev --port 3088",
