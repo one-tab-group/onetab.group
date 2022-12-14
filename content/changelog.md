@@ -3,10 +3,32 @@ navigation.title: 'Changelog'
 title: 'One Tab Group | Changelog'
 description: Stay up to date with the latest One Tab Group improvements. Learn how we build the new features in public.
 category: changelog
-head.image: /preview.jpg
+head.image: /img/changelog.jpg
 ---
 
 # Changelog
+
+## 1.2.0 (2022-12-15)
+
+:::alert{info}
+🎉🎉 One Tab Group supports integration with Notion, [Learn how to sync your tabs/tab groups to Notion](/blog/sync-session-to-notion)
+:::
+
+### Features
+
+- Sync all sessions to `Notion`
+- Send specific session to `Notion`
+- Replace the entire session with current open tabs
+- Close all open tabs & restore session
+- Group by domian in session
+- Sharing feature open for free
+- Favorite feature open for free
+- zh/en/fr languages supported in web store
+
+### Bug Fixes
+
+- Save pinned tabs when save a session
+- Adaptation to small screen style
 
 ## 1.1.1 (2022-11-25)
 
