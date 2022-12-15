@@ -5,7 +5,9 @@
         class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4 text-center sm:text-left sm:p-0 py-20"
       >
         <section>
-          <figcaption class="text-3xl font-semibold mb-4">
+          <figcaption
+            class="text-3xl font-semibold mb-4 flex justify-center flex-col lg:items-start"
+          >
             <img src="/logo.svg" class="h-12" alt="" />
             <img src="/logo-text-light.svg" class="h-8 mt-4" alt="" />
           </figcaption>
@@ -36,7 +38,9 @@
         <div>
           <p class="text-xl font-semibold">Getting Started</p>
 
-          <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
+          <nav
+            class="flex flex-col mt-4 space-y-2 text-md text-shark-400 items-center lg:items-start"
+          >
             <a
               class="flex hover:opacity-75 text-neon"
               :href="chromeUrl"
@@ -112,7 +116,9 @@
         <div>
           <p class="text-xl font-semibold">Support</p>
 
-          <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
+          <nav
+            class="flex flex-col mt-4 space-y-2 text-md text-shark-400 items-center lg:items-start"
+          >
             <div
               class="hover:opacity-75 flex items-center gap-1 cursor-pointer"
               @click="emit('navto', 'faqs')"

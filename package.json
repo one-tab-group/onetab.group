@@ -1,7 +1,7 @@
 {
   "name": "onetab.group",
   "displayName": "One Tab Group",
-  "description": "One Tab Group For Chrome Extension.",
+  "description": "Web Home For One Tab Group Chrome Extension.",
   "version": "1.2.0",
   "private": false,
   "scripts": {

@@ -2,6 +2,25 @@
   <div>
     <div class="gradient-header absolute left-0 top-0 overflow-hidden"></div>
     <!-- Site Header -->
+    <div class="hidden sm:flex border-b border-b-shark-50">
+      <div
+        class="px-4 relative group bg-neon h-10 z-99 w-full flex justify-center"
+      >
+        <a
+          href="/changelog"
+          class="relative px-4 py-2.5 leading-none flex items-center divide-x divide-shark-50 font-semibold text-shark-50"
+        >
+          <span class="pr-4 text-sm">
+            ✨ v1.2.0 on December 15, 2022, support sync browser tabs to Notion.
+          </span>
+          <span
+            class="pl-4 group-hover:text-white/90 transition duration-500 text-sm"
+          >
+            See what's new →
+          </span>
+        </a>
+      </div>
+    </div>
     <ClientOnly>
       <SiteHeader @navto="gotoAnchor">
         <img
@@ -14,17 +33,20 @@
     <!-- End Site Header -->
 
     <!-- Site Hero -->
-    <ClientOnly>
-      <section class="hero">
-        <div
-          class="max-w-screen-xl px-4 py-48 mx-auto h-auto lg:h-screen lg:items-center lg:flex"
-        >
-          <div class="max-w-[1120px] mx-auto relative">
+
+    <section class="hero">
+      <div
+        class="max-w-screen-xl px-4 py-16 2xl:py-32 mx-auto h-auto lg:flex 2xl:items-center 2xl:h-screen"
+      >
+        <div class="max-w-[1120px] mx-auto relative h-screen-sm lg:h-auto">
+          <ClientOnly>
             <svg
               width="1120"
               height="630"
               viewBox="0 0 1120 630"
               xmlns="http://www.w3.org/2000/svg"
+              class="hidden lg:block"
+              :class="animateClass"
             >
               <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
                 <rect
@@ -32,17 +54,20 @@
                   stroke-width="2"
                   width="1118"
                   height="628"
-                  rx="11"
+                  rx="12"
+                  class="browser-frame"
                 />
                 <path
                   d="M1118 39v34H0V39h116c2.387 0 3.676-.948 5.364-2.636A9 9 0 0 0 124 30V12a7 7 0 0 1 7-7h209c3.866 0 6 3.134 6 7v18c0 4.97 5.03 9 10 9h762z"
                   :stroke="SVGColor"
                   stroke-width="2"
+                  class="browser-header"
                 />
                 <path
                   d="M101.5 39H116c2.387 0 3.676-.948 5.364-2.636A9 9 0 0 0 124 30V12a7 7 0 0 1 7-7h209c3.866 0 6 3.134 6 7v18c0 4.97 5.03 9 10 9h416"
                   stroke="#0c98eb"
                   stroke-width="2"
+                  class="browser-group-line"
                 />
                 <rect
                   fill-opacity=".2"
@@ -53,28 +78,33 @@
                   width="660"
                   height="24"
                   rx="12"
+                  class="browser-skeleton"
                 />
                 <path
                   d="M84 62a5.002 5.002 0 0 0 4.9-4h2.03a7.001 7.001 0 1 1-1.98-5.95L91 50v6h-6l2.535-2.535A5 5 0 1 0 84 62z"
                   :fill="SVGColor"
                   fill-rule="nonzero"
+                  class="browser-skeleton"
                 />
                 <path
                   :fill="SVGColor"
                   fill-rule="nonzero"
                   opacity=".3"
                   d="M52.333 50L51 51.4l4.381 4.6H45v2h10.381L51 62.6l1.333 1.4L59 57z"
+                  class="browser-skeleton"
                 />
                 <path
                   :fill="SVGColor"
                   fill-rule="nonzero"
                   d="M19.667 50L21 51.4 16.619 56H27v2H16.619L21 62.6 19.667 64 13 57z"
+                  class="browser-skeleton"
                 />
                 <g
                   opacity=".4"
                   transform="translate(591.111 16)"
                   :fill="SVGColor"
                   fill-rule="nonzero"
+                  class="browser-skeleton"
                 >
                   <path
                     d="M163.024 1l-1.172 1.333L164.198 5l-2.346 2.667L163.024 9l2.346-2.667L167.716 9l1.173-1.333L166.543 5l2.346-2.667L167.716 1l-2.346 2.667z"
@@ -86,6 +116,7 @@
                   transform="translate(377 16)"
                   :fill="SVGColor"
                   fill-rule="nonzero"
+                  class="browser-skeleton"
                 >
                   <path
                     d="M163.166 1L162 2.333 164.334 5 162 7.667 163.166 9l2.334-2.667L167.834 9 169 7.667 166.666 5 169 2.333 167.834 1 165.5 3.667z"
@@ -96,109 +127,143 @@
                   :fill="SVGColor"
                   fill-rule="nonzero"
                   d="M328.333 17L327 18.333 329.667 21 327 23.667 328.333 25 331 22.333 333.667 25 335 23.667 332.333 21 335 18.333 333.667 17 331 19.667z"
+                  class="browser-skeleton"
                 />
                 <rect
                   :fill="SVGColor"
+                  fill-opacity=".6"
                   fill-rule="nonzero"
                   x="133"
                   y="16"
                   width="100"
                   height="10"
                   rx="5"
+                  class="browser-skeleton"
                 />
                 <path
                   :fill="SVGColor"
                   fill-rule="nonzero"
                   d="M788 15h-2v5h-5v2h5v5h2v-5h5v-2h-5z"
+                  class="browser-skeleton"
                 />
-                <circle fill="#0c98eb" cx="109.5" cy="21.5" r="8" />
                 <circle
-                  fill-opacity=".99"
-                  fill="#777879"
+                  fill="#0c98eb"
+                  cx="109.5"
+                  cy="21.5"
+                  r="8"
+                  class="browser-group-dot"
+                />
+                <circle
+                  fill-opacity=".4"
+                  :fill="SVGColor"
                   cx="363.5"
                   cy="20.5"
                   r="8"
+                  class="browser-skeleton"
                 />
                 <circle
-                  fill-opacity=".99"
-                  fill="#777879"
+                  fill-opacity=".4"
+                  :fill="SVGColor"
                   cx="577.5"
                   cy="20.5"
                   r="8"
+                  class="browser-skeleton"
                 />
                 <path
                   :fill="SVGColor"
                   fill-rule="nonzero"
                   d="M772 8h1v26h-1zM557 8h1v26h-1z"
+                  class="browser-skeleton"
                 />
-                <circle :stroke="SVGColor" cx="24" cy="19" r="5.5" />
-                <circle :stroke="SVGColor" cx="44" cy="19" r="5.5" />
-                <circle :stroke="SVGColor" cx="64" cy="19" r="5.5" />
+                <circle
+                  :stroke="SVGColor"
+                  fill=""
+                  cx="24"
+                  cy="19"
+                  r="5.5"
+                  class="browser-right-corner"
+                />
+                <circle
+                  :stroke="SVGColor"
+                  fill=""
+                  cx="44"
+                  cy="19"
+                  r="5.5"
+                  class="browser-right-corner"
+                />
+                <circle
+                  :stroke="SVGColor"
+                  fill=""
+                  cx="64"
+                  cy="19"
+                  r="5.5"
+                  class="browser-right-corner"
+                />
               </g>
             </svg>
-            <div
-              class="max-w-[1120px] mx-auto text-center z-10 absolute left-0 top-0 mt-40"
+          </ClientOnly>
+          <div
+            class="max-w-[1120px] mx-auto text-center z-10 absolute left-0 top-0 mt-8 lg:mt-40"
+          >
+            <h1
+              class="relative font-bold tracking-tight space-y-4 text-primary"
+              text="4xl sm:5xl md:6xl lg:7xl center"
             >
-              <h1
-                class="relative font-bold tracking-tight space-y-4 text-primary"
-                text="4xl sm:5xl md:6xl lg:7xl center"
-              >
-                <p>
-                  Your <span class="text-neon">all-in-one</span> tab/tab group
-                  manager for chrome
-                </p>
-              </h1>
-
-              <p
-                class="max-w-xl mx-auto mt-8 mb-16 text-xl font-medium sm:leading-relaxed sm:text-xl text-secondary"
-              >
-                <span class="text-neon">One Tab Group</span> is a chromium based
-                extension that allows you to manage your tabs &amp; tab groups
-                in one place. One-click to aggregate all tabs &amp; tab groups
-                into one session.
+              <p>
+                Your <span class="text-neon">all-in-one</span> tab/tab group
+                manager for chrome
               </p>
+            </h1>
 
-              <div
-                class="flex flex-wrap justify-center items-center sm:space-x-4"
+            <p
+              class="max-w-xl mx-auto mt-8 mb-16 text-xl font-medium sm:leading-relaxed sm:text-xl text-secondary"
+            >
+              <span class="text-neon">One Tab Group</span> is a chromium-based
+              extension that allows you to manage your tabs &amp; tab groups in
+              one place. One-click to aggregate all tabs &amp; tab groups into
+              one session.
+            </p>
+
+            <div
+              class="flex flex-wrap justify-center items-center sm:space-x-4 flex-col lg:flex-row"
+            >
+              <a
+                class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
+                hover="bg-lochmara-400 text-white"
+                focus="outline-none ring"
+                target="_blank"
+                :href="extensionUrl"
               >
-                <a
-                  class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
-                  hover="bg-lochmara-400 text-white"
-                  focus="outline-none ring"
-                  target="_blank"
-                  :href="extensionUrl"
-                >
-                  <logos:chrome class="h-5 w-5 mr-2" />
-                  <span>Add to Chrome</span>
-                </a>
+                <logos:chrome class="h-5 w-5 mr-2" />
+                <span>Add to Chrome</span>
+              </a>
 
-                <a
-                  class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
-                  hover="bg-lochmara-400 text-white"
-                  focus="outline-none ring"
-                  target="_blank"
-                  href="https://microsoftedge.microsoft.com/addons/detail/one-tab-group-tabtab-g/njmgdlgmnlinpieohfpmiipenmgilpga"
-                >
-                  <logos:microsoft-edge class="h-5 w-5 mr-2" />
-                  <span>Add to Edge</span>
-                </a>
+              <a
+                class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
+                hover="bg-lochmara-400 text-white"
+                focus="outline-none ring"
+                target="_blank"
+                href="https://microsoftedge.microsoft.com/addons/detail/one-tab-group-tabtab-g/njmgdlgmnlinpieohfpmiipenmgilpga"
+              >
+                <logos:microsoft-edge class="h-5 w-5 mr-2" />
+                <span>Add to Edge</span>
+              </a>
 
-                <a
-                  class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
-                  hover="bg-lochmara-400 text-white"
-                  focus="outline-none ring"
-                  target="_blank"
-                  :href="extensionUrl"
-                >
-                  <logos:brave class="h-5 w-5 mr-2" />
-                  <span>Add to Brave</span>
-                </a>
-              </div>
+              <a
+                class="flex items-center px-6 py-3 mb-4 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
+                hover="bg-lochmara-400 text-white"
+                focus="outline-none ring"
+                target="_blank"
+                :href="extensionUrl"
+              >
+                <logos:brave class="h-5 w-5 mr-2" />
+                <span>Add to Brave</span>
+              </a>
             </div>
           </div>
         </div>
-      </section>
-    </ClientOnly>
+      </div>
+    </section>
     <!-- end hero -->
 
     <!-- sections -->
@@ -552,6 +617,7 @@ const extensionUrl =
 
 const featureRef = ref()
 const faqsRef = ref()
+const animateClass = ref()
 const SVGColor = computed(() => {
   return isDark.value ? '#f6f6f7' : '#1f2023'
 })
@@ -584,6 +650,9 @@ const gotoAnchor = (anchorEl: string) => {
     })
   }
 }
+setTimeout(() => {
+  animateClass.value = 'animate-offset'
+}, 333)
 </script>
 
 <style scoped>
@@ -635,5 +704,62 @@ const gotoAnchor = (anchorEl: string) => {
 
 .chrome-frame {
   transform: translate(-50%, -50%);
+}
+
+.browser-frame {
+  stroke-dashoffset: 3500px;
+  stroke-dasharray: 3500px;
+  transition: stroke-dashoffset 1s cubic-bezier(0.66, 0.72, 0.04, 0.86) 0s;
+}
+
+.browser-header {
+  stroke-dashoffset: 2400px;
+  stroke-dasharray: 2400px;
+  transition: stroke-dashoffset 1s cubic-bezier(0.66, 0.72, 0.04, 0.86) 0.125s;
+}
+
+.browser-group-line {
+  stroke-dashoffset: 2400px;
+  stroke-dasharray: 2400px;
+  transition: stroke-dashoffset 1s cubic-bezier(0.66, 0.72, 0.04, 0.86) 1.2s;
+}
+
+.browser-right-corner {
+  stroke-dashoffset: 36px;
+  stroke-dasharray: 36px;
+  transition: stroke-dashoffset 1s cubic-bezier(0.66, 0.72, 0.04, 0.86) 0.75s;
+}
+
+.browser-group-dot {
+  fill: transparent;
+  transition: fill 1s cubic-bezier(0.66, 0.72, 0.04, 0.86) 1.2s;
+}
+
+.browser-skeleton {
+  fill: transparent;
+  transition: fill 1s cubic-bezier(0.66, 0.72, 0.04, 0.86) 0.375s;
+}
+
+svg.animate-offset .browser-frame,
+svg.animate-offset .browser-header,
+svg.animate-offset .browser-group-line,
+svg.animate-offset .browser-right-corner {
+  stroke-dashoffset: 0;
+}
+
+.dark svg.animate-offset .browser-skeleton {
+  fill: #f6f6f7;
+}
+svg.animate-offset .browser-skeleton {
+  fill: #1f2023;
+}
+
+svg.animate-offset .browser-group-dot {
+  fill: #0c98e9;
+}
+
+.gradient-shadow {
+  box-shadow: 0 10px 24px 0 hsla(202, 90%, 48%, 0.33),
+    0 -10px 24px 0 hsla(202, 90%, 48%, 0.33);
 }
 </style>

@@ -60,8 +60,10 @@ export default defineConfig({
     }
   },
   shortcuts: {
+    'bg-neon':
+      'bg-gradient-to-r from-lochmara-500 to-lochmara-300 dark:from-lochmara-600 dark:to-lochmara-400',
     'text-neon':
-      'text-transparent bg-clip-text bg-gradient-to-r from-lochmara-500 to-lochmara-200',
+      'text-transparent bg-clip-text bg-gradient-to-r from-lochmara-500 to-lochmara-300',
     btn: `
       font-semibold h-12 px-6 mt-8 rounded-lg inline-flex items-center justify-center
       sm:w-auto
