@@ -40,9 +40,7 @@
       <div
         class="max-w-screen-xl px-4 py-16 2xl:py-32 mx-auto h-auto lg:flex 2xl:items-center 2xl:h-screen"
       >
-        <div
-          class="max-w-[1120px] w-[1120px] h-[630px] mx-auto relative h-screen-sm"
-        >
+        <div class="max-w-[1120px] mx-auto relative h-screen-sm">
           <ClientOnly>
             <svg
               width="1120"
@@ -215,7 +213,7 @@
           >
             <h1
               class="relative font-bold tracking-tight space-y-4 text-primary"
-              text="4xl sm:5xl md:6xl lg:7xl center"
+              text="5xl sm:5xl md:6xl lg:7xl"
             >
               <p>
                 Your <span class="text-neon">all-in-one</span> tab/tab group

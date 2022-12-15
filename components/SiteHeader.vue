@@ -101,13 +101,96 @@
             </div>
           </div>
         </div>
+
+        <div
+          id="hamburger"
+          class="lg:hidden"
+          :class="{ open: isOpenMobileMenu }"
+          @click="toggleMobileMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
+    <!-- mobile menu - begin -->
+    <Teleport to="body">
+      <div id="menu-mobile">
+        <div class="menu-mobile-bg"></div>
+
+        <ul class="menu-mobile-list">
+          <li class="menu-mobile-item" @click="(e) => toggleDark()">
+            <button
+              class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
+            >
+              <carbon:moon class="h-6 w-6" v-if="isDark" />
+              <carbon:sun class="h-6 w-6" v-else />
+              <span class="ml-4">Dark Mode</span>
+            </button>
+          </li>
+          <li class="menu-mobile-item">
+            <a
+              :href="twitterUrl"
+              target="_blank"
+              class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
+            >
+              <span class="sr-only hidden">One Tab Group on Twitter</span>
+              <mdi:twitter class="h-6 w-6" />
+              <span class="ml-4">Twitter</span>
+            </a>
+          </li>
+          <li class="menu-mobile-item">
+            <a
+              :href="telegramUrl"
+              target="_blank"
+              class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
+            >
+              <span class="sr-only hidden">One Tab Group on Telegram</span>
+              <mdi:telegram class="h-6 w-6" />
+              <span class="ml-4">Telegram</span>
+            </a>
+          </li>
+          <li class="menu-mobile-item">
+            <a
+              :href="githubUrl"
+              target="_blank"
+              class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
+            >
+              <span class="sr-only hidden">One Tab Group on GitHub</span>
+              <mdi:github class="h-6 w-6" />
+              <span class="ml-4">GitHub</span>
+            </a>
+          </li>
+          <li class="menu-mobile-item">
+            <a
+              href="/changelog"
+              target="_blank"
+              class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
+            >
+              <span>Changelog</span>
+            </a>
+          </li>
+          <li class="menu-mobile-item">
+            <a
+              href="/terms-of-services"
+              target="_blank"
+              class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
+            >
+              <span>Terms & Conditions</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </Teleport>
+    <!-- mobile menu - end -->
   </header>
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
+import { ref } from 'vue'
+import gsap from 'gsap'
+
 import { isDark, toggleDark } from '~~/composables/useDarkMode'
 
 const twitterUrl = 'https://twitter.com/OneTabGroup'
@@ -118,7 +201,134 @@ const githubUrl = 'https://github.com/one-tab-group/'
 
 const emit = defineEmits(['navto'])
 
-const SVGColor = computed(() => {
-  return isDark.value ? '#fff' : '#0F172A'
-})
+const isOpenMobileMenu = ref(false)
+
+const toggleMobileMenu = () => {
+  if (!isOpenMobileMenu.value) {
+    gsap.to('.menu-mobile-bg', {
+      duration: 0.66,
+      x: '-100vw',
+      ease: 'expo.inOut'
+    })
+
+    const menuItemsRef = document.querySelectorAll('.menu-mobile-item')
+
+    menuItemsRef.forEach((item, idx) => {
+      gsap.to(item, {
+        duration: 0.88,
+        x: '-100vw',
+        scaleX: 1,
+        delay: idx * 0.04,
+        ease: 'expo.inOut'
+      })
+    })
+  } else {
+    gsap.to('.menu-mobile-bg', {
+      duration: 0.88,
+      x: 0,
+      ease: 'expo.inOut'
+    })
+
+    const menuItemsRef = document.querySelectorAll('.menu-mobile-item')
+
+    menuItemsRef.forEach((item, idx) => {
+      gsap.to(item, {
+        duration: 0.66,
+        x: 0,
+        delay: idx * 0.02,
+        ease: 'expo.inOut'
+      })
+    })
+  }
+  isOpenMobileMenu.value = !isOpenMobileMenu.value
+  document.body.classList.toggle('overflow-hidden')
+}
 </script>
+
+<style scoped>
+#hamburger {
+  width: 24px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+}
+
+#hamburger:hover span:nth-child(1) {
+  top: -2px;
+  transition: 0.2s ease-in-out;
+}
+
+#hamburger:hover span:nth-child(3) {
+  top: 18px;
+  transition: 0.16s ease-in-out;
+}
+
+#hamburger span {
+  z-index: 3;
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  @apply bg-shark-900 dark:bg-shark-50;
+}
+
+#hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+#hamburger span:nth-child(2) {
+  top: 8px;
+}
+
+#hamburger span:nth-child(3) {
+  top: 16px;
+}
+
+#hamburger.open span:nth-child(1) {
+  top: 8px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  @apply bg-shark-900 dark:bg-shark-50;
+}
+
+#hamburger.open span:nth-child(2) {
+  opacity: 0;
+  left: -30px;
+  transition: 0.16s ease-in-out;
+}
+
+#hamburger.open span:nth-child(3) {
+  top: 8px;
+  transform: rotate(-135deg);
+  @apply bg-shark-900 dark:bg-shark-50;
+}
+
+.menu-mobile-bg {
+  @apply w-full h-full fixed top-16 right-[-100%] bg-shark-50 dark:bg-shark-900 z-10 will-change-transform;
+}
+
+.menu-mobile-list {
+  @apply z-99 fixed top-20 left-0 text-white w-full list-none;
+}
+
+.menu-mobile-list .menu-mobile-item {
+  @apply relative left-full cursor-pointer text-base text-white font-400 py-4 px-9;
+  @apply hover:text-lochmara-500;
+  @apply border-b border-shark-300 dark:border-shark-700;
+  @apply will-change-transform;
+}
+
+.menu-mobile-list .menu-mobile-item:hover {
+  transition: all 0.1s ease-in-out;
+}
+</style>
