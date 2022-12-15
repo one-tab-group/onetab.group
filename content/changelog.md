@@ -17,17 +17,17 @@ head.image: /img/changelog.jpg
 ### Features
 
 - Sync all sessions to `Notion`
-- Send specific session to `Notion`
+- Send a specific session to `Notion`
 - Replace the entire session with current open tabs
 - Close all open tabs & restore session
-- Group by domian in session
+- Grouping by domian in a session
 - Sharing feature open for free
 - Favorite feature open for free
 - zh/en/fr languages supported in web store
 
 ### Bug Fixes
 
-- Save pinned tabs when save a session
+- Save pinned tabs when saving a session
 - Adaptation to small screen style
 
 ## 1.1.1 (2022-11-25)
