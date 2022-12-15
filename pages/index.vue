@@ -29,16 +29,20 @@
           alt="background grid"
         />
       </SiteHeader>
+      <template #fallback>
+        <div class="w-full h-16"></div>
+      </template>
     </ClientOnly>
     <!-- End Site Header -->
 
     <!-- Site Hero -->
-
     <section class="hero">
       <div
         class="max-w-screen-xl px-4 py-16 2xl:py-32 mx-auto h-auto lg:flex 2xl:items-center 2xl:h-screen"
       >
-        <div class="max-w-[1120px] mx-auto relative h-screen-sm lg:h-auto">
+        <div
+          class="max-w-[1120px] w-[1120px] h-[630px] mx-auto relative h-screen-sm"
+        >
           <ClientOnly>
             <svg
               width="1120"
@@ -201,9 +205,13 @@
                 />
               </g>
             </svg>
+            <template #fallback>
+              <!-- this will be rendered on server side -->
+              <div class="w-[1120px] h-[630px]"></div>
+            </template>
           </ClientOnly>
           <div
-            class="max-w-[1120px] mx-auto text-center z-10 absolute left-0 top-0 mt-8 lg:mt-40"
+            class="max-w-[1120px] mx-auto text-center z-10 absolute left-0 top-0 pt-8 lg:pt-40"
           >
             <h1
               class="relative font-bold tracking-tight space-y-4 text-primary"
