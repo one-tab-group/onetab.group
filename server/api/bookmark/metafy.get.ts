@@ -12,8 +12,6 @@ export default defineEventHandler(async (event) => {
   const { url } = await getQuery(event)
   let [res, message] = [{ message: '', success: false }, null]
 
-  console.log(url)
-
   const vercelRes = () => fetch(`${VERCEL_HOST}?url=${url}`, REQUEST_INPUT)
   const netlifyRes = () => fetch(`${NETLIFY_HOST}?url=${url}`, REQUEST_INPUT)
 
