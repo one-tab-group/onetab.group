@@ -142,7 +142,7 @@
               <li class="flex items-center gap-1.5 font-semibold">
                 <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
                 <span class="font-semibold">
-                  Sync session to Notion (Coming soon in v1.2.0)</span
+                  Sync session to Notion (v1.2.0)</span
                 >
               </li>
               <!-- feat - end -->
