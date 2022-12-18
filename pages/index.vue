@@ -217,7 +217,7 @@
             >
               <p>
                 Your <span class="text-neon">all-in-one</span> tab/tab group
-                manager for chrome
+                manager for <TypedText :strings="['chrome', 'edge', 'brave']" />
               </p>
             </h1>
 
