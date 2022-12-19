@@ -13,7 +13,7 @@ const props = defineProps({
   }
 })
 
-const typeSpeed = 120
+const typeSpeed = 150
 const typed = ref(null)
 const typedElement = ref(null)
 
@@ -21,7 +21,9 @@ onMounted(() => {
   typed.value = new Typed(typedElement.value, {
     strings: props.strings,
     typeSpeed,
-    loop: true
+    loop: true,
+    showCursor: false,
+    startDelay: 700
   })
 })
 </script>
