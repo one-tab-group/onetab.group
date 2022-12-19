@@ -215,16 +215,9 @@
               class="relative font-bold tracking-tight space-y-4 text-primary"
               text="5xl sm:5xl md:6xl lg:7xl"
             >
-              <p class="hidden lg:block">
-                Your <span class="text-neon">all-in-one</span> tab/tab group
-                manager for <TypedText :strings="['chrome', 'edge', 'brave']" />
-              </p>
-              <p class="block lg:hidden">
-                <div>Your <span class="text-neon">all-in-one</span> tab/tab group
-                  manager for </div>
-                <div class="h-14">
-                  <TypedText :strings="['chrome', 'edge', 'brave']" />
-                </div>
+              <p>
+                Your <span class="text-neon">all-in-one</span> browser tab/tab
+                group manager
               </p>
             </h1>
 
