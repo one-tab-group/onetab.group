@@ -15,8 +15,8 @@
           <p class="max-w-xs text-sm text-shark-400">
             Manage your tabs & tab groups in one place.
           </p>
-          <figure class="text-shark-400 mt-8">
-            <ul class="space-x-6 flex justify-center sm:justify-start">
+          <figure class="text-shark-400 mt-6">
+            <ul class="space-x-6 flex justify-center sm:justify-start mb-6">
               <li class="flex items-center">
                 <a :href="twitterUrl" target="_blank">
                   <mdi:twitter class="h-6 w-6" />
@@ -33,6 +33,16 @@
                 </a>
               </li>
             </ul>
+            <a
+              href="https://www.producthunt.com/posts/one-tab-group?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-one&#0045;tab&#0045;group"
+              target="_blank"
+              ><img
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=371900&theme=neutral"
+                alt="One&#0032;Tab&#0032;Group - Your&#0032;all&#0045;in&#0045;one&#0032;browser&#0032;tab&#0047;tab&#0032;group&#0032;manager&#0046; | Product Hunt"
+                style="width: 226px; height: 48px"
+                width="226"
+                height="48"
+            /></a>
           </figure>
         </section>
         <div>

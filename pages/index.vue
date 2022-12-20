@@ -7,16 +7,26 @@
         class="px-4 relative group bg-neon h-10 z-99 w-full flex justify-center"
       >
         <a
-          href="/changelog"
+          href="https://www.producthunt.com/posts/one-tab-group"
           class="relative px-4 py-2.5 leading-none flex items-center divide-x divide-shark-50 font-semibold text-shark-50"
+          target="_blank"
         >
-          <span class="pr-4 text-sm">
+          <!-- <span class="pr-4 text-sm">
             ✨ v1.2.0 on December 15, 2022, support sync browser tabs to Notion.
           </span>
           <span
             class="pl-4 group-hover:text-white/90 transition duration-500 text-sm"
           >
             See what's new →
+          </span> -->
+          <span class="pr-4 text-sm"
+            >🎉🎉 One Tab Group is LIVE on Product Hunt! Your support would mean
+            the world to me! 🙏</span
+          >
+          <span
+            class="pl-4 group-hover:text-white/90 transition duration-500 text-sm"
+          >
+            Go redeem 20% discount →
           </span>
         </a>
       </div>
@@ -271,6 +281,10 @@
       </div>
     </section>
     <!-- end hero -->
+
+    <!-- video begin -->
+    <!-- <PromoteVideo /> -->
+    <!-- video end -->
 
     <!-- sections -->
     <main
