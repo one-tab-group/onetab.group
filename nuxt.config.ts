@@ -50,6 +50,10 @@ export default defineNuxtConfig({
         {
           property: 'twitter:image:src',
           content: 'https://onetab.group/preview.jpg'
+        },
+        {
+          name: 'saashub-verification',
+          content: 'k79blugjtfoo'
         }
       ],
       script: [
