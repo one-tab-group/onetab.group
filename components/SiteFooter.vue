@@ -27,11 +27,6 @@
                   <mdi:telegram class="h-6 w-6" />
                 </a>
               </li>
-              <li class="flex items-center">
-                <a :href="githubUrl" target="_blank">
-                  <mdi:github class="h-6 w-6" />
-                </a>
-              </li>
             </ul>
             <a
               href="https://www.producthunt.com/posts/one-tab-group?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-one&#0045;tab&#0045;group"
