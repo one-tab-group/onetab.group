@@ -249,39 +249,38 @@
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="absolute inset-0 flex flex-col items-center justify-center z-99"
-      >
-        <div class="pt-8">
-          <button
-            class="relative flex hover:scale-110 active:scale-100 duration-300 h-16 w-16 items-center justify-center transition transform"
-            @click="isShowPromoteVideo = true"
-          >
-            <div
-              class="bg-lochmara-500 absolute inset-0 w-full animate-ping-video rounded-full"
-            ></div>
-            <div
-              class="absolute inset-0 w-full rounded-full shadow-xl shadow-black/40 bg-black/80"
-            ></div>
-            <div class="relative">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                fill="currentColor"
-                style=""
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="ml-0.5 text-white"
-              >
-                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-              </svg>
-            </div>
-          </button>
+
+        <div class="absolute inset-0 flex flex-col items-center justify-center">
+          <div class="pt-8 z-99">
+            <button
+              class="relative flex hover:scale-110 active:scale-100 duration-300 h-16 w-16 items-center justify-center transition transform"
+              @click="isShowPromoteVideo = true"
+            >
+              <div
+                class="bg-lochmara-500 absolute inset-0 w-full animate-ping-video rounded-full"
+              ></div>
+              <div
+                class="absolute inset-0 w-full rounded-full shadow-xl shadow-black/40 bg-black/80"
+              ></div>
+              <div class="relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  style=""
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="ml-0.5 text-white"
+                >
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
     </section>
