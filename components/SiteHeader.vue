@@ -1,4 +1,24 @@
 <template>
+  <div class="hidden sm:flex">
+    <div
+      class="px-4 relative group bg-neon h-10 z-99 w-full flex justify-center"
+    >
+      <a
+        href="/changelog?ref=alert_bar"
+        class="relative px-4 py-2.5 leading-none flex items-center divide-x divide-shark-50 font-semibold text-shark-50"
+      >
+        <span class="pr-4 text-sm">
+          ✨ Released v1.2.0 on Dec 15, 2022, supports syncing browser tabs to
+          Notion.
+        </span>
+        <span
+          class="pl-4 group-hover:text-white/90 transition duration-500 text-sm"
+        >
+          See what's new →
+        </span>
+      </a>
+    </div>
+  </div>
   <slot />
   <!-- header -->
   <header class="card-blur sticky left-0 right-0 top-0 h-16 z-99">

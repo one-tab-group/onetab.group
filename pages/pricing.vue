@@ -8,6 +8,16 @@
       <p class="text-secondary text-lg lg:text-xl text-center mt-4">
         Start for free, no credit card required. Upgrade anytime.
       </p>
+      <p class="text-center mt-4 text-secondary text-sm">
+        20% off discount code on
+        <a
+          class="text-neon"
+          href="https://www.producthunt.com/posts/one-tab-group"
+          target="_blank"
+        >
+          <span>Product Hunt</span>
+        </a>
+      </p>
     </header>
     <main class="my-8">
       <div class="w-full space-y-4 mx-auto py-6">
@@ -172,15 +182,11 @@
             </div>
 
             <div class="space-x-2 mb-4 w-full">
-              <div class="text-white text-base font-bold py-2 rounded-2xl">
+              <div
+                class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white"
+              >
                 <span class="text-2xl line-through text-opacity-80">$49.9</span>
                 <span class="text-3xl">$39.9</span>
-                /
-                <span
-                  class="bg-lochmara-500/50 rounded-full px-3 py-1"
-                  text="xs"
-                  >Limited Time Offer</span
-                >
               </div>
             </div>
 
@@ -191,12 +197,9 @@
             >
               Get Lifetime License
             </a>
-            <div class="text-center p-4 text-lochmara-50 text-sm">
-              20% off with code <span class="text-neon">7vn673t</span>
-            </div>
 
             <ul
-              class="text-lochmara-50 space-y-2 mb-6 lg:text-xs 2xl:text-[14px]"
+              class="text-lochmara-50 space-y-2 my-6 lg:text-xs 2xl:text-[14px]"
             >
               <!-- feat - start -->
               <li class="flex items-center gap-1.5 font-semibold">

@@ -2,25 +2,6 @@
   <div>
     <div class="gradient-header absolute left-0 top-0 overflow-hidden"></div>
     <!-- Site Header -->
-    <div class="hidden sm:flex border-b border-b-shark-50">
-      <div
-        class="px-4 relative group bg-neon h-10 z-99 w-full flex justify-center"
-      >
-        <a
-          href="/changelog"
-          class="relative px-4 py-2.5 leading-none flex items-center divide-x divide-shark-50 font-semibold text-shark-50"
-        >
-          <span class="pr-4 text-sm">
-            ✨ v1.2.0 on December 15, 2022, support sync browser tabs to Notion.
-          </span>
-          <span
-            class="pl-4 group-hover:text-white/90 transition duration-500 text-sm"
-          >
-            See what's new →
-          </span>
-        </a>
-      </div>
-    </div>
     <ClientOnly>
       <SiteHeader @navto="gotoAnchor">
         <img
