@@ -8,11 +8,22 @@ head.image: /img/changelog.jpg
 
 # Changelog
 
-## 1.2.0 (2022-12-15)
-
 :::alert{info}
 🎉🎉 One Tab Group supports integration with Notion, [Learn how to sync your tabs/tab groups to Notion](/blog/sync-session-to-notion)
 :::
+
+## 1.2.1 (2022-12-17)
+
+### Features
+
+- i18n for session
+
+### Bug Fixes
+
+- Fixed the session sharing feature
+- Fixed the bookmark render bug
+
+## 1.2.0 (2022-12-15)
 
 ### Features
 

@@ -67,27 +67,12 @@
                     Pricing
                   </NuxtLink>
                 </li>
-                <li>
-                  <a
-                    href="https://github.com/sponsors/xiaoluoboding"
-                    class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
-                  >
-                    Sponsor
-                  </a>
-                </li>
               </ul>
             </nav>
             <!-- end homepage navigation -->
             <div
               class="flex items-center border-l border-shark-900 dark:border-shark-400 ml-6 pl-6 space-x-6"
             >
-              <button
-                class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
-                @click="(e) => toggleDark()"
-              >
-                <carbon:moon class="h-6 w-6" v-if="isDark" />
-                <carbon:sun class="h-6 w-6" v-else />
-              </button>
               <!-- <button
                   class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
                   @click="(e) => toggleLocales()"
@@ -110,14 +95,13 @@
                 <span class="sr-only hidden">One Tab Group on Telegram</span>
                 <mdi:telegram class="h-6 w-6" />
               </a>
-              <a
-                :href="githubUrl"
-                target="_blank"
+              <button
                 class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
+                @click="(e) => toggleDark()"
               >
-                <span class="sr-only hidden">One Tab Group on GitHub</span>
-                <mdi:github class="h-6 w-6" />
-              </a>
+                <carbon:moon class="h-6 w-6" v-if="isDark" />
+                <carbon:sun class="h-6 w-6" v-else />
+              </button>
             </div>
           </div>
         </div>

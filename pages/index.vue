@@ -197,8 +197,8 @@
               text="5xl sm:5xl md:6xl lg:7xl"
             >
               <p>
-                Your <span class="text-neon">all-in-one</span> tab/tab group
-                manager for chrome
+                Your <span class="text-neon">all-in-one</span> browser tab/tab
+                group manager
               </p>
             </h1>
 
@@ -252,6 +252,10 @@
       </div>
     </section>
     <!-- end hero -->
+
+    <!-- video begin -->
+    <!-- <PromoteVideo /> -->
+    <!-- video end -->
 
     <!-- sections -->
     <main
