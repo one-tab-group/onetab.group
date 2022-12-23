@@ -12,7 +12,7 @@
       we own and operate.
     </p>
     <p>
-      Yunwei Xiao ("us", "we", or "our") operates the onetab.group Chrome
+      Robert Shaw ("us", "we", or "our") operates the onetab.group Chrome
       Extension.
     </p>
     <p>
@@ -63,7 +63,7 @@
       using the following details:
     </p>
     <p>
-      Yunwei Xiao<br />
+      Robert Shaw<br />
       <a href="https://onetab.group">https://onetab.group</a>
     </p>
   </NuxtLayout>

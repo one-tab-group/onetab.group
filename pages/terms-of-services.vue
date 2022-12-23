@@ -274,7 +274,7 @@
       contact us:
     </p>
     <ul>
-      <li>By email: xiaoluoboding@gmail.com</li>
+      <li>By email: support@onetab.group</li>
     </ul>
   </NuxtLayout>
 </template>
