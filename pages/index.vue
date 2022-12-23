@@ -17,7 +17,7 @@
     <!-- End Site Header -->
 
     <!-- Site Hero -->
-    <section class="hero">
+    <section class="hero relative">
       <div
         class="max-w-screen-xl px-4 py-16 2xl:py-32 mx-auto h-auto lg:flex 2xl:items-center 2xl:h-screen"
       >
@@ -250,11 +250,48 @@
           </div>
         </div>
       </div>
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center z-99"
+      >
+        <div class="pt-8">
+          <button
+            class="relative flex hover:scale-110 active:scale-100 duration-300 h-16 w-16 items-center justify-center transition transform"
+            @click="isShowPromoteVideo = true"
+          >
+            <div
+              class="bg-lochmara-500 absolute inset-0 w-full animate-ping-video rounded-full"
+            ></div>
+            <div
+              class="absolute inset-0 w-full rounded-full shadow-xl shadow-black/40 bg-black/80"
+            ></div>
+            <div class="relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                fill="currentColor"
+                style=""
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="ml-0.5 text-white"
+              >
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
     </section>
     <!-- end hero -->
 
     <!-- video begin -->
-    <!-- <PromoteVideo /> -->
+    <PromoteVideo
+      v-if="isShowPromoteVideo"
+      @close="isShowPromoteVideo = false"
+    />
     <!-- video end -->
 
     <!-- sections -->
@@ -609,6 +646,7 @@ const extensionUrl =
 const featureRef = ref()
 const faqsRef = ref()
 const animateClass = ref()
+const isShowPromoteVideo = ref(false)
 const SVGColor = computed(() => {
   return isDark.value ? '#f6f6f7' : '#1f2023'
 })
@@ -752,5 +790,36 @@ svg.animate-offset .browser-group-dot {
 .gradient-shadow {
   box-shadow: 0 10px 24px 0 hsla(202, 90%, 48%, 0.33),
     0 -10px 24px 0 hsla(202, 90%, 48%, 0.33);
+}
+
+.animate-ping-video {
+  animation: ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  75%,
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes ping {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  75%,
+  100% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 </style>

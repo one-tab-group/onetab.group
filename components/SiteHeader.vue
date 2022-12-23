@@ -6,6 +6,7 @@
       <a
         href="https://www.producthunt.com/posts/one-tab-group"
         class="relative px-4 py-2.5 leading-none flex items-center divide-x divide-shark-50 font-semibold text-shark-50"
+        target="_blank"
       >
         <span class="pr-4 text-sm">
           🎉🎉 One Tab Group is LIVE on Product Hunt! Your support would mean
