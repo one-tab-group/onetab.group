@@ -4,7 +4,7 @@
       class="px-4 relative group bg-neon h-10 z-99 w-full flex justify-center"
     >
       <a
-        href="/changelog?ref=alert_bar"
+        href="https://www.producthunt.com/posts/one-tab-group"
         class="relative px-4 py-2.5 leading-none flex items-center divide-x divide-shark-50 font-semibold text-shark-50"
       >
         <span class="pr-4 text-sm">
