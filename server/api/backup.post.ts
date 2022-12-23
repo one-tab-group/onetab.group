@@ -15,7 +15,6 @@ const sendBackupEmail = async (username: string, to: string, blob?: Blob) => {
 
   // create email transport
   const transporter = nodemailer.createTransport({
-    // host: 'smtp-mail.outlook.com',
     host: 'mail.privateemail.com',
     secureConnection: false, // TLS requires secureConnection to be false
     port: 465, // port for secure SMTP
@@ -40,12 +39,12 @@ const sendBackupEmail = async (username: string, to: string, blob?: Blob) => {
   const attachments = [
     {
       filename: 'logo.png',
-      path: 'https://beta.onetab.group/favicon-light.png',
+      path: 'https://www.onetab.group/favicon-light.png',
       cid: 'logo'
     },
     {
       filename: 'preview.jpg',
-      path: 'https://beta.onetab.group/preview.jpg',
+      path: 'https://www.onetab.group/preview.jpg',
       cid: 'preview'
     },
     {

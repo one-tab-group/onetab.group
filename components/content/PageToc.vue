@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <div class="sticky top-12 flex flex-col">
+    <div class="sticky top-24 flex flex-col">
       <label for="toc-list" class="font-semibold">On this page</label>
       <ul v-if="toc && toc.links">
         <li v-for="link in toc.links" :key="link.text">

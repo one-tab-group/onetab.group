@@ -8,13 +8,13 @@
         class="relative px-4 py-2.5 leading-none flex items-center divide-x divide-shark-50 font-semibold text-shark-50"
       >
         <span class="pr-4 text-sm">
-          ✨ Released v1.2.0 on Dec 15, 2022, supports syncing browser tabs to
-          Notion.
+          🎉🎉 One Tab Group is LIVE on Product Hunt! Your support would mean
+          the world to us! 🙏
         </span>
         <span
           class="pl-4 group-hover:text-white/90 transition duration-500 text-sm"
         >
-          See what's new →
+          Go redeem 20% discount →
         </span>
       </a>
     </div>
@@ -120,7 +120,7 @@
     </div>
     <!-- mobile menu - begin -->
     <Teleport to="body">
-      <div id="menu-mobile">
+      <div id="menu-mobile" class="block lg:hidden">
         <div class="menu-mobile-bg"></div>
 
         <ul class="menu-mobile-list">
@@ -153,17 +153,6 @@
               <span class="sr-only hidden">One Tab Group on Telegram</span>
               <mdi:telegram class="h-6 w-6" />
               <span class="ml-4">Telegram</span>
-            </a>
-          </li>
-          <li class="menu-mobile-item">
-            <a
-              :href="githubUrl"
-              target="_blank"
-              class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
-            >
-              <span class="sr-only hidden">One Tab Group on GitHub</span>
-              <mdi:github class="h-6 w-6" />
-              <span class="ml-4">GitHub</span>
             </a>
           </li>
           <li class="menu-mobile-item">

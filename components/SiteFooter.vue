@@ -134,7 +134,7 @@
 
             <a
               class="hover:opacity-75 flex items-center gap-1"
-              href="mailto:onetabgroup@hotmail.com"
+              href="mailto:support@onetab.group"
             >
               <span>Contact</span>
               <carbon:email class="h-4 w-4" />

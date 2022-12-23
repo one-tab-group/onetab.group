@@ -8,7 +8,7 @@
       <p class="text-secondary text-lg lg:text-xl text-center mt-4">
         Start for free, no credit card required. Upgrade anytime.
       </p>
-      <p class="text-center mt-4 text-secondary text-sm">
+      <!-- <p class="text-center mt-4 text-secondary text-sm">
         20% off discount code on
         <a
           class="text-neon"
@@ -17,7 +17,7 @@
         >
           <span>Product Hunt</span>
         </a>
-      </p>
+      </p> -->
     </header>
     <main class="my-8">
       <div class="w-full space-y-4 mx-auto py-6">
@@ -62,19 +62,6 @@
                 <span>Basic support</span>
               </li>
               <!-- feat - end -->
-
-              <!-- feat - start -->
-              <li class="flex items-center gap-1.5 text-shark-400 line-through">
-                <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
-                <span>Cloud sync and backup</span>
-              </li>
-              <!-- feat - end -->
-
-              <!-- feat - start -->
-              <li class="flex items-center gap-1.5 text-shark-400 line-through">
-                <carbon:checkmark-outline class="w-5 h-5 shrink-0" />
-                <span class="font-semibold">Sync session to Notion</span>
-              </li>
             </ul>
           </div>
           <!-- left side - end -->
@@ -132,7 +119,12 @@
             <ul
               class="text-lochmara-50 space-y-2 my-6 lg:text-xs 2xl:text-[14px]"
             >
-              <FreeFeatures />
+              <!-- feat - start -->
+              <li class="flex items-center gap-1.5 font-semibold">
+                <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
+                <span>All Free Features +</span>
+              </li>
+              <!-- feat - end -->
 
               <!-- feat - start -->
               <li class="flex items-center gap-1.5 font-semibold">
@@ -182,11 +174,10 @@
             </div>
 
             <div class="space-x-2 mb-4 w-full">
-              <div
-                class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white"
-              >
+              <div class="text-white text-base font-bold rounded-2xl">
                 <span class="text-2xl line-through text-opacity-80">$49.9</span>
                 <span class="text-3xl">$39.9</span>
+                / <span class="text-sm">Limited Time Offer</span>
               </div>
             </div>
 
@@ -198,8 +189,12 @@
               Get Lifetime License
             </a>
 
+            <div class="text-center p-4 text-lochmara-50 text-sm">
+              20% off with code <span class="text-neon">7vn673t</span>
+            </div>
+
             <ul
-              class="text-lochmara-50 space-y-2 my-6 lg:text-xs 2xl:text-[14px]"
+              class="text-lochmara-50 space-y-2 mb-6 lg:text-xs 2xl:text-[14px]"
             >
               <!-- feat - start -->
               <li class="flex items-center gap-1.5 font-semibold">
