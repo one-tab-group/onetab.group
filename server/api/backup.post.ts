@@ -18,10 +18,11 @@ const sendBackupEmail = async (username: string, to: string, blob?: Blob) => {
     // host: 'smtp-mail.outlook.com',
     host: 'mail.privateemail.com',
     secureConnection: false, // TLS requires secureConnection to be false
-    port: 587, // port for secure SMTP
+    port: 465, // port for secure SMTP
     tls: {
       ciphers: 'SSLv3'
     },
+    secure: true,
     auth: passport,
     connectionTimeout: 300000,
     greetingTimeout: 300000
@@ -39,12 +40,12 @@ const sendBackupEmail = async (username: string, to: string, blob?: Blob) => {
   const attachments = [
     {
       filename: 'logo.png',
-      path: 'https://www.onetab.group/favicon-light.png',
+      path: 'https://beta.onetab.group/favicon-light.png',
       cid: 'logo'
     },
     {
-      filename: 'preview.png',
-      path: 'https://www.onetab.group/preview.png',
+      filename: 'preview.jpg',
+      path: 'https://beta.onetab.group/preview.jpg',
       cid: 'preview'
     },
     {
@@ -57,9 +58,9 @@ const sendBackupEmail = async (username: string, to: string, blob?: Blob) => {
   const template = ejs.compile(EMAIL_TEMPLATE, 'utf8')
 
   const templateParams = {
-    name: 'onetab.group',
+    name: 'One Tab Group',
     href: 'https://onetab.group',
-    bio: 'Your all-in-one tab/tab group manager for Chrome.',
+    bio: 'Your all-in-one browser tab/tab group manager.',
     creatorDesc:
       'is a chrome extension that allows you to manage your tabs & tab groups in one place. One-click to aggregate all tabs & tab groups into one session. ',
     cids: attachments
