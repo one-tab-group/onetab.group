@@ -173,7 +173,7 @@
               </div>
             </div>
 
-            <div class="space-x-2 mb-4 w-full">
+            <div class="space-x-2 mb-4 w-full h-[50px]">
               <div class="text-white text-base font-bold rounded-2xl">
                 <span class="text-2xl line-through text-opacity-80">$49.9</span>
                 <span class="text-3xl">$39.9</span>
