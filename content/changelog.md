@@ -12,6 +12,22 @@ head.image: /img/changelog.jpg
 🎉🎉 One Tab Group supports integration with Notion, [Learn how to sync your tabs/tab groups to Notion](/blog/sync-session-to-notion)
 :::
 
+## 1.2.2 (2022-12-25)
+
+### Features
+
+- i18n for shortcuts
+- add a new settings, [whether show the session title]
+- enhancement the bookmark feature
+  - Copy image to clipboard
+  - Toggle QRCode
+  - Styling your bookmark
+- add the [open & suspend] option for click the tab in session
+
+### Bug Fixes
+
+- Fixed the sharing feature when not login
+
 ## 1.2.1 (2022-12-17)
 
 ### Features
