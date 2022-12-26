@@ -12,7 +12,7 @@ head.image: /img/changelog.jpg
 🎉🎉 One Tab Group supports integration with Notion, [Learn how to sync your tabs/tab groups to Notion](/blog/sync-session-to-notion)
 :::
 
-## 1.2.2 (2022-12-25)
+## 1.2.2 (2022-12-25) 🎄
 
 ### Features
 
