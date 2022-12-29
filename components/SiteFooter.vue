@@ -77,7 +77,13 @@
               <span>IndieHackers</span>
               <heroicons-outline:external-link class="h-4 w-4" />
             </a>
-            <a class="hover:opacity-75" href=""> ProductHunt </a>
+            <a
+              class="hover:opacity-75"
+              href="https://www.producthunt.com/products/one-tab-group"
+              target="_blank"
+            >
+              ProductHunt
+            </a>
           </nav>
         </div>
 
