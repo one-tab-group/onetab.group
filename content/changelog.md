@@ -18,7 +18,7 @@ head.image: /img/changelog.jpg
 
 - i18n for command palette
 - Open/Show the One Tab Group Home Page with Command/Context Menu Action
-- Multiple select session with some features
+- Action items for multi-select sessions
   - Move to Top
   - Move up
   - Move to Bottom
