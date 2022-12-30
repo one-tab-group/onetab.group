@@ -12,6 +12,20 @@ head.image: /img/changelog.jpg
 🎉🎉 One Tab Group supports integration with Notion, [Learn how to sync your tabs/tab groups to Notion](/blog/sync-session-to-notion)
 :::
 
+## 1.2.3 (2022-12-30)
+
+### Features
+
+- i18n for command palette
+- Open/Show the One Tab Group Home Page with Command/Context Menu Action
+- Multiple select session with some features
+  - Move to Top
+  - Move up
+  - Move to Bottom
+  - Move down
+  - Add/Cancel Favorites
+  - Delete selected session
+
 ## 1.2.2 (2022-12-25) 🎄
 
 ### Features
