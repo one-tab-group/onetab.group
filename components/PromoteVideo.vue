@@ -28,15 +28,15 @@
           </button>
         </div>
         <div
-          class="relative mx-auto flex w-full max-w-4xl items-center justify-center px-4"
+          class="relative mx-auto flex w-full max-w-6xl items-center justify-center px-4 mt-20"
         >
           <div class="relative h-full w-full">
             <div style="display: contents; --aspect-padding: 56.25%">
               <div class="aspect-container">
                 <div class="aspect-content bg-black shadow-2xl">
                   <iframe
-                    width="896"
-                    height="540"
+                    width="1152"
+                    height="768"
                     src="https://www.youtube.com/embed/vieRK8vWyUQ"
                     title="YouTube video player"
                     frameborder="0"
