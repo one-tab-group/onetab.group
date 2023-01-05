@@ -307,11 +307,11 @@ const toggleMobileMenu = () => {
 }
 
 .menu-mobile-bg {
-  @apply w-full h-full fixed top-16 right-[-100%] bg-shark-50 dark:bg-shark-900 z-10 will-change-transform;
+  @apply w-full h-full fixed top-16 right-[-100%] bg-shark-50 dark:bg-shark-900 z-100 will-change-transform;
 }
 
 .menu-mobile-list {
-  @apply z-99 fixed top-20 left-0 text-white w-full list-none;
+  @apply z-101 fixed top-20 left-0 text-white w-full list-none;
 }
 
 .menu-mobile-list .menu-mobile-item {

@@ -1,6 +1,6 @@
 <template>
   <Teleport to="body">
-    <div class="fixed inset-0 z-99 bg-lochmara-800/20 top-0 left-0">
+    <div class="fixed inset-0 z-102 bg-lochmara-800/20 top-0 left-0">
       <div
         class="relative flex h-full w-full flex-col items-center justify-center"
       >
@@ -28,15 +28,15 @@
           </button>
         </div>
         <div
-          class="relative mx-auto flex w-full max-w-6xl items-center justify-center px-4 mt-20"
+          class="relative mx-auto flex w-full max-w-screen xl:max-w-6xl items-center justify-center px-4 mt-20"
         >
           <div class="relative h-full w-full">
-            <div style="display: contents; --aspect-padding: 56.25%">
+            <div class="content w-full">
               <div class="aspect-container">
                 <div class="aspect-content bg-black shadow-2xl">
                   <iframe
-                    width="1152"
-                    height="768"
+                    :width="isLargeScreen ? '1152' : '100%'"
+                    :height="isLargeScreen ? '768' : '100%'"
                     src="https://www.youtube.com/embed/vieRK8vWyUQ"
                     title="YouTube video player"
                     frameborder="0"
@@ -54,5 +54,8 @@
 </template>
 
 <script lang="ts" setup>
+import { useMediaQuery } from '@vueuse/core'
+
+const isLargeScreen = useMediaQuery('(min-width: 1024px)')
 const emit = defineEmits(['close'])
 </script>
