@@ -62,6 +62,10 @@ export default defineNuxtConfig({
           defer: true,
           'data-website-id': process.env.UMAMI_WEBSITE_ID,
           src: 'https://analytics.onetab.group/umami.js'
+        },
+        {
+          defer: true,
+          src: 'https://widget.senja.io/embed/frame.js'
         }
       ]
     }

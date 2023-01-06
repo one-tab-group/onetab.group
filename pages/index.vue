@@ -480,12 +480,11 @@
             </OneTabFeature>
 
             <OneTabFeature
-              title="Copy links to your clipboard"
-              desc="Within tab groups, you can copy all the links to your clipboard,
-              and share them to anyone."
+              title="Sharing tab/tab groups with others"
+              desc="By sign-in, you can share any session with others via a web link."
             >
               <template #icon>
-                <mdi:content-copy class="h-8 w-8 text-lochmara-500" />
+                <mdi:share-variant-outline class="h-8 w-8 text-lochmara-500" />
               </template>
             </OneTabFeature>
 
@@ -585,6 +584,10 @@
           alt="background glow"
         />
       </section>
+
+      <Divider between />
+
+      <Testimonial />
 
       <Divider between />
 
