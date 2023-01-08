@@ -94,15 +94,21 @@
           <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
             <a
               class="hover:opacity-75"
-              href="/blog/how-to-save-your-tabs-and-tab-groups"
-            >
-              Save all tabs & tab groups
-            </a>
-            <a
-              class="hover:opacity-75"
               href="/blog/synchronize-the-opened-tabs-and-tab-groups"
             >
               Synchronize the Open Tabs/Tab Groups
+            </a>
+            <a
+              class="hover:opacity-75"
+              href="/blog/how-to-save-your-tabs-and-tab-groups"
+            >
+              How to Save tabs & tab groups
+            </a>
+            <a
+              class="hover:opacity-75"
+              href="/blog/how-to-restore-your-browser-tabs-and-tabgroups"
+            >
+              How to Restore tabs & tab groups
             </a>
             <a
               class="hover:opacity-75"

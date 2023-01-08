@@ -148,6 +148,20 @@
                 >
               </li>
               <!-- feat - end -->
+
+              <!-- feat - start -->
+              <li class="flex items-center gap-1.5 font-semibold">
+                <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
+                <span class="font-semibold">
+                  <a
+                    href="https://github.com/one-tab-group/onetab.group/issues/55"
+                    target="_blank"
+                    >Integration with Raycast</a
+                  >
+                  (v1.3.0, Coming soon)</span
+                >
+              </li>
+              <!-- feat - end -->
             </ul>
           </div>
           <!-- center side - end -->
