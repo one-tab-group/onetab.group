@@ -103,7 +103,7 @@
               <div
                 class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white"
               >
-                <span class="text-2xl">$19.99</span>
+                <span class="text-2xl">$19.9</span>
                 <span>/year</span>
               </div>
             </div>
