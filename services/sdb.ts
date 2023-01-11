@@ -11,7 +11,7 @@ type SupaDb = {
       sessionItem: Session
     ) => Promise<{
       data: Session[] | null
-      error: PostgrestError
+      error: PostgrestError | null
     }>
     deleteById: (
       sessionId: Session['id'],
@@ -19,7 +19,7 @@ type SupaDb = {
     ) => Promise<Session[] | null>
     fetchById: (id: Session['id']) => Promise<{
       data: Session[] | null
-      error: PostgrestError
+      error: PostgrestError | null
     }>
     fetchByAccountId: (accountId: Account['id']) => Promise<Session[] | null>
   }
@@ -37,26 +37,26 @@ type SupaDb = {
   license: {
     fetchByKey: (key: License['license_key']) => Promise<{
       data: License[] | null
-      error: PostgrestError
+      error: PostgrestError | null
     }>
     fetchByEmail: (email: Account['email']) => Promise<{
       data: License[] | null
-      error: PostgrestError
+      error: PostgrestError | null
     }>
     insert: (license: License) => Promise<{
       data: License[] | null
-      error: PostgrestError
+      error: PostgrestError | null
     }>
     upsert: (license: License) => Promise<{
       data: License[] | null
-      error: PostgrestError
+      error: PostgrestError | null
     }>
     deleteById: (
       licenseId: License['id'],
       accountId: Account['id']
     ) => Promise<{
       data: License[] | null
-      error: PostgrestError
+      error: PostgrestError | null
     }>
   }
 }
