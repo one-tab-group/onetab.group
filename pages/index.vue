@@ -303,14 +303,14 @@
       <!-- 1. Sync with your open tabs &amp; tab groups-->
       <OneTabDesc left-desc>
         <template #title>
-          Synchronize your browser tabs &amp;
-          <span class="text-lochmara-500">tab groups</span>
+          Your Open Tabs &
+          <span class="text-lochmara-500">Tab Groups</span>
+          in sync with your browser
         </template>
         <template #description>
-          Are you struggling to find the tab you're looking for after opening
-          huge amount of tabs? We have synced the tabs and tab groups you are
-          browsing in chrome, so you can easily manage your open tabs and tab
-          groups.
+          Struggling to find a site among a mass of open tabs in your browser?
+          Don't worry, We Provide you Open Tabs Panel offers an easy way to
+          manage multiple tabs at once, in sync with your browser.
         </template>
         <template #media>
           <img
@@ -326,8 +326,8 @@
       <!-- 2. Save/Restore/Reorganise tabs, even tab groups -->
       <OneTabDesc>
         <template #title>
-          Save/Restore/Reorganise tabs
-          <p>Even <span class="text-lochmara-500">tab groups</span></p>
+          Save/Restore Tabs &
+          <span class="text-lochmara-500">Tab Groups</span>
         </template>
         <template #description>
           One-click to aggregate all tabs &amp; tab groups into one session. You

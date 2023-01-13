@@ -60,6 +60,13 @@
             >
               <span>Add to Microsoft Edge</span>
             </a>
+            <a
+              class="flex hover:opacity-75 text-neon"
+              :href="chromeUrl"
+              target="_blank"
+            >
+              <span>Add to Brave</span>
+            </a>
             <a class="hover:opacity-75" href="/blog/how-to-migrate-from-onetab">
               Migration from OneTab
             </a>
@@ -94,9 +101,9 @@
           <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
             <a
               class="hover:opacity-75"
-              href="/blog/synchronize-the-opened-tabs-and-tab-groups"
+              href="/blog/introduce-the-open-tabs-panel"
             >
-              Synchronize the Open Tabs/Tab Groups
+              Introduce the Open Tabs Panel
             </a>
             <a
               class="hover:opacity-75"
@@ -106,7 +113,7 @@
             </a>
             <a
               class="hover:opacity-75"
-              href="/blog/how-to-restore-your-browser-tabs-and-tabgroups"
+              href="/blog/how-to-restore-your-browser-tabs-and-tab-groups"
             >
               How to Restore tabs & tab groups
             </a>
@@ -118,15 +125,22 @@
             </a>
             <a
               class="hover:opacity-75"
-              href="/blog/sharing-your-tabs-or-tabgroups-with-others"
+              href="/blog/sharing-your-tabs-or-tab-groups-with-others"
             >
-              Sharing your tabs/tab groups with others
+              Sharing tabs & tab groups with others
             </a>
-            <a class="hover:opacity-75" href="/blog/sync-session-to-notion">
-              Sync your tabs/tab groups to Notion
+            <a
+              class="hover:opacity-75"
+              href="/blog/sync-your-browser-tabs-to-notion"
+            >
+              Sync your browser tabs to <span class="text-neon">Notion</span>
             </a>
-            <a class="hover:opacity-75" href="">
-              Searching tabs using Command Palette
+            <a
+              class="hover:opacity-75"
+              href="/blog/search-saved-browser-tabs-and-tab-groups-in-raycast"
+            >
+              Search tabs & tab groups using
+              <span class="text-neon">Raycast</span>
             </a>
           </nav>
         </div>
