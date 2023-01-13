@@ -133,31 +133,52 @@
               class="hover:opacity-75"
               href="/blog/sync-your-browser-tabs-to-notion"
             >
-              Sync your browser tabs to <span class="text-neon">Notion</span>
+              Sync your browser tabs to Notion
             </a>
             <a
               class="hover:opacity-75"
               href="/blog/search-saved-browser-tabs-and-tab-groups-in-raycast"
             >
-              Search tabs & tab groups using
-              <span class="text-neon">Raycast</span>
+              Search tabs & tab groups using Raycast
             </a>
           </nav>
         </div>
 
         <div>
-          <p class="text-xl font-semibold">Support</p>
+          <p class="text-xl font-semibold">Product</p>
 
           <nav
             class="flex flex-col mt-4 space-y-2 text-md text-shark-400 items-center lg:items-start"
           >
+            <a
+              class="hover:opacity-75"
+              href="/blog/sync-your-browser-tabs-to-notion"
+            >
+              Integration with <span class="text-neon">Notion</span>
+            </a>
+
+            <a
+              class="hover:opacity-75"
+              href="/blog/search-saved-browser-tabs-and-tab-groups-in-raycast"
+            >
+              Integration with <span class="text-neon">Raycast</span>
+            </a>
+
+            <div
+              class="hover:opacity-75 flex items-center gap-1 cursor-pointer"
+              @click="emit('navto', 'features')"
+            >
+              <span>Features</span>
+            </div>
+
             <div
               class="hover:opacity-75 flex items-center gap-1 cursor-pointer"
               @click="emit('navto', 'faqs')"
             >
               <span>FAQS</span>
             </div>
-            <a class="hover:opacity-75" href=""> Help Center </a>
+
+            <a class="hover:opacity-75" href="/pricing"> Pricing </a>
 
             <a
               class="hover:opacity-75 flex items-center gap-1"
