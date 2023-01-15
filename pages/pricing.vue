@@ -8,16 +8,6 @@
       <p class="text-secondary text-lg lg:text-xl text-center mt-4">
         Start for free, no credit card required. Upgrade anytime.
       </p>
-      <!-- <p class="text-center mt-4 text-secondary text-sm">
-        20% off discount code on
-        <a
-          class="text-neon"
-          href="https://www.producthunt.com/posts/one-tab-group"
-          target="_blank"
-        >
-          <span>Product Hunt</span>
-        </a>
-      </p> -->
     </header>
     <main class="my-8">
       <div class="w-full space-y-4 mx-auto py-6">
@@ -143,23 +133,24 @@
               <!-- feat - start -->
               <li class="flex items-center gap-1.5 font-semibold">
                 <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-                <span class="font-semibold">
-                  Sync session to Notion (v1.2.0)</span
+                <a
+                  class="font-semibold"
+                  href="/blog/sync-your-browser-tabs-to-notion"
                 >
+                  Sync browser tabs to Notion (v1.2.0)
+                </a>
               </li>
               <!-- feat - end -->
 
               <!-- feat - start -->
               <li class="flex items-center gap-1.5 font-semibold">
                 <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
-                <span class="font-semibold">
-                  <a
-                    href="https://github.com/one-tab-group/onetab.group/issues/55"
-                    target="_blank"
-                    >Integration with Raycast</a
-                  >
-                  (v1.3.0, Coming soon)</span
+                <a
+                  class="font-semibold"
+                  href="/blog/search-saved-browser-tabs-and-tab-groups-in-raycast"
                 >
+                  Search browser tabs in Raycast (v1.3.0)
+                </a>
               </li>
               <!-- feat - end -->
             </ul>

@@ -12,7 +12,7 @@ head.image: /img/changelog.jpg
 🎉🎉 One Tab Group supports integrates with Raycast, [Learn how to search saved browser tabs and tab groups in Raycast](/blog/search-saved-browser-tabs-and-tab-groups-in-raycast)
 :::
 
-## v1.3.0（2023-01-15）
+## 1.3.0（2023-01-15）
 
 ### Features
 
