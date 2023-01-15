@@ -8,8 +8,8 @@
         class="relative px-4 py-2.5 leading-none flex items-center divide-x divide-shark-50 font-semibold text-shark-50"
       >
         <span class="pr-4 text-sm">
-          ✨ Released v1.2.2 on Dec 25 2022 to support syncing browser tabs to
-          Notion.
+          ✨ Released v1.3.0 on Jan 15 2023 integrates with Raycast for effective
+          tab searching.
         </span>
         <span
           class="pl-4 group-hover:text-white/90 transition duration-500 text-sm"

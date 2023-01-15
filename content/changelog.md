@@ -9,8 +9,15 @@ head.image: /img/changelog.jpg
 # Changelog
 
 :::alert{info}
-🎉🎉 One Tab Group supports integration with Notion, [Learn how to sync your tabs/tab groups to Notion](/blog/sync-session-to-notion)
+🎉🎉 One Tab Group supports integrates with Raycast, [Learn how to search saved browser tabs and tab groups in Raycast](/blog/search-saved-browser-tabs-and-tab-groups-in-raycast)
 :::
+
+## v1.3.0（2023-01-15）
+
+### Features
+
+- Integrates with with `Raycast` for effective tab searching
+- Virtual scrolling rendering for the long session list (40% memeory savings)
 
 ## 1.2.3 (2022-12-30)
 
@@ -54,6 +61,10 @@ head.image: /img/changelog.jpg
 - Fixed the bookmark render bug
 
 ## 1.2.0 (2022-12-15)
+
+:::alert{info}
+🎉🎉 One Tab Group supports integration with Notion, [Learn how to sync your tabs/tab groups to Notion](/blog/sync-your-browser-tabs-to-notion)
+:::
 
 ### Features
 
