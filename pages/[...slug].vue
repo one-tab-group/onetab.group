@@ -5,9 +5,9 @@
 </template>
 
 <script lang="ts" setup>
-const { path } = useRoute()
+// const { path } = useRoute()
 
-console.log(path)
+// console.log(path)
 </script>
 
 <style scoped></style>
