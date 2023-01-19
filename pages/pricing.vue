@@ -77,7 +77,7 @@
                     class="flex items-center inline-block order-first lg:order-none bg-lochmara-200/50 text-white text-xs font-semibold tracking-wider uppercase rounded-full px-3 py-1"
                   >
                     <tabler:discount-2 class="w-4 h-4 mr-1" />
-                    <span>Save 33%</span>
+                    <span>Save 30%</span>
                   </p>
                 </div>
               </div>
@@ -87,13 +87,13 @@
               <div
                 class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white"
               >
-                <span class="text-2xl">$2.49</span>
+                <span class="text-2xl">$2.99</span>
                 <span>/month</span>
               </div>
               <div
                 class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white"
               >
-                <span class="text-2xl">$19.9</span>
+                <span class="text-2xl">$24.9</span>
                 <span>/year</span>
               </div>
             </div>
