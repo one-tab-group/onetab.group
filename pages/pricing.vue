@@ -201,7 +201,7 @@
             </a> -->
 
             <a
-              href="https://otg.lemonsqueezy.com/checkout/buy/ef730d5f-6f6c-4b15-b766-e9beddd26222?embed=1&dark=1"
+              href="https://otg.lemonsqueezy.com/checkout/buy/a79788cc-8ca3-4781-a929-d393517e77d9?embed=1&dark=1"
               class="lemonsqueezy-button relative block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
             >
               Get Lifetime License
