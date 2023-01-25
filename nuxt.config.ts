@@ -66,6 +66,10 @@ export default defineNuxtConfig({
         {
           defer: true,
           src: 'https://widget.senja.io/embed/frame.js'
+        },
+        {
+          defer: true,
+          src: 'https://app.lemonsqueezy.com/js/lemon.js'
         }
       ]
     }

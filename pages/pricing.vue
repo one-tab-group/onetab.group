@@ -98,10 +98,16 @@
               </div>
             </div>
 
-            <a
+            <!-- <a
               href="https://xiaoluoboding.gumroad.com/l/otg"
               target="_blank"
               class="block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+            >
+              Get Pro License
+            </a> -->
+            <a
+              href="https://otg.lemonsqueezy.com/checkout/buy/073e5834-75af-41b3-bd39-004e83240180?embed=1&dark=1"
+              class="lemonsqueezy-button block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
             >
               Get Pro License
             </a>
@@ -186,10 +192,17 @@
               </div>
             </div>
 
-            <a
+            <!-- <a
               href="https://xiaoluoboding.gumroad.com/l/otg_lifetime"
               target="_blank"
               class="relative block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+            >
+              Get Lifetime License
+            </a> -->
+
+            <a
+              href="https://otg.lemonsqueezy.com/checkout/buy/ef730d5f-6f6c-4b15-b766-e9beddd26222?embed=1&dark=1"
+              class="lemonsqueezy-button relative block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
             >
               Get Lifetime License
             </a>
@@ -257,4 +270,12 @@
   </NuxtLayout>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { isDark } from '~/composables/useDarkMode'
+
+const LTDUrl = computed(() => {
+  const url =
+    'https://otg.lemonsqueezy.com/checkout/buy/ef730d5f-6f6c-4b15-b766-e9beddd26222?embed=1'
+  return isDark.value ? `${url}&dark=1` : url
+})
+</script>
