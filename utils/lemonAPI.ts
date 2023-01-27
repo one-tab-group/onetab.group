@@ -18,6 +18,6 @@ const request = async (method: string, route: string) => {
 }
 
 export default {
-  post: (route: string) => request('POST', route),
-  get: (route: string) => request('GET', route)
+  post: <T>(route: string): Promise<T> => request('POST', route),
+  get: <T>(route: string): Promise<T> => request('GET', route)
 }

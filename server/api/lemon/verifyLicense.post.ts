@@ -10,7 +10,7 @@ interface VerifyRes {
   meta: AnyRecord
 }
 
-interface LicenseKeyRes {
+interface LemonAPIData {
   jsonapi: AnyRecord
   links: AnyRecord
   data: {
@@ -32,7 +32,7 @@ const verifyLicense = async (licenseKey: string) => {
   let res = {} as VerifyRes
 
   try {
-    res = await api.post(reqURL)
+    res = await api.post<VerifyRes>(reqURL)
   } catch (error) {
     console.log(error)
   }
@@ -47,15 +47,43 @@ const verifyLicense = async (licenseKey: string) => {
  */
 const getLicense = async (licenseId: number) => {
   const reqURL = `license-keys/${licenseId}`
-  let res = {} as LicenseKeyRes
+  let res = {} as LemonAPIData
 
   try {
-    res = await api.get(reqURL)
+    res = await api.get<LemonAPIData>(reqURL)
   } catch (error) {
     console.log(error)
   }
 
   return res
+}
+
+/**
+ * Step 3. get the order
+ * @param licenseId
+ * @returns
+ */
+const getOrder = async (orderId: number) => {
+  const reqURL = `orders/${orderId}`
+  let res = {} as LemonAPIData
+
+  try {
+    res = await api.get<LemonAPIData>(reqURL)
+  } catch (error) {
+    console.log(error)
+  }
+
+  return res
+}
+
+const getRecurrence = (variantId: number) => {
+  const variantMap = {
+    38360: 'monthly',
+    38361: 'lifetime',
+    38635: 'yearly'
+  } as Record<number, string>
+
+  return variantMap[variantId]
 }
 
 export default defineEventHandler(async (event) => {
@@ -65,12 +93,20 @@ export default defineEventHandler(async (event) => {
 
   // console.log(license_key)
   const verifyInfo = await verifyLicense(license_key)
-  // console.log(verifyInfo)
 
   if (verifyInfo && verifyInfo.valid) {
-    const licenseId = verifyInfo.license_key.id
-    const licenseInfo = await getLicense(licenseId)
-    res = licenseInfo.data
+    const licenseRes = await getLicense(verifyInfo.license_key.id)
+    const licenseInfo = licenseRes.data.attributes
+    const orderRes = await getOrder(licenseInfo.order_id)
+
+    res = {
+      ...licenseInfo,
+      ...verifyInfo.license_key,
+      ...verifyInfo.meta,
+      recurrence: getRecurrence(verifyInfo.meta.variant_id),
+      ...orderRes.data.attributes
+    }
+    // console.log(orderRes)
   } else {
     message = verifyInfo.error
   }
