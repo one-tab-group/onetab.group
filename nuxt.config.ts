@@ -127,7 +127,8 @@ export default defineNuxtConfig({
       EMAIL_PASSWORD: process.env.EMAIL_PASSWORD,
       SUPABASE_URL: process.env.SUPABASE_URL,
       SUPABASE_KEY: process.env.SUPABASE_KEY,
-      CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN
+      CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN,
+      LEMON_KEY: process.env.LEMON_KEY
     }
   }
 })
