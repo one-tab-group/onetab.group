@@ -76,22 +76,6 @@ const getOrder = async (orderId: number) => {
   return res
 }
 
-const getIPInfo = async () => {
-  let res = {
-    data: {
-      country_name: 'OTG'
-    }
-  } as AnyRecord
-
-  try {
-    res = await axios.get<AnyRecord>('https://ipapi.co/json/')
-  } catch (error) {
-    console.log(error)
-  }
-
-  return res.data
-}
-
 const getRecurrence = (variantId: number) => {
   const variantMap = {
     38360: 'monthly',
@@ -114,15 +98,13 @@ export default defineEventHandler(async (event) => {
     const licenseRes = await getLicense(verifyInfo.license_key.id)
     const licenseInfo = licenseRes.data.attributes
     const orderRes = await getOrder(licenseInfo.order_id)
-    const ipInfo = await getIPInfo()
 
     res = {
       ...licenseInfo,
       ...verifyInfo.license_key,
       ...verifyInfo.meta,
       ...orderRes.data.attributes,
-      recurrence: getRecurrence(verifyInfo.meta.variant_id),
-      ip_country: ipInfo.country_name
+      recurrence: getRecurrence(verifyInfo.meta.variant_id)
     }
     // console.log(orderRes)
   } else {
