@@ -95,8 +95,8 @@ const convertGumroadData = (data: AnyRecord) => {
     ...data.purchase,
     key: data.purchase.license_key,
     order_id: data.purchase.sale_id,
-    order_item_id: data.purchase.subscription_id,
-    identifier: data.purchase.subscription_id
+    order_item_id: data.purchase?.subscription_id || null,
+    identifier: data.purchase?.subscription_id || null
   }
 }
 
@@ -113,7 +113,9 @@ export default defineEventHandler(async (event) => {
       `${GUMROAD_API_URI}otg&license_key=${license_key}`
     )
 
-    res = convertGumroadData(pro.data)
+    if (!pro.error) {
+      res = convertGumroadData(pro.data)
+    }
 
     if (pro !== null && !pro.data?.success) {
       const lifetime = await axios.post<AnyRecord>(
