@@ -2,7 +2,7 @@
   "name": "onetab.group",
   "displayName": "One Tab Group",
   "description": "Web Home For One Tab Group Chrome Extension.",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "private": false,
   "scripts": {
     "dev": "nuxt dev --port 3088",

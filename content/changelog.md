@@ -12,6 +12,13 @@ head.image: /img/changelog.jpg
 🎉🎉 One Tab Group supports integrates with Raycast, [Learn how to search saved browser tabs and tab groups in Raycast](/blog/search-saved-browser-tabs-and-tab-groups-in-raycast)
 :::
 
+## 1.3.1（2023-01-31）
+
+### Features
+
+- Support Chinese Payment channels for Lifetime License like (支付宝、微信支付)
+- The default title for creating a new session is the creation time; this helps to avoid scrambled session names.
+
 ## 1.3.0（2023-01-15）
 
 ### Features
