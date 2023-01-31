@@ -128,7 +128,8 @@ export default defineNuxtConfig({
       SUPABASE_URL: process.env.SUPABASE_URL,
       SUPABASE_KEY: process.env.SUPABASE_KEY,
       CHATWOOT_WEBSITE_TOKEN: process.env.CHATWOOT_WEBSITE_TOKEN,
-      LEMON_KEY: process.env.LEMON_KEY
+      LEMON_KEY: process.env.LEMON_KEY,
+      GUMROAD_KEY: process.env.GUMROAD_KEY
     }
   }
 })
