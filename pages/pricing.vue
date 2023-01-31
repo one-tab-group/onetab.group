@@ -208,7 +208,7 @@
             </a>
 
             <div class="text-center p-4 text-lochmara-50 text-sm">
-              20% off with code <span class="text-neon">7vn673t</span>
+              20% off with code <span class="text-neon">OTGNEW20</span>
             </div>
 
             <ul
