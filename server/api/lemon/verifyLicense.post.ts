@@ -1,4 +1,3 @@
-import axios from '~/utils/http'
 import api from '~/utils/lemonAPI'
 import { AnyRecord } from '~/types'
 
@@ -21,9 +20,6 @@ interface LemonAPIData {
     links: AnyRecord
   }
 }
-
-const GUMROAD_API_URI =
-  'https://api.gumroad.com/v2/licenses/verify?product_permalink='
 
 /**
  * Step 1. verify the license
@@ -89,59 +85,30 @@ const getRecurrence = (variantId: number) => {
   return variantMap[variantId]
 }
 
-// TODO. delete on imported the data
-const convertGumroadData = (data: AnyRecord) => {
-  return {
-    ...data.purchase,
-    key: data.purchase.license_key,
-    order_id: data.purchase.sale_id,
-    order_item_id: data.purchase?.subscription_id || null,
-    identifier: data.purchase?.subscription_id || null
-  }
-}
-
 export default defineEventHandler(async (event) => {
   const { license_key } = await readBody(event)
   const env = useRuntimeConfig()
-  const gumroadKeys = env.public.GUMROAD_KEY.split(',')
 
   let res = null
   let message = null
 
-  if (gumroadKeys.includes(license_key)) {
-    const pro = await axios.post<AnyRecord>(
-      `${GUMROAD_API_URI}otg&license_key=${license_key}`
-    )
+  const verifyInfo = await verifyLicense(license_key)
 
-    if (!pro.error) {
-      res = convertGumroadData(pro.data)
-    }
+  if (verifyInfo && verifyInfo.valid) {
+    const licenseRes = await getLicense(verifyInfo.license_key.id)
+    const licenseInfo = licenseRes.data.attributes
+    const orderRes = await getOrder(licenseInfo.order_id)
 
-    if (pro !== null && !pro.data?.success) {
-      const lifetime = await axios.post<AnyRecord>(
-        `${GUMROAD_API_URI}otg_lifetime&license_key=${license_key}`
-      )
-      res = convertGumroadData(lifetime.data)
+    res = {
+      ...licenseInfo,
+      ...verifyInfo.license_key,
+      ...verifyInfo.meta,
+      ...orderRes.data.attributes,
+      recurrence: getRecurrence(verifyInfo.meta.variant_id)
     }
+    // console.log(orderRes)
   } else {
-    const verifyInfo = await verifyLicense(license_key)
-
-    if (verifyInfo && verifyInfo.valid) {
-      const licenseRes = await getLicense(verifyInfo.license_key.id)
-      const licenseInfo = licenseRes.data.attributes
-      const orderRes = await getOrder(licenseInfo.order_id)
-
-      res = {
-        ...licenseInfo,
-        ...verifyInfo.license_key,
-        ...verifyInfo.meta,
-        ...orderRes.data.attributes,
-        recurrence: getRecurrence(verifyInfo.meta.variant_id)
-      }
-      // console.log(orderRes)
-    } else {
-      message = verifyInfo.error
-    }
+    message = verifyInfo.error
   }
 
   // console.log(res)
