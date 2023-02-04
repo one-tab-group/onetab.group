@@ -8,8 +8,8 @@
         class="relative px-4 py-2.5 leading-none flex items-center divide-x divide-shark-50 font-semibold text-shark-50"
       >
         <span class="pr-4 text-sm">
-          ✨ Released v1.3.0 on Jan 15 2023 integrates with Raycast for effective
-          tab searching.
+          ✨ Released v1.3.0 on Jan 15 2023 integrates with Raycast for
+          effective tab searching.
         </span>
         <span
           class="pl-4 group-hover:text-white/90 transition duration-500 text-sm"
@@ -153,6 +153,14 @@
               <span class="sr-only hidden">One Tab Group on Telegram</span>
               <mdi:telegram class="h-6 w-6" />
               <span class="ml-4">Telegram</span>
+            </a>
+          </li>
+          <li class="menu-mobile-item">
+            <a
+              href="/pricing"
+              class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
+            >
+              <span>Pricing</span>
             </a>
           </li>
           <li class="menu-mobile-item">
