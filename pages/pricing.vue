@@ -1,17 +1,18 @@
 <template>
   <NuxtLayout name="pricing">
-    <header>
+    <header class="mx-8 lg:mx-0">
       <h2 class="text-primary text-xl lg:text-2xl font-bold text-center">
-        Upgrade to start using
-        <span class="text-neon">One Tab Group</span> at its Fullest
+        <span>Upgrade to start using </span>
+        <span class="text-neon block lg:inline">One Tab Group</span>
+        <span> at its Fullest</span>
       </h2>
       <p class="text-secondary text-lg lg:text-xl text-center mt-4">
         Start for free, no credit card required. Upgrade anytime.
       </p>
     </header>
-    <main class="my-8">
+    <main class="my-8 mx-8">
       <div class="w-full space-y-4 mx-auto py-6">
-        <div class="flex gap-4">
+        <div class="flex gap-4 flex-col lg:flex-row">
           <!-- left side - start -->
           <div class="w-full bg-shark-700 rounded-lg p-6 sm:p-8">
             <div class="mb-4">
@@ -28,9 +29,9 @@
             </div>
 
             <div class="space-x-2 mb-4 h-[50px]">
-              <span class="text-shark-100 text-3xl 2xl:text-4xl font-bold"
-                >$0</span
-              >
+              <span class="text-shark-100 text-3xl 2xl:text-4xl font-bold">
+                $0
+              </span>
             </div>
 
             <a
@@ -67,7 +68,7 @@
                 <h3 class="text-white text-3xl 2xl:text-4xl font-semibold mb-4">
                   Pro
                 </h3>
-                <div class="flex gap-2">
+                <div class="grid grid-cols-1 lg:flex gap-2">
                   <p
                     class="inline-block order-first lg:order-none bg-lochmara-200/50 text-white text-xs font-semibold tracking-wider uppercase rounded-full px-3 py-1"
                   >
@@ -83,28 +84,21 @@
               </div>
             </div>
 
-            <div class="space-x-2 mb-4 w-full grid grid-cols-2">
+            <div class="mb-4 w-full grid grid-cols-1 lg:grid-cols-2 gap-2">
               <div
-                class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white"
+                class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white w-full"
               >
                 <span class="text-2xl">$2.99</span>
                 <span>/month</span>
               </div>
               <div
-                class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white"
+                class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white w-full"
               >
                 <span class="text-2xl">$24.9</span>
                 <span>/year</span>
               </div>
             </div>
 
-            <!-- <a
-              href="https://xiaoluoboding.gumroad.com/l/otg"
-              target="_blank"
-              class="block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
-            >
-              Get Pro License
-            </a> -->
             <a
               href="https://otg.lemonsqueezy.com/checkout/buy/e752e4ec-3fa0-40c7-a378-a4dc4c8b702c?embed=1&dark=1"
               class="lemonsqueezy-button block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
@@ -186,30 +180,21 @@
 
             <div class="space-x-2 mb-4 w-full h-[50px]">
               <div class="text-white text-base font-bold rounded-2xl">
-                <span class="text-2xl line-through text-opacity-80">$49.9</span>
-                <span class="text-3xl">$39.9</span>
-                / <span class="text-sm">Limited Time Offer</span>
+                <span class="text-shark-100 text-3xl 2xl:text-4xl font-bold"
+                  >$49.99</span
+                >
+                <!-- <span class="text-3xl">$39.9</span>
+                / <span class="text-sm">Limited Time Offer</span> -->
+                / <span class="text-sm">lifetime deal</span>
               </div>
             </div>
 
-            <!-- <a
-              href="https://xiaoluoboding.gumroad.com/l/otg_lifetime"
-              target="_blank"
-              class="relative block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
-            >
-              Get Lifetime License
-            </a> -->
-
             <a
               href="https://otg.lemonsqueezy.com/checkout/buy/3b4ba86e-b022-4983-80e0-3221e79a5c4f?embed=1&dark=1"
-              class="lemonsqueezy-button relative block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+              class="lemonsqueezy-button relative block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3 mb-4"
             >
               Get Lifetime License
             </a>
-
-            <div class="text-center p-4 text-lochmara-50 text-sm">
-              20% off with code <span class="text-neon">OTGNEW20</span>
-            </div>
 
             <ul
               class="text-lochmara-50 space-y-2 mb-6 lg:text-xs 2xl:text-[14px]"
@@ -248,7 +233,9 @@
       </div>
     </main>
     <footer>
-      <div class="flex justify-center items-center gap-4">
+      <div
+        class="flex justify-center items-center gap-4 flex-col mx-8 lg:flex-row"
+      >
         <div class="flex items-center gap-4">
           <img src="/logo.svg" class="h-8" alt="" />
         </div>
@@ -275,7 +262,7 @@ import { isDark } from '~/composables/useDarkMode'
 
 const LTDUrl = computed(() => {
   const url =
-    'https://otg.lemonsqueezy.com/checkout/buy/ef730d5f-6f6c-4b15-b766-e9beddd26222?embed=1'
+    'https://otg.lemonsqueezy.com/checkout/buy/3b4ba86e-b022-4983-80e0-3221e79a5c4f?embed=1'
   return isDark.value ? `${url}&dark=1` : url
 })
 </script>
