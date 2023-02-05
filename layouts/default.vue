@@ -4,14 +4,18 @@
       <SiteHeader />
     </ClientOnly>
 
-    <main class="max-w-screen-xl pt-12 2xl:pt-16 my-12 m-auto sm:rounded">
-      <article class="prose text-shark-800 dark:text-shark-100 max-w-none">
+    <main
+      class="max-w-screen-xl pt-0 lg:pt-12 2xl:pt-16 my-6 lg:my-12 sm:rounded mx-4 lg:mx-auto"
+    >
+      <article
+        class="prose text-shark-800 dark:text-shark-100 max-w-none !p-4 !lg:p-20"
+      >
         <PageHeader />
 
         <Divider between />
 
-        <section class="grid grid-cols-[1fr,2fr]">
-          <PageToc />
+        <section class="grid grid-cols-1 lg:grid-cols-[1fr,2fr]">
+          <PageToc class="hidden lg:block" />
           <slot />
         </section>
       </article>
