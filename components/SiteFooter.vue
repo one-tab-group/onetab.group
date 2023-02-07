@@ -143,6 +143,12 @@
             >
               Search tabs & tab groups using Raycast
             </a>
+            <a
+              class="hover:opacity-75"
+              href="/blog/how-to-reduce-browser-memory-usage"
+            >
+              How to reduce browser memory usage
+            </a>
           </nav>
         </div>
 
