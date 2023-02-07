@@ -78,7 +78,7 @@
                     class="flex items-center inline-block order-first lg:order-none bg-lochmara-200/50 text-white text-xs font-semibold tracking-wider uppercase rounded-full px-3 py-1"
                   >
                     <tabler:discount-2 class="w-4 h-4 mr-1" />
-                    <span>Save 30%</span>
+                    <span>Save 33%</span>
                   </p>
                 </div>
               </div>
