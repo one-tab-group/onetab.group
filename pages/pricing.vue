@@ -88,13 +88,13 @@
               <div
                 class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white w-full"
               >
-                <span class="text-2xl">$2.99</span>
+                <span class="text-2xl">$2.49</span>
                 <span>/month</span>
               </div>
               <div
                 class="text-white text-base font-bold px-6 py-2 rounded-2xl border border-2 border-white w-full"
               >
-                <span class="text-2xl">$24.9</span>
+                <span class="text-2xl">$19.9</span>
                 <span>/year</span>
               </div>
             </div>
@@ -180,21 +180,25 @@
 
             <div class="space-x-2 mb-4 w-full h-[50px]">
               <div class="text-white text-base font-bold rounded-2xl">
-                <span class="text-shark-100 text-3xl 2xl:text-4xl font-bold"
-                  >$49.99</span
+                <span
+                  class="text-2xl line-through text-opacity-80 text-shark-100"
+                  >$49.9</span
                 >
-                <!-- <span class="text-3xl">$39.9</span>
-                / <span class="text-sm">Limited Time Offer</span> -->
-                / <span class="text-sm">lifetime deal</span>
+                <span class="text-3xl">$39.9</span>
+                / <span class="text-sm">Limited Time Offer</span>
               </div>
             </div>
 
             <a
               href="https://otg.lemonsqueezy.com/checkout/buy/3b4ba86e-b022-4983-80e0-3221e79a5c4f?embed=1&dark=1"
-              class="lemonsqueezy-button relative block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3 mb-4"
+              class="lemonsqueezy-button relative block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
             >
               Get Lifetime License
             </a>
+
+            <div class="text-center p-4 text-lochmara-50 text-sm">
+              20% off with code <span class="text-neon">OTGNEW20</span>
+            </div>
 
             <ul
               class="text-lochmara-50 space-y-2 mb-6 lg:text-xs 2xl:text-[14px]"
