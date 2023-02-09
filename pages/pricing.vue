@@ -99,8 +99,15 @@
               </div>
             </div>
 
-            <a
+            <!-- <a
               href="https://otg.lemonsqueezy.com/checkout/buy/e752e4ec-3fa0-40c7-a378-a4dc4c8b702c?embed=1&dark=1"
+              class="lemonsqueezy-button block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+            >
+              Get Pro License
+            </a> -->
+            <a
+              href="https://otg.lemonsqueezy.com/checkout/buy/1b389fe6-f20b-43ad-a22c-f2a1e261f45d"
+              target="_blank"
               class="lemonsqueezy-button block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
             >
               Get Pro License
@@ -189,8 +196,15 @@
               </div>
             </div>
 
-            <a
+            <!-- <a
               href="https://otg.lemonsqueezy.com/checkout/buy/3b4ba86e-b022-4983-80e0-3221e79a5c4f?embed=1&dark=1"
+              class="lemonsqueezy-button relative block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+            >
+              Get Lifetime License
+            </a> -->
+            <a
+              href="https://otg.lemonsqueezy.com/checkout/buy/3b4ba86e-b022-4983-80e0-3221e79a5c4f"
+              target="_blank"
               class="lemonsqueezy-button relative block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
             >
               Get Lifetime License
