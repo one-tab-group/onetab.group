@@ -79,7 +79,8 @@ const getRecurrence = (variantId: number) => {
   const variantMap = {
     38360: 'monthly',
     38361: 'lifetime',
-    38635: 'yearly'
+    38635: 'yearly',
+    39817: 'lifetime'
   } as Record<number, string>
 
   return variantMap[variantId]
