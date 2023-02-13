@@ -77,9 +77,12 @@ const getOrder = async (orderId: number) => {
 
 const getRecurrence = (variantId: number) => {
   const variantMap = {
+    // lemon
     38360: 'monthly',
     38361: 'lifetime',
     38635: 'yearly',
+    // gumroad
+    39816: 'monthly',
     39817: 'lifetime'
   } as Record<number, string>
 
