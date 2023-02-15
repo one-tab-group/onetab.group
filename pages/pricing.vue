@@ -205,7 +205,7 @@
             </a>
 
             <div class="flex items-center gap-4 mt-4 w-full">
-              <div class="w-full bg-shark-200 rounded-full dark:bg-shark-600">
+              <div class="w-full bg-shark-600 rounded-full">
                 <div
                   class="bg-lochmara-400 text-xs font-medium text-lochmara-100 text-center p-0.5 leading-none rounded-full"
                   style="width: 38%"
