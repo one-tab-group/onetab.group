@@ -196,12 +196,6 @@
               </div>
             </div>
 
-            <!-- <a
-              href="https://otg.lemonsqueezy.com/checkout/buy/3b4ba86e-b022-4983-80e0-3221e79a5c4f?embed=1&dark=1"
-              class="lemonsqueezy-button relative block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
-            >
-              Get Lifetime License
-            </a> -->
             <a
               href="https://otg.lemonsqueezy.com/checkout/buy/3b4ba86e-b022-4983-80e0-3221e79a5c4f"
               target="_blank"
@@ -210,8 +204,21 @@
               Get Lifetime License
             </a>
 
+            <div class="flex items-center gap-4 mt-4 w-full">
+              <div class="w-full bg-shark-200 rounded-full dark:bg-shark-600">
+                <div
+                  class="bg-lochmara-400 text-xs font-medium text-lochmara-100 text-center p-0.5 leading-none rounded-full"
+                  style="width: 38%"
+                >
+                  38 sales
+                </div>
+              </div>
+              <div class="w-15 text-sm text-neon font-semibold">62 left</div>
+            </div>
+
             <div class="text-center p-4 text-lochmara-50 text-sm">
-              20% off with code <span class="text-neon">OTGNEW20</span>
+              20% off with code
+              <span class="text-neon font-semibold">OTGNEW20</span>
             </div>
 
             <ul

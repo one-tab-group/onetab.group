@@ -91,7 +91,6 @@ const getRecurrence = (variantId: number) => {
 
 export default defineEventHandler(async (event) => {
   const { license_key } = await readBody(event)
-  const env = useRuntimeConfig()
 
   let res = null
   let message = null
