@@ -12,10 +12,10 @@
             <img src="/logo-text-light.svg" class="h-8 mt-4" alt="" />
           </figcaption>
 
-          <p class="max-w-xs text-sm text-shark-400">
+          <p class="max-w-xs text-sm text-shark-300">
             Manage your tabs & tab groups in one place.
           </p>
-          <figure class="text-shark-400 mt-6">
+          <figure class="text-shark-300 mt-6">
             <ul class="space-x-6 flex justify-center sm:justify-start mb-6">
               <li class="flex items-center">
                 <a :href="twitterUrl" target="_blank">
@@ -46,7 +46,7 @@
           <p class="text-xl font-semibold">Getting Started</p>
 
           <nav
-            class="flex flex-col mt-4 space-y-2 text-md text-shark-400 items-center lg:items-start"
+            class="flex flex-col mt-4 space-y-2 text-md text-shark-300 items-center lg:items-start"
           >
             <a
               class="flex hover:opacity-75 text-neon"
@@ -100,7 +100,7 @@
         <div>
           <p class="text-xl font-semibold">Product Features</p>
 
-          <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-400">
+          <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-300">
             <a
               class="hover:opacity-75"
               href="/blog/introduce-the-open-tabs-panel"
@@ -156,7 +156,7 @@
           <p class="text-xl font-semibold">Product</p>
 
           <nav
-            class="flex flex-col mt-4 space-y-2 text-md text-shark-400 items-center lg:items-start"
+            class="flex flex-col mt-4 space-y-2 text-md text-shark-300 items-center lg:items-start"
           >
             <a
               class="hover:opacity-75"

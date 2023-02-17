@@ -210,10 +210,10 @@
                   class="bg-lochmara-400 text-xs font-medium text-lochmara-100 text-center p-0.5 leading-none rounded-full"
                   style="width: 38%"
                 >
-                  38 sales
+                  40 sales
                 </div>
               </div>
-              <div class="w-15 text-sm text-neon font-semibold">62 left</div>
+              <div class="w-15 text-sm text-neon font-semibold">60 left</div>
             </div>
 
             <div class="text-center p-4 text-lochmara-50 text-sm">
