@@ -12,6 +12,31 @@ head.image: /img/changelog.jpg
 🎉🎉 One Tab Group supports integrates with Raycast, [Learn how to search saved browser tabs and tab groups in Raycast](/blog/search-saved-browser-tabs-and-tab-groups-in-raycast)
 :::
 
+## 1.3.3（2023-02-18)
+
+### Features
+
+- Bi-directional synchronization between `browser tabs` and `OTG's Open Tabs sidebar`
+  - Double click the tab to switch tab
+  - Tabs/tab groups can be reordered by dragging and dropping
+- Always open the extension home page when create a new window
+
+### Improvements
+
+- UI improvements of Open Tabs Sidebar
+- Enlarge the trash, bubble, pin icon on tab row clickable area
+
+### Bug Fixes
+
+- Fixed the problem of sharing session failure when logging in for the first time
+- Fixed the problem that the tabs in the search results cannot be deleted and pinned
+
+## 1.3.2（2023-02-12)
+
+### Bug Fixes
+
+- Fixed the wrong order when cloud sync
+
 ## 1.3.1（2023-01-31）
 
 ### Features
