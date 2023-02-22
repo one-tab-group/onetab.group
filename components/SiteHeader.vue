@@ -61,6 +61,14 @@
                 </li>
                 <li>
                   <NuxtLink
+                    to="/blog"
+                    class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
+                  >
+                    Blog
+                  </NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink
                     to="/pricing"
                     class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
                   >
@@ -153,6 +161,14 @@
               <span class="sr-only hidden">One Tab Group on Telegram</span>
               <mdi:telegram class="h-6 w-6" />
               <span class="ml-4">Telegram</span>
+            </a>
+          </li>
+          <li class="menu-mobile-item">
+            <a
+              href="/blog"
+              class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
+            >
+              <span>Blog</span>
             </a>
           </li>
           <li class="menu-mobile-item">

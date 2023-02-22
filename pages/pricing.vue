@@ -99,12 +99,6 @@
               </div>
             </div>
 
-            <!-- <a
-              href="https://otg.lemonsqueezy.com/checkout/buy/e752e4ec-3fa0-40c7-a378-a4dc4c8b702c?embed=1&dark=1"
-              class="lemonsqueezy-button block bg-lochmara-200 bg-opacity-50 hover:bg-lochmara-300 active:bg-lochmara-400 focus-visible:ring ring-lochmara-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
-            >
-              Get Pro License
-            </a> -->
             <a
               href="https://otg.lemonsqueezy.com/checkout/buy/1b389fe6-f20b-43ad-a22c-f2a1e261f45d"
               target="_blank"
@@ -208,12 +202,12 @@
               <div class="w-full bg-shark-600 rounded-full">
                 <div
                   class="bg-lochmara-400 text-xs font-medium text-lochmara-100 text-center p-0.5 leading-none rounded-full"
-                  style="width: 38%"
+                  style="width: 42%"
                 >
-                  40 sales
+                  42 sales
                 </div>
               </div>
-              <div class="w-15 text-sm text-neon font-semibold">60 left</div>
+              <div class="w-15 text-sm text-neon font-semibold">58 left</div>
             </div>
 
             <div class="text-center p-4 text-lochmara-50 text-sm">

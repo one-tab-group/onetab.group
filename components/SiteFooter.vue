@@ -94,6 +94,9 @@
               <span>ProductHunt</span>
               <heroicons-outline:external-link class="h-4 w-4" />
             </a>
+            <a class="hover:opacity-75 flex items-center gap-1" href="/blog">
+              <span>Blog</span>
+            </a>
           </nav>
         </div>
 

@@ -14,6 +14,14 @@
     "p:ish": "pnpm install --shamefully-hoist",
     "p:up": "pnpm up"
   },
+  "dependencies": {
+    "axios": "^1.2.6",
+    "dayjs": "^1.11.6",
+    "gsap": "^3.11.3",
+    "lodash.clonedeep": "^4.5.0",
+    "pinia": "^2.0.26",
+    "typed.js": "^2.0.12"
+  },
   "devDependencies": {
     "@iconify/json": "^2.1.143",
     "@notionhq/client": "^2.2.2",
@@ -23,6 +31,7 @@
     "@pinia/nuxt": "^0.4.5",
     "@supabase/supabase-js": "1.35.7",
     "@types/ejs": "^3.1.1",
+    "@types/lodash.clonedeep": "^4.5.7",
     "@types/nodemailer": "^6.4.6",
     "@vueuse/core": "9.6.0",
     "@vueuse/nuxt": "9.6.0",
@@ -34,12 +43,5 @@
     "sitemap": "^7.1.1",
     "unplugin-icons": "^0.14.14",
     "unplugin-vue-components": "^0.22.11"
-  },
-  "dependencies": {
-    "axios": "^1.2.6",
-    "dayjs": "^1.11.6",
-    "gsap": "^3.11.3",
-    "pinia": "^2.0.26",
-    "typed.js": "^2.0.12"
   }
 }

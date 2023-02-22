@@ -2,6 +2,7 @@ import { defineConfig } from 'windicss/helpers'
 import plugin from 'windicss/plugin'
 import colors from 'windicss/colors'
 import typography from 'windicss/plugin/typography'
+import lineClamp from 'windicss/plugin/line-clamp'
 
 const rainbowGradient = plugin(({ addUtilities }) => {
   addUtilities({
@@ -14,7 +15,7 @@ const rainbowGradient = plugin(({ addUtilities }) => {
 export default defineConfig({
   darkMode: 'class',
   attributify: true,
-  plugins: [typography, rainbowGradient],
+  plugins: [typography, rainbowGradient, lineClamp],
   theme: {
     extend: {
       colors: {
