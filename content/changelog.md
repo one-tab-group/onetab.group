@@ -12,6 +12,23 @@ head.image: /img/changelog.jpg
 🎉🎉 One Tab Group supports integrates with Raycast, [Learn how to search saved browser tabs and tab groups in Raycast](/blog/search-saved-browser-tabs-and-tab-groups-in-raycast)
 :::
 
+## 1.3.4 (2023-02-23)
+
+### Features
+
+- Merge two or more sessions into one session
+- Add the setting option
+  - Whether to restore pinned tabs when restoring a session
+  - Automatically open the extension homepage when opening a new window
+
+### Improvements
+
+- Pinned tabs can not drag/sort/move
+
+### Bug Fixes
+
+- Fixed the problem of extension's page always selected on `Open Tabs` pane
+
 ## 1.3.3（2023-02-18)
 
 ### Features
