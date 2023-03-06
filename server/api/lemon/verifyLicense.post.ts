@@ -9,16 +9,33 @@ interface VerifyRes {
   meta: AnyRecord
 }
 
+type LemonReturnData = {
+  type: string
+  id: string
+  attributes: AnyRecord
+  relationships: AnyRecord
+  links: AnyRecord
+}
+
 interface LemonAPIData {
   jsonapi: AnyRecord
   links: AnyRecord
-  data: {
-    type: string
-    id: string
-    attributes: AnyRecord
-    relationships: AnyRecord
-    links: AnyRecord
+  data: LemonReturnData
+}
+interface LemonAPIDataList {
+  meta: {
+    page: {
+      currentPage: number
+      from: number
+      to: number
+      lastPage: number
+      perPage: number
+      total: number
+    }
   }
+  jsonapi: AnyRecord
+  links: AnyRecord
+  data: LemonReturnData[]
 }
 
 /**
@@ -75,6 +92,29 @@ const getOrder = async (orderId: number) => {
   return res
 }
 
+/**
+ * Step 4. get the subscrption
+ * @param licenseId
+ * @returns
+ */
+const getSubData = async (productId: number, orderId: number) => {
+  const reqURL = `subscriptions/?filter[product_id]=${productId}&filter[order_id]=${orderId}`
+  let res = {} as LemonAPIDataList
+  let subData: AnyRecord = {}
+
+  try {
+    res = await api.get<LemonAPIDataList>(reqURL)
+  } catch (error) {
+    console.log(error)
+  }
+
+  if (res.data && res.data.length > 0 && res.meta.page.total === 1) {
+    subData = res.data[0].attributes
+  }
+
+  return subData
+}
+
 const getRecurrence = (variantId: number) => {
   const variantMap = {
     // lemon
@@ -98,15 +138,22 @@ export default defineEventHandler(async (event) => {
   const verifyInfo = await verifyLicense(license_key)
 
   if (verifyInfo && verifyInfo.valid) {
+    let subData = {}
     const licenseRes = await getLicense(verifyInfo.license_key.id)
     const licenseInfo = licenseRes.data.attributes
     const orderRes = await getOrder(licenseInfo.order_id)
+
+    // subscrption on lemon
+    if (/38360|38635/.test(verifyInfo.meta.variant_id)) {
+      subData = await getSubData(licenseInfo.product_id, licenseInfo.order_id)
+    }
 
     res = {
       ...licenseInfo,
       ...verifyInfo.license_key,
       ...verifyInfo.meta,
       ...orderRes.data.attributes,
+      ...subData,
       recurrence: getRecurrence(verifyInfo.meta.variant_id)
     }
     // console.log(orderRes)
