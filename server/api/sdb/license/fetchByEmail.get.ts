@@ -3,7 +3,8 @@ import { sdb } from '@/services/sdb'
 export default defineEventHandler(async (event) => {
   const { email } = getQuery(event) as { email: string }
 
-  let [data, message] = [null, null]
+  let data = null
+  let message = null
 
   try {
     const { data: LicenseList, error } = await sdb.license.fetchByEmail(email)

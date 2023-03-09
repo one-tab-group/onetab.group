@@ -3,7 +3,8 @@ import { sdb } from '@/services/sdb'
 export default defineEventHandler(async (event) => {
   const { key } = getQuery(event) as { key: string }
 
-  let [data, message] = [null, null]
+  let data = null
+  let message = null
 
   try {
     const { data: LicenseList, error } = await sdb.license.fetchByKey(key)

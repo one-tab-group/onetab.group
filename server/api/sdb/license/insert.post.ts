@@ -2,7 +2,8 @@ import { sdb } from '@/services/sdb'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
-  let [data, message] = [null, null]
+  let data = null
+  let message = null
 
   try {
     const { data: LicenseList, error } = await sdb.license.insert(body)
