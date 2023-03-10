@@ -181,11 +181,7 @@
 
             <div class="space-x-2 mb-4 w-full h-[50px]">
               <div class="text-white text-base font-bold rounded-2xl">
-                <span
-                  class="text-2xl line-through text-opacity-80 text-shark-100"
-                  >$49.9</span
-                >
-                <span class="text-3xl">$39.9</span>
+                <span class="text-3xl">$49.9</span>
                 / <span class="text-sm">Limited Time Offer</span>
               </div>
             </div>
@@ -198,21 +194,16 @@
               Get Lifetime License
             </a>
 
-            <div class="flex items-center gap-4 mt-4 w-full">
+            <div class="flex items-center gap-4 my-4 w-full">
               <div class="w-full bg-shark-600 rounded-full">
                 <div
                   class="bg-lochmara-400 text-xs font-medium text-lochmara-100 text-center p-0.5 leading-none rounded-full"
-                  style="width: 55%"
+                  style="width: 56%"
                 >
-                  55 sales
+                  56 sales
                 </div>
               </div>
-              <div class="w-15 text-sm text-neon font-semibold">45 left</div>
-            </div>
-
-            <div class="text-center p-4 text-lochmara-50 text-sm">
-              20% off with code
-              <span class="text-neon font-semibold">OTGNEW20</span>
+              <div class="w-15 text-sm text-neon font-semibold">44 left</div>
             </div>
 
             <ul

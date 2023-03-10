@@ -1,24 +1,4 @@
 <template>
-  <div class="hidden sm:flex">
-    <div
-      class="px-4 relative group bg-neon h-10 z-99 w-full flex justify-center"
-    >
-      <a
-        href="/changelog/?ref=alert_bar"
-        class="relative px-4 py-2.5 leading-none flex items-center divide-x divide-shark-50 font-semibold text-shark-50"
-      >
-        <span class="pr-4 text-sm">
-          ✨ Released v1.3.0 on Jan 15 2023 integrates with Raycast for
-          effective tab searching.
-        </span>
-        <span
-          class="pl-4 group-hover:text-white/90 transition duration-500 text-sm"
-        >
-          See what's new →
-        </span>
-      </a>
-    </div>
-  </div>
   <slot />
   <!-- header -->
   <header class="card-blur sticky left-0 right-0 top-0 h-16 z-99">
@@ -68,12 +48,12 @@
                   </NuxtLink>
                 </li>
                 <li>
-                  <NuxtLink
-                    to="/pricing"
+                  <a
+                    href="/pricing?pd_identifier=ed471667-a9b2-4c9d-9279-4da8a5b422fd"
                     class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
                   >
                     Pricing
-                  </NuxtLink>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -173,7 +153,7 @@
           </li>
           <li class="menu-mobile-item">
             <a
-              href="/pricing"
+              href="/pricing?pd_identifier=ed471667-a9b2-4c9d-9279-4da8a5b422fd"
               class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
             >
               <span>Pricing</span>

@@ -3,6 +3,26 @@
     <div class="gradient-header absolute left-0 top-0 overflow-hidden"></div>
     <!-- Site Header -->
     <ClientOnly>
+      <div class="hidden sm:flex">
+        <div
+          class="px-4 relative group bg-neon h-10 z-99 w-full flex justify-center"
+        >
+          <a
+            href="/changelog/?ref=alert_bar"
+            class="relative px-4 py-2.5 leading-none flex items-center divide-x divide-shark-50 font-semibold text-shark-50"
+          >
+            <span class="pr-4 text-sm">
+              ✨ Released v1.3.0 on Jan 15 2023 integrates with Raycast for
+              effective tab searching.
+            </span>
+            <span
+              class="pl-4 group-hover:text-white/90 transition duration-500 text-sm"
+            >
+              See what's new →
+            </span>
+          </a>
+        </div>
+      </div>
       <SiteHeader @navto="gotoAnchor">
         <img
           class="bg-grid pointer-events-none hidden sm:block"
