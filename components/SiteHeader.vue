@@ -49,7 +49,7 @@
                 </li>
                 <li>
                   <a
-                    href="/pricing?pd_identifier=ed471667-a9b2-4c9d-9279-4da8a5b422fd"
+                    href="/pricing?pd_identifier=89936e6c-516e-4a66-9978-82a85e2defb0"
                     class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
                   >
                     Pricing
@@ -153,7 +153,7 @@
           </li>
           <li class="menu-mobile-item">
             <a
-              href="/pricing?pd_identifier=ed471667-a9b2-4c9d-9279-4da8a5b422fd"
+              href="/pricing?pd_identifier=89936e6c-516e-4a66-9978-82a85e2defb0"
               class="flex items-center block text-shark-900 dark:text-white hover:text-shark-500 dark:hover:text-lochmara-500"
             >
               <span>Pricing</span>
