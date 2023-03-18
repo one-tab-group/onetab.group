@@ -67,13 +67,14 @@ export default defineNuxtConfig({
           defer: true,
           src: 'https://widget.senja.io/embed/frame.js'
         },
-        // {
-        //   defer: true,
-        //   src: 'https://app.lemonsqueezy.com/js/lemon.js'
-        // },
         {
           defer: true,
           src: 'https://cdn.paritydeals.com/banner.js'
+        },
+        {
+          defer: true,
+          'data-domain': 'onetab.group',
+          src: 'https://plausible.io/js/script.js'
         }
       ]
     }
