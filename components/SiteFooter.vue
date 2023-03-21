@@ -152,6 +152,12 @@
             >
               How to reduce browser memory usage
             </a>
+            <a
+              class="hover:opacity-75 hidden"
+              href="/blog/how-does-one-tab-group-compare-to-other-tab-management-extensions"
+            >
+              How does One Tab Group compare to other tab management extensions
+            </a>
           </nav>
         </div>
 
