@@ -12,7 +12,7 @@
             </div>
           </div>
         </h2>
-        <a
+        <!-- <a
           class="hidden lg:flex items-center px-4 py-2 text-sm font-medium text-white bg-lochmara-500 border border-lochmara-500 rounded-lg sm:w-auto active:text-opacity-75"
           hover="bg-lochmara-400 text-white"
           focus="outline-none ring"
@@ -20,7 +20,7 @@
         >
           <mdi:open-in-new class="h-5 w-5 mr-2" />
           <span>Open all tabs</span>
-        </a>
+        </a> -->
       </div>
       <div v-for="element in session.tabTree">
         <template v-if="element.children">
@@ -66,7 +66,7 @@
           href="/blog/how-to-sync-tabs-across-devices-or-browsers"
           class="hover:underline underline-sky-400"
         >
-          Learn how to shared a session in
+          Interested in learning how to share a session in
           <span class="text-neon">One Tab Group</span>?
         </a>
       </section>
