@@ -59,13 +59,27 @@
           hover="bg-shark-100 dark:bg-shark-700"
         />
       </div>
+      <section
+        class="flex justify-center items-center text-center flex-col gap-8 justify-center mt-10 text-lg lg:text-xl 2xl:text-2xl h-20"
+      >
+        <a
+          href="/blog/how-to-sync-tabs-across-devices-or-browsers"
+          class="hover:underline underline-sky-400"
+        >
+          Learn how to shared a session in
+          <span class="text-neon">One Tab Group</span>?
+        </a>
+      </section>
     </section>
     <section
       class="flex items-center flex-col gap-8 justify-center h-96"
       v-else
     >
       Session has not been shared
-      <a href="https://onetab.group" class="text-neon">
+      <a
+        href="/blog/how-to-sync-tabs-across-devices-or-browsers"
+        class="text-neon"
+      >
         Learn how to shared a session in One Tab Group?
       </a>
     </section>
@@ -75,6 +89,7 @@
 
 <script lang="ts" setup>
 import { useGlobalStore } from '@/store/global'
+import { Session } from '~~/types'
 
 const route = useRoute()
 type AnyRecord = Record<string, any>
@@ -102,7 +117,9 @@ const TAB_GROUP_COLORS: Record<string, string> = {
 
 const formatColor = (color: string) => TAB_GROUP_COLORS[color]
 
-const session = computed(() => data.value.data)
+const session = computed(
+  () => (data.value && data.value.data) || ({} as AnyRecord)
+)
 const tabLength = computed(() => {
   let tabs = []
   const tabTree = session.value.tabTree
@@ -128,16 +145,16 @@ const tabLength = computed(() => {
   return tabs.length
 })
 const tabGroupLength = computed(() => {
-  return session.value.tabTree.filter((item) => item.children).length
+  return session.value.tabTree.filter((item: any) => item.children).length
 })
 
-const getGroupTitleStyle = (meta) => {
+const getGroupTitleStyle = (meta: any) => {
   return {
     'background-color': formatColor(meta.color)
   }
 }
 
-const getGroupHeaderStyle = (meta) => {
+const getGroupHeaderStyle = (meta: any) => {
   return {
     'border-left': `1px solid ${formatColor(meta.color)}`,
     'border-right': `1px solid ${formatColor(meta.color)}`,
@@ -146,7 +163,7 @@ const getGroupHeaderStyle = (meta) => {
     'border-bottom-right-radius': 0
   }
 }
-const getGroupContentStyle = (meta) => {
+const getGroupContentStyle = (meta: any) => {
   return {
     'border-left': `1px solid ${formatColor(meta.color)}`,
     'border-right': `1px solid ${formatColor(meta.color)}`,
