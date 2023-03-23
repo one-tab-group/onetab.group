@@ -198,12 +198,12 @@
               <div class="w-full bg-shark-600 rounded-full">
                 <div
                   class="bg-lochmara-400 text-xs font-medium text-lochmara-100 text-center p-0.5 leading-none rounded-full"
-                  style="width: 56%"
+                  style="width: 60%"
                 >
-                  56 sales
+                  60 sales
                 </div>
               </div>
-              <div class="w-15 text-sm text-neon font-semibold">44 left</div>
+              <div class="w-15 text-sm text-neon font-semibold">30 left</div>
             </div>
 
             <ul

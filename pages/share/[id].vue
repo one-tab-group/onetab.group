@@ -63,7 +63,7 @@
         class="flex justify-center items-center text-center flex-col gap-8 justify-center mt-10 text-lg lg:text-xl 2xl:text-2xl h-20"
       >
         <a
-          href="/blog/how-to-sync-tabs-across-devices-or-browsers"
+          href="/blog/sharing-your-tabs-or-tab-groups-with-others"
           class="hover:underline underline-sky-400"
         >
           Interested in learning how to share a session in
@@ -77,7 +77,7 @@
     >
       Session has not been shared
       <a
-        href="/blog/how-to-sync-tabs-across-devices-or-browsers"
+        href="/blog/sharing-your-tabs-or-tab-groups-with-others"
         class="text-neon"
       >
         Learn how to shared a session in One Tab Group?
