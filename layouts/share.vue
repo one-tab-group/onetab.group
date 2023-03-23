@@ -48,20 +48,6 @@
       </div>
     </header>
     <main class="max-w-screen-lg my-12 m-auto sm:rounded px-8 lg:px-0">
-      <div class="mx-auto text-center z-10">
-        <h1
-          class="relative font-bold tracking-tight space-y-4 text-primary"
-          text="xl sm:2xl md:3xl lg:3xl"
-        >
-          <p>
-            Your <span class="text-neon">all-in-one</span> browser tab/tab group
-            manager
-          </p>
-        </h1>
-      </div>
-
-      <Divider between class="!max-w-screen-lg" />
-
       <section class="container text-shark-800 dark:text-shark-100">
         <slot />
       </section>
