@@ -44,5 +44,5 @@ export type License = {
   recurrence: RecurrenceType
   ip_country: string
   created_at: number | string
-  expriy_at: number | string
+  expiry_at: number | string
 }

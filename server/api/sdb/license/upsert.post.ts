@@ -2,7 +2,8 @@ import { sdb } from '@/services/sdb'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
-  let [data, message] = [null, null]
+  let data = null
+  let message = null
   const { email, license_key } = body
 
   const resByEmail = await sdb.license.fetchByEmail(email)
