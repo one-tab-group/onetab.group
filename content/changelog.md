@@ -12,6 +12,18 @@ head.image: /img/changelog.jpg
 🎉🎉 One Tab Group supports integrates with Raycast, [Learn how to search saved browser tabs and tab groups in Raycast](/blog/search-saved-browser-tabs-and-tab-groups-in-raycast)
 :::
 
+## 1.4.0 (2023-04-20)
+
+### Features
+
+- Sync session state between two browser windows
+
+![](/img/changelog_001.gif)
+
+### Bug Fixes
+
+- Fixed the problem when search result is empty
+
 ## 1.3.4 (2023-02-23)
 
 ### Features
