@@ -154,6 +154,19 @@
                 </a>
               </li>
               <!-- feat - end -->
+
+              <!-- feat - start -->
+              <li class="flex items-center gap-1.5 font-semibold">
+                <carbon:checkmark-filled class="w-5 h-5 shrink-0" />
+                <a
+                  class="font-semibold"
+                  :style="{ width: '-webkit-fill-available' }"
+                  href="/changelog"
+                >
+                  Sync session state between mutilple windows (v1.4.0)
+                </a>
+              </li>
+              <!-- feat - end -->
             </ul>
           </div>
           <!-- center side - end -->

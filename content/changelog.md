@@ -16,7 +16,7 @@ head.image: /img/changelog.jpg
 
 ### Features
 
-- Sync session state between two browser windows
+- Synchronize session state between multiple windows
 
 ![](/img/changelog_001.gif)
 

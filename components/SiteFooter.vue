@@ -101,7 +101,7 @@
         </div>
 
         <div>
-          <p class="text-xl font-semibold">Product Features</p>
+          <p class="text-xl font-semibold">Features</p>
 
           <nav class="flex flex-col mt-4 space-y-2 text-md text-shark-300">
             <a
@@ -192,7 +192,7 @@
               class="hover:opacity-75 flex items-center gap-1 cursor-pointer"
               @click="emit('navto', 'faqs')"
             >
-              <span>FAQS</span>
+              <span>FAQs</span>
             </div>
 
             <a
@@ -234,8 +234,8 @@
         class="flex justify-between items-center flex-col lg:flex-row py-8 lg:p-0"
       >
         <div class="text-center sm:text-left">
-          One Tab Group © 2022 <a class="text-neon" href="/">onetab.group</a>.
-          All rights reserved.
+          One Tab Group © {{ new Date().getFullYear() }}
+          <a class="text-neon" href="/">onetab.group</a>. All rights reserved.
         </div>
         <div class="divide-x divide-shark-200">
           <NuxtLink to="/terms-of-services" class="px-2"
