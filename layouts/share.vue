@@ -30,7 +30,7 @@
               <li>
                 <a
                   class="hover:text-lochmara-500 dark:hover:text-lochmara-400"
-                  href="/pricing?pd_identifier=f8f10870-2b1b-44bc-a6b4-49fedfb967f3"
+                  href="/pricing?pd_identifier=91a333ff-eba3-43bd-be2c-4ae95a806e00"
                 >
                   Pricing
                 </a>
